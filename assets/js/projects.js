@@ -9,7 +9,6 @@ function init() {
 
 window.addEventListener('DOMContentLoaded', init)	// Calls method init when Sheets has loaded
 
-
 function showInfo(data) {
 	var name = [];
 	var image = [];
@@ -28,7 +27,7 @@ function showInfo(data) {
 		linktext[index] = data[index].linktext;
 		p1[index] = data[index].p1;
 		p2[index] = data[index].p2;
-		allTiles += '<p>' + name[index] + '</p>';
+		allTiles += '<div class="clearfix"><img src="' + image[index] + '" width=300px><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p1[index] + '</p><p>' + p2[index] + '</p></div>';
 		index++;
 	}
 	document.getElementById("Projects").innerHTML = allTiles;
