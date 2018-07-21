@@ -13,6 +13,7 @@ function showInfo(data) {
 	var company = [];
 	var image = [];
 	var job = [];
+	var link = [];
 	var p = [];
 	var useTemplate = [];
 	var webURL = [];
@@ -23,7 +24,8 @@ function showInfo(data) {
 		image[index] = data[index].image;
 		job[index] = data[index].job;
 		p[index] = data[index].p;
-		allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2>' + job[index] + '</h2><p>' + p[index] + '</p></div>';
+		link[index] = data[index].link;
+		allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + job[index] + '</a></h2><p>' + p[index] + '</p></div>';
 		index++;
 	}
 	document.getElementById("Projects").innerHTML = allTiles;
