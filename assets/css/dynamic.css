@@ -1,16 +1,24 @@
 			body{
- 				font-family:  "Quicksand", Arial;
+ 				font-family:  "Maven Pro", "Quicksand",  Arial;
   				background-color: #151515;
   				color: #cccccc;
   				text-align: center;
 			}
 			.content{
-				max-width:1600px;
+				max-width:700px;
   				margin-top:30px;
 				margin-right: auto;
 				margin-left: auto;
   				padding-right:60px;
   				padding-left:60px;
+			}
+			img {
+				border-radius: 10px;
+			}
+			p a {
+  				color: white;
+  				text-decoration: none;
+  				border-bottom: 1px dotted;
 			}
 			ul {
 				z-index:5;
@@ -18,28 +26,49 @@
   				margin:0;
   				padding:0;
   				overflow: auto;
-  				background-color: #151515;
+  				background-color: #202020;
   				position:sticky;
   				top:0;
-  				width:100%;
+  				width:700px;
   				text-align:center;
+				margin-left:auto;
+				margin-right:auto;
+				border-radius:30px;
+				margin-top:30px;
+				margin-bottom:30px;
 			}
 			li {
-  				display: inline;
- 				height: 50px;
-			}
-			li a{
   				display: inline-block;
-  				color: #777777;
+ 				height: 50px;
+				border-radius: 30px;
+				transition: .2s;
+			}
+			li a {
+				z-index: 5;
+  				display: inline-block;
+  				color: #999999;
   				text-align: center;
   				padding: 14px 16px;
   				text-decoration: none;
 			}
-			.clearfix {
-				overflow: auto;
+			li:hover {
+				background-color: #f18b6d; 
 			}
 			li a:hover {
+				transition: .1s;
+  				color: #ffffff;
+			}
+			p a:hover {
   				color: #f18b6d;
+			}
+			p {
+				text-align: justify;
+			}
+			.active {
+  				color: #93d8f4;
+			}
+			.clearfix {
+				overflow: auto;
 			}
 			.active {
   				color: #93d8f4;
@@ -92,4 +121,53 @@
 			}
 			.hoverImage a:hover {
   				color: #f18b6d;
+			}
+			.button a {
+  				color: #151515;
+  				text-decoration: none;
+			}
+			.button {
+  				display: inline-block;
+  				border-radius: 30px;
+  				background-color: #202020;
+  				color: #999999;
+  				text-align: center;
+  				font-size: 16px;
+  				padding: 10px;
+  				width: 140px;
+  				transition: all 0.5s;
+  				cursor: pointer;
+  				margin-right:5px;
+  				margin-left:5px;
+				border-width: 0px;
+			}
+
+			.button span {
+  				cursor: pointer;
+  				display: inline-block;
+  				position: relative;
+  				transition: 0.5s;
+			}
+
+			.button span:after {
+  				content: '>>';
+  				position: absolute;
+  				opacity: 0;
+  				top: 0;
+  				right: -20px;
+  				transition: 0.5s;
+			}
+
+			.button:hover {
+  				background-color: #f18b6d;
+				color: #ffffff;
+			}
+
+			.button:hover span {
+  				padding-right: 25px;
+			}
+
+			.button:hover span:after {
+  				opacity: 1;
+  				right: 0;
 			}
