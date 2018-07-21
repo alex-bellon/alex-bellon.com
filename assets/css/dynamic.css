@@ -1,0 +1,95 @@
+			body{
+ 				font-family:  "Quicksand", Arial;
+  				background-color: #151515;
+  				color: #cccccc;
+  				text-align: center;
+			}
+			.content{
+				max-width:1600px;
+  				margin-top:30px;
+				margin-right: auto;
+				margin-left: auto;
+  				padding-right:60px;
+  				padding-left:60px;
+			}
+			ul {
+				z-index:5;
+  				list-style: none;
+  				margin:0;
+  				padding:0;
+  				overflow: auto;
+  				background-color: #151515;
+  				position:sticky;
+  				top:0;
+  				width:100%;
+  				text-align:center;
+			}
+			li {
+  				display: inline;
+ 				height: 50px;
+			}
+			li a{
+  				display: inline-block;
+  				color: #777777;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+			.clearfix {
+				overflow: auto;
+			}
+			li a:hover {
+  				color: #f18b6d;
+			}
+			.active {
+  				color: #93d8f4;
+			}
+			.hoverImage {
+				display:inline-block;
+				position: relative;
+				width: 400px;
+				height: 350px;
+				margin: 20px;
+			}
+			.hoverImage img {
+				height:100%;
+				z-index:1;
+				width:100%;
+				transition:.4s;
+				border-radius:10px;
+			}
+			.hoverImage :not(img) {
+				z-index:2;
+				position:absolute;
+				color: #ffffff;
+				text-align: center;
+				opacity:0;
+				transition:.4s;
+			}
+			.hoverImage p {
+				top:20%;
+				text-align: justify;
+				width:80%;
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+			.hoverImage h2 {
+				width:80%;
+				margin-right: 10%;
+				margin-left: 10%;
+				top:7%;
+			}	
+			.hoverImage:hover :not(img){
+				opacity:1;
+			}
+			.hoverImage:hover img{
+				filter:blur(2px) brightness(20%);
+			}
+			.hoverImage a {
+				position:relative;
+  				text-decoration: none;
+  				border-bottom: 1px dotted;
+			}
+			.hoverImage a:hover {
+  				color: #f18b6d;
+			}
