@@ -15,6 +15,9 @@
 			img {
 				border-radius: 10px;
 			}
+			.logo{
+				max-width: 300px;
+			}
 			p a {
   				color: white;
   				text-decoration: none;
@@ -25,11 +28,12 @@
   				list-style: none;
   				margin:0;
   				padding:0;
-  				overflow: auto;
+  				overflow: hidden;
   				background-color: #202020;
   				position:sticky;
   				top:0;
   				width:700px;
+				height:50px;
   				text-align:center;
 				margin-left:auto;
 				margin-right:auto;
@@ -38,6 +42,7 @@
 				margin-bottom:30px;
 			}
 			li {
+				overflow: hidden;
   				display: inline-block;
  				height: 50px;
 				border-radius: 30px;
@@ -78,7 +83,10 @@
 				position: relative;
 				width: 400px;
 				height: 350px;
-				margin: 20px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				margin-left:auto;
+				margin-right:auto;
 			}
 			.hoverImage img {
 				height:100%;
