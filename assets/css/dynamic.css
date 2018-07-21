@@ -5,12 +5,15 @@
   				text-align: center;
 			}
 			.content{
-				max-width:700px;
+				max-width:1600px;
   				margin-top:30px;
 				margin-right: auto;
 				margin-left: auto;
   				padding-right:60px;
   				padding-left:60px;
+			}
+			.text {
+				max-width: 700px;
 			}
 			img {
 				border-radius: 10px;
@@ -83,11 +86,7 @@
 				position: relative;
 				width: 400px;
 				height: 350px;
-				margin-top: 20px;
-				margin-bottom: 20px;
-				margin-left:auto;
-				margin-right:auto;
-			}
+				margin: 20px;			}
 			.hoverImage img {
 				height:100%;
 				z-index:1;
