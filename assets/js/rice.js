@@ -22,6 +22,10 @@ function showInfo(data) {
 	var dlink = [];
 	var e = [];
 	var elink = [];
+	var bar1 = [];
+	var bar2 = [];
+	var bar3 = [];
+	var bar4 = [];
 	var useTemplate = [];
 	var webURL = [];
 	var index = 0;
@@ -38,10 +42,14 @@ function showInfo(data) {
 		dlink[index] = data[index].dlink;
 		e[index] = data[index].e;
 		elink[index] = data[index].elink;
+		bar1[index] = data[index].bar1;
+		bar2[index] = data[index].bar2;
+		bar3[index] = data[index].bar3;
+		bar4[index] = data[index].bar4;
 		if(cat[index] == "  ") {
-			allTiles += '<tr> </tr><tr>  </tr><tr> </tr><tr> </tr>'; 
+			allTiles += '<tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr>'; 
 		} else {
-			allTiles += '<tr><th>' + cat[index] + '</th><td>' + '<a href="' + alink[index] + '">' + a[index] + '</a></td>' + '<td><a href="' + blink[index] + '">' + b[index] + '</a></td>' + '<td><a href="' + clink[index] + '">' + c[index] + '</a></td>' + '<td><a href="' + dlink[index] + '">' + d[index] + '</a></td>' + '<td><a href="' + elink[index] + '">' + e[index] + '</a></td>' + '</tr>';
+			allTiles += '<tr><th>' + cat[index] + '</th><td>' + '<a href="' + alink[index] + '">' + a[index] + '</a>' + bar1[index]  + '<a href="' + blink[index] + '">' + b[index] + '</a>' + bar2[index]  + '<a href="' + clink[index] + '">' + c[index] + '</a>' + bar3[index] + '<a href="' + dlink[index] + '">' + d[index] + '</a>' + bar4[index]+ '<a href="' + elink[index] + '">' + e[index] + '</a></td>' + '</tr>';
 		}
 		index++;
 	}
