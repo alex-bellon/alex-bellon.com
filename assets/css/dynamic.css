@@ -5,15 +5,14 @@
   				text-align: center;
 			}
 			.footer{
-				position: fixed;
+				position:fixed;
 				left: 0;
 				bottom: 0;
 				width: 100%;
+				height: 200px;
 				background-color: #000000;
 				color: white;
 				text-align: center;
-				margin-top: 100px;
-				z-index: 3;
 			}
 			.content{
 				max-width:1600px;
