@@ -15,6 +15,18 @@
 				padding: 15px;
 				z-index:5;
 			}
+			.footer a {
+				z-index: 5;
+  				display: inline-block;
+  				color: #ffffff;
+  				text-align: center;	
+  				padding: 0px 5px;
+  				text-decoration: none;
+			}
+			.footer a:hover {
+				transition: .1s;
+  				color: #f18b6d;
+			}
 			.content{
 				max-width:1600px;
   				margin-top:30px;
