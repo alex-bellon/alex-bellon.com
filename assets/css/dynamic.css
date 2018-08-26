@@ -73,7 +73,7 @@
   				display: inline-block;
  				height: 50px;
 				border-radius: 30px;
-				transition: .2s;
+				transition: .1s;
 			}
 			li a {
 				z-index: 5;
