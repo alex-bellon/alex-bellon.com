@@ -4,6 +4,12 @@
   				color: #cccccc;
   				text-align: center;
 			}
+			h4 {
+				margin-top: 5px;
+			}
+			h1 {
+				margin-bottom: 5px;
+			}
 			.footer{
 				position: fixed;
 				bottom: 0;
