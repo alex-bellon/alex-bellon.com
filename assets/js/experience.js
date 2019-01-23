@@ -25,7 +25,11 @@ function showInfo(data) {
 		job[index] = data[index].job;
 		p[index] = data[index].p;
 		link[index] = data[index].link;
-		allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + job[index] + '</a></h2><p>' + p[index] + '</p></div>';
+		if(company[index] == "---"){
+			allTiles += '<div><h1>' + job[index] + '</h1></div>';
+		} else {
+			allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + job[index] + '</a></h2><p>' + p[index] + '</p></div>';
+		}
 		index++;
 	}
 	document.getElementById("Projects").innerHTML = allTiles;
