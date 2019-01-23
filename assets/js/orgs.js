@@ -14,6 +14,7 @@ function showInfo(data) {
 	var image = [];
 	var link = [];
 	var p = [];
+	var pos = [];
 	var useTemplate = [];
 	var webURL = [];
 	var index = 0;
@@ -23,7 +24,12 @@ function showInfo(data) {
 		image[index] = data[index].image;
 		link[index] = data[index].link;
 		p[index] = data[index].p;
-		allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p[index] + '</p></div>';
+		pos[index] = data[index].pos;
+		if(name[index] == "---"){
+			allTiles += '<div><h1>' + pos[index] + '</h1></div>';
+		} else {
+			allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p[index] + '</p></div>';
+		}
 		index++;
 	}
 	document.getElementById("Projects").innerHTML = allTiles;
