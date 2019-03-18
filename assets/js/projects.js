@@ -27,7 +27,11 @@ function showInfo(data) {
 		linktext[index] = data[index].linktext;
 		p1[index] = data[index].p1;
 		p2[index] = data[index].p2;
-		allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p1[index] + '</p></div>';
+		if(name[index] == "---"){
+        	allTiles += '<div><h1>' + image[index] + '</h1></div>';
+        } else {
+        	allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p1[index] +  p2[index] + '</p></div>';
+        }
 		index++;
 	}
 	document.getElementById("Projects").innerHTML = allTiles;
