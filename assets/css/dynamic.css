@@ -1,3 +1,10 @@
+			body{
+ 				font-family:  "Maven Pro", "Quicksand",  Arial;
+  				background-color: #000000;
+  				color: #cccccc;
+  				text-align: center;
+                margin-top: 0px;
+			}
 			.background{
 				max-width:1600px;
 				width: 80%;
@@ -5,13 +12,6 @@
 				margin-left: 10%;
 				background-color: #151515;
                 position: absolute;
-			}
-			body{
- 				font-family:  "Maven Pro", "Quicksand",  Arial;
-  				background-color: #000000;
-  				color: #cccccc;
-  				text-align: center;
-                margin-top: 0px;
 			}
 			h4 {
 				margin-top: 5px;
