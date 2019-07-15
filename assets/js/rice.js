@@ -47,7 +47,7 @@ function showInfo(data) {
 		bar3[index] = data[index].bar3;
 		bar4[index] = data[index].bar4;
 		if(cat[index] == "  ") {
-			allTiles += '<tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr>'; 
+			allTiles += '<tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr><tr> </tr>';
 		} else {
 			allTiles += '<tr><th>' + cat[index] + '</th><td>' + '<a href="' + alink[index] + '">' + a[index] + '</a>' + bar1[index]  + '<a href="' + blink[index] + '">' + b[index] + '</a>' + bar2[index]  + '<a href="' + clink[index] + '">' + c[index] + '</a>' + bar3[index] + '<a href="' + dlink[index] + '">' + d[index] + '</a>' + bar4[index]+ '<a href="' + elink[index] + '">' + e[index] + '</a></td>' + '</tr>';
 		}
@@ -56,3 +56,22 @@ function showInfo(data) {
 	allTiles+="</table>"
 	document.getElementById("Bookmarks").innerHTML = allTiles;
 }
+
+/*
+
+Go through the first row and make that many lists for <tr> tag.
+On each iteration, add appropriate <td> to each <tr> list.
+In the end, go through each <tr> list in order and set up the actualy table.
+
+allTiles = '<table><tr>'
+for item in <tr> list:
+	allTiles += <th> entry </th>
+allTiles += '</tr><tr>'
+for rest of tr lists:
+	allTiles += '<tr>'
+	for item in rest:
+		allTiles += '<td><a></a></td>'
+	allTiles += '</tr>'
+allTiles += '</table>'
+
+*/
