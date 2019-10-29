@@ -8,28 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=.5">
 		<link rel="stylesheet" type="text/css" href="assets/css/dynamic.css">
 		<base target="_blank" />
-		<script type="text/javascript" charset="utf-8">
-			var pos = 0;
-			var jump = 250;
-			document.onkeydown = function(e) {
-				e = e || window.event;
-				if (e.keyCode == 74){ //j
-					if (pos + jump <= 2000){ // Fix this. If you try to do scrollHeight, you need to make sure it calculates that after everything loads. 
-						pos += jump;
-					}
-					console.log(pos);
-					window.scrollTo(0, pos);
-				}
-				else if (e.keyCode == 75){ //k
-					if (pos - jump >= 0){
-						pos -= jump;
-					}
-					console.log(pos);
-					window.scrollTo(0, pos);
-				}
-			};
-		</script>
 		<script src="assets/js/tabletop.js"></script>
+		<script src="assets/js/vim.js"></script>
  		<title>Projects | Alex Bellon </title>
 	</head>
 <body>
@@ -52,8 +32,5 @@
 	</div>
     </div>
   	<script src="assets/js/projects.js"></script>
-		<script src="assets/js/vim.js"></script>
-
-
 </body>
 </html>
