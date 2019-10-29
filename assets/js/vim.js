@@ -1,6 +1,6 @@
 var pos = 0;
 var jump = 250;
-var pages = ["", "projects", "workexperience", "organizations", "writeups", "graphicdesign"]
+var pages = ["", "projects", "workexperience", "organizations", "writeups", "art"]
 
 document.onkeydown = function(e) {
   e = e || window.event;
