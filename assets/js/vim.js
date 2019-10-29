@@ -1,6 +1,6 @@
 var pos = 0;
 var jump = 250;
-var pages = ["index", "projects", "workexperience", "organizations", "writeups", "graphicdesign"]
+var pages = ["", "projects", "workexperience", "organizations", "writeups", "graphicdesign"]
 
 document.onkeydown = function(e) {
   e = e || window.event;
@@ -20,12 +20,14 @@ document.onkeydown = function(e) {
   else if (e.keyCode == 76){ // l, next
     var title = document.location.href.split("/").slice(-1)[0].replace(".html", "");
     var index = pages.indexOf(title);
+	if(index == -1) index = 0;
     var newindex = pages[(index + 1) % pages.length];
     window.location.href = home + newindex;
   }
   else if (e.keyCode == 72){ // h, prev
     var title = document.location.href.split("/").slice(-1)[0].replace(".html", "");
     var index = pages.indexOf(title);
+	if(index == -1) index = 0;
     var newindex = pages[(index - 1 + pages.length) % pages.length];
     window.location.href = home + newindex;
   }
