@@ -28,7 +28,7 @@ function showInfo(data) {
 		if(name[index] == "---"){
 			allTiles += '<div><h1>' + pos[index] + '</h1></div>';
 		} else {
-			allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p[index] + '</p></div>';
+			allTiles += '<div class="hoverImage" onclick="location.href=\'' + link[index] + '\'"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p[index] + '</p></div>';
 		}
 		index++;
 	}

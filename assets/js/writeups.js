@@ -28,7 +28,7 @@ function showInfo(data) {
 		if(name[index] == "---"){
         	allTiles += '<div><h1>' + link[index] + '</h1></div>';
         } else {
-        	allTiles += '<div class="hoverText"><h4><h3>' + name[index] + '</h3><h5>' + subtitle[index] + '</h5></h4><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p1[index] +  p2[index] + '</p></div>';
+        	allTiles += '<div class="hoverText" onclick="location.href=\'' + link[index] + '\'"><h4><h3>' + name[index] + '</h3><h5>' + subtitle[index] + '</h5></h4><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p1[index] +  p2[index] + '</p></div>';
         }
 		index++;
 	}
