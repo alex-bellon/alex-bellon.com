@@ -26,7 +26,7 @@ function showInfo(data) {
 		if(name[index] == "---"){
                 allTiles += '<h1>' + image[index] + '</h1>';
         } else {
-                allTiles += '<div class="hoverImage" onclick="location.href=\'' + link[index] + '\'"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p1[index] + '</p></div>';
+                allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + name[index] + '</a></h2><p>' + p1[index] + '</p></div>';
         }
 
 		index++;

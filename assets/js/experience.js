@@ -28,7 +28,7 @@ function showInfo(data) {
 		if(company[index] == "---"){
 			allTiles += '<h1>' + job[index] + '</h1>';
 		} else {
-			allTiles += '<div class="hoverImage" onclick="location.href=\'' + link[index] + '\'"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + job[index] + '</a></h2><p>' + p[index] + '</p></div>';
+			allTiles += '<div class="hoverImage"><img src="' + image[index] + '"><h2><a href="' + link[index] + '">' + job[index] + '</a></h2><p>' + p[index] + '</p></div>';
 		}
 		index++;
 	}
