@@ -67,6 +67,12 @@ h1 {
 	padding-right:60px;
 	padding-left:60px;
 	margin-bottom: 80px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 }
 
 .text {
@@ -91,7 +97,7 @@ p a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
+	font-size: 110%;
 	z-index:5;
 	list-style: none;
 	margin:0;
@@ -156,104 +162,34 @@ p {
 	color: #93d8f4;
 }
 
-.hoverText {
-	display:inline-block;
-	position: relative;
+.textBlock {
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
 	width: 400px;
 	height: 200px;
 	margin: 20px;
-}
-
-.hoverText :not(h4):not(h3):not(h5){
-	z-index:2;
-	/* position:absolute; */
-	color: #ffffff;
-	text-align: center;
-	opacity:0;
-	transition:.4s;
-}
-
-.hoverText h4 {
-	height:100%;
 	z-index:1;
-	width:100%;
-	transition:.4s;
 	border-radius:10px;
-	background-color: #cc8855;
-	text-align: center;
+	background-color: #47a9ff;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
-.hoverText h3 {
-	transition:0s;
-	z-index:2;
+.textBlock h3 {
+	color: white;
 	font-size: 250%;
-	/* top:20%; */
-	text-align: center;
-	width:90%;
-	margin-top: -40%;
-	margin-left: 5%;
-	margin-right: 5%;
-	height: 100%;
+	width: 80%;
+	margin: 0;
 }
 
-.hoverText h5 {
-	transition:0s;
-	z-index:2;
+.textBlock h5 {
+	color: #dddddd;
 	font-size: 150%;
-	/* top:20%; */
-	text-align: center;
-	width:90%;
-	margin-top: -47%;
-	margin-left: 5%;
-	margin-right: 5%;
-	height: 100%;
-	color: #aa6633;
-}
-
-.hoverText h2 {
-	position: absolute;
-	width:80%;
-	margin-right: 10%;
-	margin-left: 10%;
-	top:7%;
-}
-
-.hoverText p {
-	position: absolute;
-	top:35%;
-	text-align: center;
-	width:90%;
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
-.hoverText:hover :not(h5){
-	opacity:1;
-}
-
-.hoverText:hover :not(h4){
-	opacity:1;
-}
-
-.hoverText:hover :not(h3){
-	opacity:1;
-}
-
-.hoverText:hover h4{
-	filter:blur(2px) brightness(20%);
-}
-
-.hoverText:hover h3 h5{
-	opacity:0;
-}
-
-.hoverText a {
-	/* position:absolute; */
-	text-decoration: none;
-	border-bottom: 1px dotted;
-}
-.hoverText a:hover {
-	color: #f18b6d;
+	width: 100%;
+	margin: 0;
+	margin-top: 1%;
 }
 
 .hoverImage {
