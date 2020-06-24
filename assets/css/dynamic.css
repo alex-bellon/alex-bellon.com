@@ -31,8 +31,6 @@ h4 {
 	min-height: 100%;
 }
 
-
-
 .footer{
 	max-width:1600px;
 	width: 79%;
@@ -199,12 +197,11 @@ p {
 .hoverImage {
 	display:inline-block;
 	position: relative;
-	max-width: 400px;
+	max-width: 370px;
 	overflow: hidden;
-	max-height: 350px;
-	margin: 20px;
+	max-height: 320px;
+	margin: 15px;
 	border-radius: 10px;
-
 }
 
 .hoverImage img {
