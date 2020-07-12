@@ -211,6 +211,43 @@ p {
 	transition:.4s;
 }
 
+
+.hoverImage :not(img) {
+	z-index:2;
+	position:absolute;
+	color: #ffffff;
+	text-align: center;
+	opacity:0;
+	transition:.4s;
+}
+.hoverImage p {
+	top:20%;
+	text-align: center;
+	width:90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.hoverImage h2 {
+	width:80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	top:7%;
+}
+.hoverImage:hover :not(img){
+	opacity:1;
+}
+.hoverImage:hover img{
+	filter:blur(2px) brightness(20%);
+}
+.hoverImage a {
+	position:relative;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+.hoverImage a:hover {
+	color: #f18b6d;
+}
+
 .button a {
 	color: #151515;
 	text-decoration: none;
