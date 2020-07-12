@@ -220,6 +220,7 @@ p {
 	opacity:0;
 	transition:.4s;
 }
+
 .hoverImage p {
 	top:20%;
 	text-align: center;
@@ -227,25 +228,47 @@ p {
 	margin-left: 5%;
 	margin-right: 5%;
 }
+
 .hoverImage h2 {
 	width:80%;
 	margin-right: 10%;
 	margin-left: 10%;
 	top:7%;
 }
+
 .hoverImage:hover :not(img){
 	opacity:1;
 }
+
 .hoverImage:hover img{
 	filter:blur(2px) brightness(20%);
 }
+
 .hoverImage a {
 	position:relative;
 	text-decoration: none;
 	border-bottom: 1px dotted;
 }
+
 .hoverImage a:hover {
 	color: #f18b6d;
+}
+
+.photo {
+	display:inline-block;
+	position: relative;
+	max-width: 370px;
+	overflow: hidden;
+	max-height: 320px;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+.photo img {
+	max-width: 100%;
+	max-height:100%;
+	z-index:1;
+	transition:.4s;
 }
 
 .button a {
