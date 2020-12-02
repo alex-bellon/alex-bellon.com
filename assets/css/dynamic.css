@@ -1,5 +1,5 @@
 body{
-	font-family:  "Maven Pro", "Quicksand",  Arial;
+	font-family:  "Nunito",  Arial;
 	background-color: #000000;
 	color: #cccccc;
 	text-align: center;
@@ -14,7 +14,7 @@ h1 {
 }
 
 h3 {
-	width: 100%
+	width: 100%;
 }
 
 h4 {
@@ -181,14 +181,14 @@ p {
 
 .textBlock h3 {
 	color: white;
-	font-size: 250%;
+	font-size: 200%;
 	width: 80%;
 	margin: 0;
 }
 
 .textBlock h5 {
 	color: #dddddd;
-	font-size: 150%;
+	font-size: 120%;
 	width: 100%;
 	margin: 0;
 	margin-top: 1%;
