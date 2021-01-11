@@ -1,0 +1,158 @@
+body {
+  font-family: "Nunito", Arial;
+  background-color: #000000;
+  color: #cccccc;
+  text-align: center;
+  margin-top: 0px;
+}
+
+a {
+  text-decoration-style: dotted;
+}
+
+h1 {
+  color: white;
+}
+
+.background {
+  max-width: 1600px;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: #151515;
+  position: absolute;
+  min-height: 100%;
+}
+
+.content {
+  max-width: 1600px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentBlock {
+  text-align: left;
+  max-width: 60%;
+}
+
+.contentBlock a {
+  color: #f18b6d;
+}
+
+.contentBlock a:hover {
+	color: #a8614c;
+}
+
+.contentBlock h2 {
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contentBlock p {
+  font-size: 30px;
+  margin: 0;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  justify-content: center;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentContainer img {
+  max-height: 320px;
+  max-width: 370px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 3%;
+}
+
+.footer {
+  max-width: 1600px;
+  width: 79%;
+  margin-right: 11%;
+  margin-left: 11%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: #151515;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  z-index: 5;
+}
+
+.footer a {
+  z-index: 5;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px 5px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  transition: .1s;
+  color: #f18b6d;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 110%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #151515;
+  position: sticky;
+  top: 0;
+  min-width: 700px;
+  min-height: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.header li {
+  overflow: hidden;
+  display: inline-block;
+  height: 50px;
+  border-radius: 30px;
+  transition: .1s;
+}
+
+.header li a {
+  z-index: 5;
+  display: inline-block;
+  color: #999999;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header li:hover {
+  background-color: #f18b6d;
+}
+
+.header li a:hover {
+  transition: .1s;
+  color: #ffffff;
+}
