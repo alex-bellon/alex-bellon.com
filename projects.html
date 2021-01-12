@@ -1,17 +1,19 @@
 <html>
+
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<link rel="icon"  type="image/png" href="http://cs.utexas.edu/~abellon/images/personal_logo.png">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=.5">
-	<link rel="stylesheet" type="text/css" href="assets/css/dynamic.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<base target="_blank" />
-	<script src="assets/js/tabletop.js"></script>
 	<script src="assets/js/vim.js"></script>
 	<title id="title"> Projects | Alex Bellon </title>
 </head>
+
 <body>
 	<div class="background">
+
 		<ul class="header">
 			<li><a target="_parent"href="https://cs.utexas.edu/~abellon"> home </a></li>
 			<li><a target="_parent" class="active" href="https://cs.utexas.edu/~abellon/projects"> projects </a></li>
@@ -22,12 +24,176 @@
 			<li><a target="_parent"href="https://cs.utexas.edu/~abellon/art"> art </a></li>
 			<li><a target="_parent"href="https://cs.utexas.edu/~abellon/photography"> photography </a></li>
 		</ul>
-		<div id="Projects" class="content">
+
+		<div class="content">
+
+			<h1>Cybersecurity Projects</h1>
+
+      <div class="contentContainer">
+        <img src="images/aes.png">
+        <div class="contentBlock">
+          <h2><a href="https://github.com/alex-bellon/aes">AES</a></h2>
+          <p>An implementation of 128 & 256 bit AES, written in Python. A project for my Introduction to Security class.</p>
+        </div>
+      </div>
+
+			<div class="contentContainer">
+				<img src="images/aag.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/alex-bellon/anshel-anshel-goldfeld-rubiks-cube">Anshel-Anshel-Goldfeld Key Exchange</a></h2>
+					<p>My implementation of the Anshel-Anshel-Goldfeld Key Exchange using the Rubiks's Cube group. I made this for one of my UTCTF 2020 problems.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/ctf-challenges.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/alex-bellon/ctf-challenges">CTF Challenges</a></h2>
+					<p>A collection of all of the CTF challenges I have written for ISSS's biweekly CTFs. I mainly write Forensics and Cryptography problems.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/ctf-tools.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/alex-bellon/ctf-tools">CTF Tools</a></h2>
+					<p>Repository where I write tools to make and solve CTF challenges, as well as collect pre-existing tools.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/cybersecurity-resources.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/alex-bellon/cybersecurity-resources">Cybersecurity Resources</a></h2>
+					<p>A collection of links, notes, programs, websites, etc. related to CTFs and cybersecurity.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/drunken-bishop.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/alex-bellon/drunken-bishop">Drunken Bishop</a></h2>
+					<p>My Python implementation of the drunken bishop algorithm used to generate the ASCII art that you see when using OpenSSH. I made this for a CTF problem I wrote.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/rubikstega.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/alex-bellon/rubikstega">Rubikstega</a></h2>
+					<p>My implementation of Rubikstega, a Rubik's cube based type of steganography. Whitepaper describing the algorithm can be found <a href="http://informatika.stei.itb.ac.id/~rinaldi.munir/TA/Makalah_TA_Ade_Yusuf.pdf">here</a>.</p>
+				</div>
+			</div>
+
+			<h1>Hackathon Projects</h1>
+
+			<div class="contentContainer">
+				<img src="images/allergen.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/Texas-Waitlisters/AllerGen">AllerGen</a></h2>
+					<p>AllerGen allows you to create a profile with a list of things you are allergic to. You can then scan foods, and it will show the ingredient list and determine whether or not you are allergic to it. You can also create a list of foods and then find the common ingredients to see which ingredient is causing the allergic reaction.</p>
+					<br>
+					<p>This project was made for TAMUhack 2019. I worked on the backend in Python, sending requests to the USDA's API to search and get info, as well as implement the logic compare ingredients to the allergen list or to each other.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/accessatlas.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/Texas-Waitlisters/Access-Atlas">Access Atlas</a></h2>
+					<p>Access Atlas consolidates campus wide accessibility services in one easy to use app. Users can more easily find and engage with the services they need.  Our map shows the different locations of handicap parking spaces, entrances, and ramps.  Users can also be matched with services suited to them including accomodation letters and copies of class notes.</p>
+					<br>
+					<p>This project was made for Hacklahoma 2019.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/macrobites.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/Texas-Waitlisters/MacroBites">MacroBites</a></h2>
+					<p>MacroBites allows you to search by restaurant or individual food and get specific information about the amount and ratios of macronutrients that the foods have. You can also set your goal macronutrient ratios in your profile, and then get results that rank foods based on how close they are to your goal ratio.</p>
+					<br>
+					<p>This project was made for TAMUhack 2020.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/slidedown.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/alex-bellon/slidedown">SlideDown</a></h2>
+					<p>SlideDown is a command-line tool that allows you turn a Markdown file into a Google Slides presentation. This makes it really easy to batch-convert a lot of Markdown files to Slides format. Currently still in development!</p>
+					<br>
+					<p>This project was made for HackMIT 2019.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/totc.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/Texas-Waitlisters/TopOfTheClass">Top of the Class</a></h2>
+					<p>Top of the Class is a web app where students can search for the classes they are taking during the semester and see how much the textbooks, iClickers, and other classroom supplies will cost. Students can navigate to the page of their class and add new items that detail what the item is, a link to purchase it, its ISBN (if applicable) and its price.</p>
+					<br>
+					<p>This project was made for HackRice 2018. I worked in Python and MySQL to create the database to hold the data and script to connect it to the React app. I also used React to create part of the frontend.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/flock.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/Texas-Waitlisters/Flock">Flock</a></h2>
+					<p>Flock allows its users to locate rentals that are open to pooling and rent their own private room with shared living spaces. Any prospective tenants can make a request to rent a room, which can then be accepted or denied by the current tenants. In order to make Flock safer, every user is assigned a rating that corresponds to how good of a tenant they are.</p>
+					<br>
+					<p>This project was made for HomeAway's InternHackATX 2018. I worked in Python and MySQL to create the database to hold the data and script to connect it to the React Native app.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/prescriptchain.jpg">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/Texas-Waitlisters/PrescriptChain">PrescriptChain</a></h2>
+					<p>PrescriptChain is a web app that allows doctors to connect prescriptions they write to a blockchain. The immutability of the blockchain ensures that when prescriptions are filled at pharmacies they will not be misinterpreted due to bad handwriting, and that they are authentic prescriptions. </p>
+					<br>
+					<p>This project was made for Factom's Blockchain Hackathon 2018. I worked in MySQL to create the database to the user and prescription data, and helped write the Python script to retrieve information from the datbase.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/playfuse.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/Texas-Waitlisters/PlayFuse">PlayFuse</a></h2>
+					<p>PlayFuse is a web tool that allows users to make playlists once and then have them distributed to all of their favorite music streaming services. It pulls playlist information from a user’s account, searches each platform for selected music, and then syncs playlists between services.  One of the Top 10 Projects at Hacklahoma 2018!</p>
+					<br>
+					<p>This project was made for Hacklahoma 2018. I worked in Python with Google's YouTube API and the gmusicapi.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/ccca.png">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/Texas-Waitlisters/CCCA">CCCA</a></h2>
+					<p>CCCA uses the frequency of tweets with location enabled and keywords relevant to natural disasters to form a heatmap from which first responders and helpers can decide which areas are most in need of assistance. Placed 2nd at Texas Convergent Side Project Expo!</p>
+					<br>
+					<p>This project was made for TAMUhack 2018. I wrote the Python script that received, analyzed and formatted tweets, then exported them to a .csv file.</p>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<img src="images/reddit.jpg">
+				<div class="contentBlock">
+					<h2><a href="https://github.com/Texas-Waitlisters/Text2Emoji">Text2Emoji</a></h2>
+					<p>Text2Emoji is a reddit bot that replies to comments with the same content, but replaces some of the keywords with their corresponding emojis. The bot will parse though the comment while consulting our handmade dictionary that tells it what emojis correspond to what phrases. It will then reply to the original comment with its own version!</p>
+					<br>
+					<p>This project was made for HackTX 2017. I was responsible for developing the keyword dictionary, and I also worked on the Python script that would choose what comments to reply to and post comments.</p>
+				</div>
+			</div>
+
 		</div>
+
 		<div id="Footer" class="footer">
           <a href="https://cs.utexas.edu/~abellon/resume.pdf">Resume</a>|<a href="https://github.com/alex-bellon">GitHub</a>|<a href="https://linkedin.com/in/alex-bellon">LinkedIn</a>|<a href="https://devpost.com/alex-bellon">DevPost</a>
 		</div>
+
 	</div>
-	<script src="assets/js/projects.js"></script>
+
 </body>
 </html>
