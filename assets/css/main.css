@@ -8,10 +8,21 @@ body {
 
 a {
   text-decoration-style: dotted;
+  color: white;
+}
+
+a:hover {
+	color: #cccccc;
 }
 
 h1 {
+  font-size: 50px;
+  margin: 20px;
   color: white;
+}
+
+h3 {
+  margin: 0;
 }
 
 .background {
@@ -24,9 +35,23 @@ h1 {
   min-height: 100%;
 }
 
+.blocks {
+	max-width:1600px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right:60px;
+	padding-left:60px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
 .content {
   max-width: 1600px;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 60px;
@@ -41,40 +66,36 @@ h1 {
   max-width: 60%;
 }
 
-.contentBlock a {
-  color: #f18b6d;
-}
-
-.contentBlock a:hover {
-	color: #a8614c;
-}
-
 .contentBlock h2 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .contentBlock p {
-  font-size: 30px;
+  font-size: 23px;
   margin: 0;
+  width: auto;
 }
 
 .contentContainer {
   display: flex;
   flex-direction: row;
-  margin: 15px;
+  flex-wrap: wrap;
+  margin: 20px;
   justify-content: center;
-  max-width: 1300px;
+  max-width: 1100px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .contentContainer img {
-  max-height: 320px;
-  max-width: 370px;
-  border-radius: 10px;
+  display: block;
+  max-height: 300px;
+  max-width: 347px;
   overflow: hidden;
+  border-radius: 10px;
   margin-right: 3%;
 }
 
@@ -155,4 +176,52 @@ h1 {
 .header li a:hover {
   transition: .1s;
   color: #ffffff;
+}
+
+.photo {
+	display:inline-block;
+	position: relative;
+	max-width: 370px;
+	overflow: hidden;
+	max-height: 320px;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+.photo img {
+	max-width: 100%;
+	max-height:100%;
+	z-index:1;
+	transition:.4s;
+}
+
+.textBlock {
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	width: 370px;
+	height: 200px;
+	z-index:1;
+	border-radius:10px;
+	background-color: #47a9ff;
+	margin: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.textBlock h2 {
+	color: white;
+	font-size: 200%;
+	width: 80%;
+	margin: 0;
+  line-height: 95%;
+}
+
+.textBlock h3 {
+	color: #dddddd;
+	font-size: 120%;
+	width: 100%;
+	margin: 0;
+	margin-top: 1%;
 }
