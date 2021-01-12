@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  text-decoration-style: dotted;
+  text-decoration-line: none;
   color: white;
 }
 
@@ -16,13 +16,22 @@ a:hover {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 20px;
   color: white;
 }
 
 h3 {
   margin: 0;
+}
+
+img {
+  border-radius: 10px;
+}
+
+p a {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
 }
 
 .background {
@@ -49,6 +58,57 @@ h3 {
 	justify-content: center;
 }
 
+
+.button a {
+	color: #151515;
+	text-decoration: none;
+}
+.button {
+	display: inline-block;
+	border-radius: 30px;
+	background-color: #202020;
+	color: #999999;
+	text-align: center;
+	font-size: 16px;
+	padding: 10px;
+	width: 140px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin-right:5px;
+	margin-left:5px;
+	border-width: 0px;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '>>';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover {
+	background-color: #f18b6d;
+	color: #ffffff;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
 .content {
   max-width: 1600px;
   margin-top: 0px;
@@ -67,9 +127,9 @@ h3 {
 }
 
 .contentBlock h2 {
-  font-size: 40px;
+  font-size: 35px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .contentBlock p {
@@ -92,8 +152,8 @@ h3 {
 
 .contentContainer img {
   display: block;
-  max-height: 300px;
-  max-width: 347px;
+  max-height: 280px;
+  max-width: 324px;
   overflow: hidden;
   border-radius: 10px;
   margin-right: 3%;
@@ -185,7 +245,6 @@ h3 {
 	overflow: hidden;
 	max-height: 320px;
 	margin: 15px;
-	border-radius: 10px;
 }
 
 .photo img {
