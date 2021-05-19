@@ -1,8 +1,7 @@
-Order allow,deny
-Allow from all
-Require all granted
-
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 Redirect 301 /github https://github.com/alex-bellon/
 Redirect 301 /linkedin https://linkedin.com/in/alex-bellon/
+Redirect 301 /resume https://alex-bellon.com/resume.pdf
+
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
