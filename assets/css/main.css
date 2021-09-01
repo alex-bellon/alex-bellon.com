@@ -25,10 +25,6 @@ h3 {
     margin: 0;
 }
 
-img {
-    border-radius: 30px;
-}
-
 p a {
     text-decoration-line: underline;
     text-decoration-style: dotted;
@@ -238,6 +234,10 @@ p a {
     color: #ffffff;
 }
 
+.logo {
+    border-radius: 20px;
+}
+
 .photo {
 	display:inline-block;
 	position: relative;
@@ -253,7 +253,7 @@ p a {
 	max-height:100%;
 	z-index:1;
 	transition:.4s;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .textBlock {

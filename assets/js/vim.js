@@ -4,7 +4,7 @@ var pages = ["", "projects", "workexperience", "organizations", "writeups", "tal
 
 document.onkeydown = function(e) {
   e = e || window.event;
-  var home = "https://cs.utexas.edu/~abellon/";
+  var home = "https://www.sysnet.ucsd.edu/~abellon/";
 
   // UP AND DOWN SCROLLING
   if (e.keyCode == 74){ // j, down
