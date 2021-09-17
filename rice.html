@@ -5,7 +5,6 @@
 		<meta charset="utf-8" />
 		<link rel="icon"  type="image/png" href="./images/personal_logo.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<script src="assets/js/tabletop.js"></script>
 		<style>
 			body{
 				font-family:"Source Code Pro";
@@ -13,17 +12,6 @@
 				text-align: center;
 				padding: 60px 0;
 				color: #ffffff;
-			}
-			table {
-				margin-right: auto;
-				margin-left: auto;
-			}
-			td {	
-				padding: 0 5px;
-			}
-			th {
-				text-align: right;
-				color: #93d8f4;
 			}
 			a:link {
     			color: #ffffff;
@@ -48,6 +36,22 @@
 			.content{
 				margin-top: 80px;
 			}
+			h3 {
+    			color: #f18b6d;
+                margin-bottom: 10px;
+			} 
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0px;
+                text-align: left;
+            }
+            .bookmarks {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                column-gap: 40px; 
+            }
 		</style>
 	</head>
 	<body>
@@ -63,8 +67,34 @@
                                                                  \/                                  
 			</p></pre>
 		</div>
-		<div id="Bookmarks" class="content">
-			<script src="assets/js/rice.js"></script>
+		<div class="bookmarks">
+            <ul>
+                <h3>code</h3> 
+                <li>
+                    <a href="https://github.com">github</a>
+                </li>
+            </ul>
+            <ul>
+                <h3>docs</h3> 
+                <li>
+                    <a href="https://drive.google.com/drive/u/1/my-drive">drive</a>
+                </li>
+                <li>
+                    <a href="https://keep.google.com/u/0/">keep</a>
+                </li>
+            </ul>
+            <ul>
+                <h3>media</h3> 
+                <li>
+                    <a href="https://www.hulu.com/">hulu</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/">netflix</a>
+                </li>
+                <li>
+                    <a href="https://app.plex.tv/desktop#">plex</a>
+                </li>
+            </ul>
 		</div>
 	</body>
 </html>
