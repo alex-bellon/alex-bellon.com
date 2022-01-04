@@ -1,0 +1,63 @@
+==================================================================
+https://keybase.io/alexbellon
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://alex-bellon.com
+  * I am alexbellon (https://keybase.io/alexbellon) on keybase.
+  * I have a public key with fingerprint 29F2 B702 3CB5 87ED CF6A  33DD 69AC 0E7E 14DF B2D2
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0116475d6b4c1302066b7f638bdfc4fb8a6850efd4200468c40f105084cd14fa6eed0a",
+      "fingerprint": "29f2b7023cb587edcf6a33dd69ac0e7e14dfb2d2",
+      "host": "keybase.io",
+      "key_id": "69ac0e7e14dfb2d2",
+      "kid": "0116475d6b4c1302066b7f638bdfc4fb8a6850efd4200468c40f105084cd14fa6eed0a",
+      "uid": "c06d71393fe12fcf6e1eb6b461eb8b19",
+      "username": "alexbellon"
+    },
+    "service": {
+      "hostname": "alex-bellon.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1638936551,
+  "expire_in": 157680000,
+  "prev": "b712cadfd243f2c6482e0605325f0ba392c3af60e838977137008514ba75123c",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkr9rFEEUxzdn1HgkQSQeBBR0KgNnnF87u3cENJaClVhYyDE/3lwmuexedvfO
+hCOxVBAhNgr+DSlEEG21NIVBxU5sQkRERbEVnY0GLCydZpg33/eZ73vz1sf2BSM1
+tzG+NvHu4cuhzQ8qkA/OfB0glZoV1BygBdjdoGMgL1oLzqAmwoQIHoVGKK4JwxQL
+oSIrWKyM1dyqWIo4xGANpxhzEWuOLcEhjrk2hFspAAyWqI6sS9qQdTOXFB5LG5aq
+CFOmVRhHYLQVkjFjRENqDBEQbqyihvrEuTQvM7w5JXOYdqmP+UNr194/9P/Zd28X
+p7EwEWENZoFQ690CAeXZwm+xIo1SmEOWyEXwatmBZQWdTpqg1Try8b7TULa2rOUv
+zenfommdLnpAN0uLVKcdfzlXFN28WSYXK91SfQ1U6w+npVxifDN9Rh+y3PlHmsQr
+deFKMPE1NpgIQ1JHsNx1GbRcqQgjEWO/yneg75EqukqolsYaypmlWvCYAhY4ZDS0
+WEnWoJpJKzDEnhj56iOM45BwJaOQ+J9DZWlLSYqa3PuUbc/MXTuRRS8DtFq92RsO
+aiPB8drJ4alvjyszj258ejHP3u7N3/5KOXxB9dDhvUiFDAV3qjtfNrfZ0fWtpSPX
+d27jW++3tsfOXXh9ZerAq4tr5+8GPwffx5/NXn7+5uwJJO7P3Hty7ODE5OSpS7M/
+Np5+dJ9HR38B
+=ukxc
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/alexbellon
+
+==================================================================
+
