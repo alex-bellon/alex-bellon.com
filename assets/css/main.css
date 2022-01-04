@@ -1,5 +1,5 @@
 body {
-    font-family: "Nunito", Arial;
+    font-family: "Hack", Arial;
     background-color: #000000;
     color: #cccccc;
     text-align: center;
@@ -7,12 +7,14 @@ body {
 }
 
 a {
-    text-decoration-line: none;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
     color: white;
 }
 
 a:hover {
-	color: #cccccc;
+	color: #f18b6d;
+    transition: .2s;
 }
 
 h1 {
@@ -21,8 +23,16 @@ h1 {
     color: white;
 }
 
+h2 {
+    margin: 0px;
+}
+
 h3 {
-    margin: 0;
+    margin: 0px;
+}
+
+p {
+    margin: 10px;
 }
 
 p a {
@@ -61,13 +71,12 @@ p a {
 }
 .button {
 	display: inline-block;
-	border-radius: 30px;
 	background-color: #202020;
 	color: #999999;
 	text-align: center;
 	font-size: 16px;
 	padding: 10px;
-	width: 140px;
+	width: 100px;
 	transition: all 0.5s;
 	cursor: pointer;
 	margin-right:5px;
@@ -82,27 +91,9 @@ p a {
 	transition: 0.5s;
 }
 
-.button span:after {
-	content: '>>';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.5s;
-}
-
 .button:hover {
 	background-color: #f18b6d;
 	color: #ffffff;
-}
-
-.button:hover span {
-	padding-right: 25px;
-}
-
-.button:hover span:after {
-	opacity: 1;
-	right: 0;
 }
 
 .content {
@@ -166,8 +157,8 @@ p a {
     color: white;
     background-color: #151515;
     text-align: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     z-index: 5;
 }
 
@@ -198,43 +189,48 @@ p a {
     background-color: #151515;
     position: sticky;
     top: 0;
-    min-height: 50px;
+    min-height: 30px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .header li {
     overflow: hidden;
     display: inline-block;
-    height: 50px;
-    border-radius: 30px;
-    transition: .1s;
+    height: 30px;
 }
 
 .header li a {
     z-index: 5;
     display: inline-block;
-    color: #999999;
     text-align: center;
-    padding: 14px 16px;
+    padding: 4px 10px;
     text-decoration: none;
+    transition: .5s;
 }
 
-.header li:hover {
-    background-color: #f18b6d;
+.header li a::before {
+    content: "[";
+    color: #aaaaaa;
+}
+
+.header li a::after {
+    content: "]";
+    color: #aaaaaa;
 }
 
 .header li a:hover {
-    transition: .1s;
-    color: #ffffff;
+    transition: .2s;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
 }
 
 .logo {
-    border-radius: 20px;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 .photo {
@@ -268,6 +264,12 @@ p a {
 	margin: 15px;
 	margin-left: 15px;
 	margin-right: 15px;
+    transition: .5s;
+}
+
+.textBlock:hover {
+    background-color: #f18b6d;
+    transition: .2s; 
 }
 
 .textBlock h2 {
