@@ -9,12 +9,12 @@ body {
 a {
     text-decoration-line: underline;
     text-decoration-style: dotted;
-    color: white;
+    color: #aaaaff;
 }
 
 a:hover {
-	color: #f18b6d;
-    transition: .2s;
+	  color: #5555cc;
+    transition: .4s;
 }
 
 h1 {
@@ -25,6 +25,7 @@ h1 {
 
 h2 {
     margin: 0px;
+    color: #9999ff;
 }
 
 h3 {
@@ -36,8 +37,13 @@ p {
 }
 
 p a {
+    color: #ffffff;
     text-decoration-line: underline;
     text-decoration-style: dotted;
+}
+
+p a:hover {
+  color: #9999ff;
 }
 
 .background {
@@ -206,6 +212,7 @@ p a {
 }
 
 .header li a {
+    color: #ffffff;
     z-index: 5;
     display: inline-block;
     text-align: center;
@@ -228,6 +235,7 @@ p a {
     transition: .2s;
     text-decoration-line: underline;
     text-decoration-style: dotted;
+    color: #9999ff;
 }
 
 .logo {
@@ -275,11 +283,10 @@ p a {
 }
 
 .textBlock h2 {
-	color: white;
 	font-size: 200%;
 	width: 80%;
 	margin: 0;
-    line-height: 95%;
+  line-height: 95%;
 }
 
 .textBlock h3 {
