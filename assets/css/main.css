@@ -9,12 +9,12 @@ body {
 a {
     text-decoration-line: underline;
     text-decoration-style: dotted;
-    color: white;
+    color: #aaaaff;
 }
 
 a:hover {
-	color: #f18b6d;
-    transition: .2s;
+	  color: #5555cc;
+    transition: .4s;
 }
 
 h1 {
@@ -25,6 +25,7 @@ h1 {
 
 h2 {
     margin: 0px;
+    color: #9999ff;
 }
 
 h3 {
@@ -36,8 +37,13 @@ p {
 }
 
 p a {
+    color: #ffffff;
     text-decoration-line: underline;
     text-decoration-style: dotted;
+}
+
+p a:hover {
+  color: #9999ff;
 }
 
 .background {
@@ -98,7 +104,7 @@ p a {
 
 .content {
     max-width: 1600px;
-    margin-top: 0px;
+    margin-top: 60px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 60px;
@@ -110,11 +116,11 @@ p a {
 
 .contentBlock {
     text-align: left;
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .contentBlock h2 {
-    font-size: 35px;
+    font-size: 30px;
     margin: 0;
     margin-bottom: 3px;
 }
@@ -128,7 +134,7 @@ p a {
 .contentContainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 20px;
     justify-content: center;
     max-width: 1100px;
@@ -140,10 +146,12 @@ p a {
 .contentContainer img {
     display: block;
     max-height: 280px;
-    max-width: 324px;
+    max-width: 300px;
     overflow: hidden;
     border-radius: 10px;
     margin-right: 3%;
+    width: auto;
+    height: 100%;
 }
 
 .footer {
@@ -204,6 +212,7 @@ p a {
 }
 
 .header li a {
+    color: #ffffff;
     z-index: 5;
     display: inline-block;
     text-align: center;
@@ -226,6 +235,7 @@ p a {
     transition: .2s;
     text-decoration-line: underline;
     text-decoration-style: dotted;
+    color: #9999ff;
 }
 
 .logo {
@@ -273,11 +283,10 @@ p a {
 }
 
 .textBlock h2 {
-	color: white;
 	font-size: 200%;
 	width: 80%;
 	margin: 0;
-    line-height: 95%;
+  line-height: 95%;
 }
 
 .textBlock h3 {
