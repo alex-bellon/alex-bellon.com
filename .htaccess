@@ -1,6 +1,8 @@
 Redirect 301 /github https://github.com/alex-bellon/
 Redirect 301 /linkedin https://linkedin.com/in/alex-bellon/
+Redirect 301 /scholar https://scholar.google.com/citations?user=caybufUAAAAJ
+
 Redirect 301 /resume https://alex-bellon.com/resume.pdf
+Redirect 301 /cv https://alex-bellon.com/cv.pdf
 
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
