@@ -1,0 +1,48 @@
+#+TITLE: publications | alex bellon
+#+OPTIONS: title:nil
+
+#+HTML: <div id="publications" class="main">
+#+HTML: <div class="contentBlock">
+
+** [[file:pubs/2023-soups-via.pdf][understanding the viability of e-mail origin indicators for identifying the sender]]
+enze liu, lu sun, *alex bellon*, grant ho, stefan savage, geoffrey m. voelker, imani n. s. munyaka. /SOUPS 2023/
+#+ATTR_HTML: :class publinks
+[[[file:pubs/2023-soups-via.pdf][pdf]]] [[[https://www.usenix.org/conference/soups2023/presentation/liu][usenix page]]] [[[https://www.usenix.org/conference/soups2023][conference]]]
+
+** [[file:pubs/2023-hotmobile-tagalong.pdf][tagalong: a free, wide-area data-muling service built on the airtag protocol]]
+*alex bellon*, alex yen, pat pannuto. /HotMobile 2023/
+#+ATTR_HTML: :class publinks
+[[[file:pubs/2023-hotmobile-tagalong.pdf][pdf]]] [[[file:pubs/2023-hotmobile-tagalong-slides.pdf][slides]]] [[[https://dl.acm.org/doi/10.1145/3572864.3580342][doi]]] [[[https://hotmobile.org/2023/][conference]]]
+
+** [[file:pubs/2022-techcon-hacking-for-fun-and-glucose.pdf][hacking for fun and glucose: reverse engineering an insulin pump]]
+*alex bellon*, alex snoeren, deian stefan. /SRC TECHCON 2022/
+#+ATTR_HTML: :class publinks
+[[[file:pubs/2022-techcon-hacking-for-fun-and-glucose.pdf][pdf]]] [[[file:pubs/2022-techcon-slides.pdf][slides]]] [[[https://src.secure-platform.com/a/page/techcon][conference]]]
+
+#+ATTR_HTML: :class divider
+demos and posters
+
+** [[file:pubs/2022-sensys-tagalong-demo.pdf][demo: tagalong: a free, wide-area data-muling service built on the airtag protocol]]
+*alex bellon*, alex yen, pat pannuto. /SenSys 2022/
+#+ATTR_HTML: :class publinks
+[[[file:pubs/2022-sensys-tagalong-demo.pdf][pdf]]] [[[file:pubs/2022-sensys-tagalong-poster.pdf][poster]]] [[[https://www.youtube.com/watch?v=c1jwv0srtu4][video]]] [[[https://dl.acm.org/doi/abs/10.1145/3560905.3568085][doi]]] [[[https://sensys.acm.org/2022/][conference]]]
+
+#+ATTR_HTML: :class divider
+writeups and articles
+
+** [[file:docs/mozilla-internship-writeup.pdf][the impact of maintainers on package ecosystem security]]
+*alex bellon*. /mozilla internship project blog post/
+
+** [[file:docs/cptc-report-2020.pdf][cptc report 2020]]
+*alex bellon*, nathan huckleberry, emma reuter, soham roy. /pentesting report for CPTC southeast regional 2020/
+
+** [[file:docs/cptc-report-2019.pdf][cptc report 2019]]
+neil patil, *alex bellon*, nathan huckleberry, emma reuter, logan kirkpatrick, joseph manahan. /pentesting report for CPTC new england regional 2019/
+
+** [[https://pagedout.institute/download/PagedOut_001_beta1.pdf][rubikstega]]
+*alex bellon*. /article in [[https://pagedout.institute/][Paged Out!]] zine/
+
+** [[https://github.com/alex-bellon/ctf-writeups][ctf challenge writeups]]
+*alex bellon*. /writeups for challenges I have completed while compething in ctfs. too many to post here individually :)/
+
+#+HTML: </div></div>

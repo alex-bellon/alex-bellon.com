@@ -1,0 +1,39 @@
+#+TITLE: art | alex bellon
+#+OPTIONS: title:nil
+
+#+HTML: <div id="art" class="main">
+#+HTML: <div class="blocks">
+
+#+ATTR_HTML: :class divider
+*graphic design*
+
+[[file:images/art/acm-shirt-2020.png]]
+[[file:images/art/underground.png]]
+[[file:images/art/fly-me-to-the-moon.png]]
+[[file:images/art/isss.png]]
+[[file:images/art/acm-shirt.png]]
+[[file:images/art/hash.png]]
+[[file:images/art/waitlisters.png]]
+[[file:images/art/finalproject.png]]
+[[file:images/art/jazzy.png]]
+[[file:images/art/kota.png]]
+[[file:images/art/planets.png]]
+[[file:images/art/totc.png]]
+[[file:images/art/slidedown.png][file:images/art/slidedown.png]]
+[[file:images/art/personal_logo.png][file:images/art/personal_logo.png]]
+[[file:images/art/infographic.png][file:images/art/infographic-cropped.png]]
+
+#+ATTR_HTML: :class divider
+*ink, charcoal, colored pencil and paint*
+
+[[file:images/art/bike.jpg][file:images/art/bike.jpg]]
+[[file:images/art/cs-jacket.jpg][file:images/art/cs-jacket.jpg]]
+[[file:images/art/hands.jpg][file:images/art/hands.jpg]]
+[[file:images/art/ink.jpg][file:images/art/ink.jpg]]
+[[file:images/art/cup.jpg][file:images/art/cup.jpg]]
+[[file:images/art/pins.jpg][file:images/art/pins.jpg]]
+[[file:images/art/horse.jpg][file:images/art/horse.jpg]]
+[[file:images/art/tintin-jacket.jpg][file:images/art/tintin-jacket.jpg]]
+[[file:images/art/egypt.jpg][file:images/art/egypt.jpg]]
+
+#+HTML: </div></div>

@@ -1,0 +1,46 @@
+#+TITLE: photography | alex bellon
+#+OPTIONS: title:nil
+
+#+HTML: <div id="photography" class="main">
+#+HTML: <div class="blocks">
+
+#+ATTR_HTML: :class comment
+find more photos on my [[https://www.flickr.com/photos/181915931@N04/][flickr]]
+
+[[file:images/photography/flower.jpg][file:images/photography/flower.jpg]]
+[[file:images/photography/ice.jpg][file:images/photography/ice.jpg]]
+[[file:images/photography/horse.jpg][file:images/photography/horse.jpg]]
+[[file:images/photography/lighthouse.jpg][file:images/photography/lighthouse.jpg]]
+[[file:images/photography/typewriter.jpg][file:images/photography/typewriter.jpg]]
+[[file:images/photography/lock.jpg][file:images/photography/lock.jpg]]
+[[file:images/photography/stanford.jpg][file:images/photography/stanford.jpg]]
+[[file:images/photography/rock.jpg][file:images/photography/rock.jpg]]
+[[file:images/photography/red.jpg][file:images/photography/red.jpg]]
+[[file:images/photography/sign.jpg][file:images/photography/sign.jpg]]
+[[file:images/photography/bee2.jpg][file:images/photography/bee2.jpg]]
+[[file:images/photography/berries.jpg][file:images/photography/berries.jpg]]
+[[file:images/photography/flowers.jpg][file:images/photography/flowers.jpg]]
+[[file:images/photography/cars2.jpg][file:images/photography/cars2.jpg]]
+[[file:images/photography/church.jpg][file:images/photography/church.jpg]]
+[[file:images/photography/climbing.jpg][file:images/photography/climbing.jpg]]
+[[file:images/photography/horse2.jpg][file:images/photography/horse2.jpg]]
+[[file:images/photography/cloud.jpg][file:images/photography/cloud.jpg]]
+[[file:images/photography/bee.jpg][file:images/photography/bee.jpg]]
+[[file:images/photography/coast.jpg][file:images/photography/coast.jpg]]
+[[file:images/photography/dock.jpg][file:images/photography/dock.jpg]]
+[[file:images/photography/flower2.jpg][file:images/photography/flower2.jpg]]
+[[file:images/photography/beach.jpg][file:images/photography/beach.jpg]]
+[[file:images/photography/bee3.jpg][file:images/photography/bee3.jpg]]
+[[file:images/photography/flowers2.jpg][file:images/photography/flowers2.jpg]]
+[[file:images/photography/flower3.jpg][file:images/photography/flower3.jpg]]
+[[file:images/photography/cloud2.jpg][file:images/photography/cloud2.jpg]]
+[[file:images/photography/moss3.jpg][file:images/photography/moss3.jpg]]
+[[file:images/photography/moss.jpg][file:images/photography/moss.jpg]]
+[[file:images/photography/paragliders.jpg][file:images/photography/paragliders.jpg]]
+[[file:images/photography/cars.jpg][file:images/photography/cars.jpg]]
+[[file:images/photography/bee4.jpg][file:images/photography/bee4.jpg]]
+[[file:images/photography/steam.jpg][file:images/photography/steam.jpg]]
+[[file:images/photography/sun.jpg][file:images/photography/sun.jpg]]
+[[file:images/photography/tree.jpg][file:images/photography/tree.jpg]]
+
+#+HTML: </div></div>

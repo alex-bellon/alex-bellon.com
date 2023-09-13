@@ -1,0 +1,27 @@
+#+TITLE: experience | alex bellon
+#+OPTIONS: title:nil
+
+#+HTML: <div id="experience" class="main">
+#+HTML: <div class="contentBlock">
+
+** [[https://micron.com][software engineering intern]]
+*** [Summer 2023]
+I'm currently interning at Micron, working with CXL memory. More updates to come!
+
+** [[https://www.cs.utexas.edu/][undergraduate TA (CS349)]]
+*** [Spring 2021, Fall 2021]
+As a TA for CS349 Contemporary Issues in Computer Science, I graded assignments and held office hours for 40+ students.
+
+** [[https://github.com/mozilla-services/dependency-observatory-research/tree/master/alex-bellon-internship][security engineering intern]]
+*** [Summer 2020]
+As part of the Firefox Operations Security team, I worked on Dependency Observatory, a tool that allows developers to check how secure an NPM package is before using it in their project. I researched how vulnerable top packages in NPM, PyPI and Cargo are to attack, and used those findings to tweak the algorithm used to "score" packages' safety in Dependency Observatory. I worked with Python, k8s, Docker, Flask, and GraphQL.
+
+** [[https://www.cs.utexas.edu/][undergraduate TA (CS361)]]
+*** [Spring 2019, Fall 2019]
+As a TA for CS361 Intro to Security, I created and graded security-focused assignments for 80+ students, lectured on various topics in security like ​cryptography​ and ​forensics​, and held office hours every week. I also wrote and ran a Capture the Flag (CTF) competition that was used for the students' final exam last semester.
+
+** [[https://www.ea.com/][security analyst intern]]
+*** [Summer 2019]
+As part of the Enterprise Security team, I wrote programs in ​Python​ to automate validating the results from CASB scans. The programs conduct port scans and send GET/HEAD requests to cloud service instances, then export the results to a JSON file, Google Sheet and MySQL database. It also sent out emails to the owner of those accounts to share and explain the findings. I also created a dynamic warning page to place in front of non-approved websites as categorized by the firewall.
+
+#+HTML: </div></div>

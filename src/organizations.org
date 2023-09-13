@@ -1,0 +1,34 @@
+#+TITLE: organizations | alex bellon
+#+OPTIONS: title:nil
+
+#+HTML: <div id="organization" class="main">
+#+HTML: <div class="contentBlock">
+
+** [[http://cse-gsa.eng.ucsd.edu/grad-student-lounge/chezbob][chez bob]]
+I help Chez Bob, the graduate student food and drink co-op for the CSE department. Chez Bob is run out of the CSE graduate student lounge, and provides students, postdocs, faculty and staff with cheap snacks and caffeine 24/7. The infrastructure for Chez Bob is completely [[https://github.com/chezbob/chezbob][open source]]!
+
+** [[https://www.naqt.com/stats/school/index.jsp?org_id=66397][quizbowl]]
+I am a member of UCSD's QuizBowl team. QuizBowl is like competitive trivia, with an emphasis on art and literature, history and science. I've competed at ACF Fall 2022 (SoCal Region), NAQT Sectionals 2023 (SoCal Region), and ACRONYM 2023 (online).
+
+#+ATTR_HTML: :class divider
+*undergrad*
+
+** [[https://isss.io][hash association of security hackers]]
+I was a member of HASH (the HASH Association of Security Hackers), which was the overarching organization for competitive security at UT Austin. We competed in the [[https://www.nationalccdc.org/][Collegiate Cybersecurity Defense Competition (CCDC)]] and the [[https://cp.tc/][Collegiate Penetration Testing Competition (CPTC)]]. I served as captain of both the CCDC (2020, 2021) and CPTC (2019, 2020) teams. In CPTC, we placed 2nd at the [[https://cp.tc/new-england][New England Regionals]] in 2019. In CCDC, we placed 2nd in 2019 and 3rd in 2020 at the [[https://southwestccdc.com/about/][Southwest Regional]]; in 2021 we won the Southwest Regional and competed at Nationals for the first time in school history!
+
+** [[https://www.isss.io/][information & systems security society]]
+I was President of the Information & System Security Society, a club dedicated to cybersecurity, from spring 2020 to spring 2021. Before that, I served as an engineering officer for 2 years. I wrote problems and challenges for the CTFs we held every two weeks, and gave talks about introductory security topics. I managed an officer team of 15, and we had 100+ members. We also held a yearly international CTF called UTCTF that had 1200+ competitors from all over the globe (I lead this project in 2020 and 2021).
+
+** [[https://texasacm.org/][association for computing machinery]]
+For 2 years, I served as a Web/Tech office for UT's Association for Computing Machinery (ACM) chapter. I kept the [[https://texasacm.org][TexasACM.org]] website up to date and free of bugs, responded to issues on our GitHub page, and maintained the GitHub Wiki. I also created, wrote curriculum for and hosted a series of [[https://github.com/UTACM/CS101][introductory workshops]] for new CS majors to introduce them to topics like Linux, Git/VCS, debugging, and more.
+
+** [[https://waitlisters.org][waitlisters]]
+I was one of the co-founders of a hackathon team called 'The Waitlisters'. Started at HackTX 2017, we particpated in dozens of hackathons across the US. We finished in the top 3 at multiple competitions, and we even took home the grand prize at TAMUhack 2019. Besides Hackathons, we also particpated in CTFs and Programming Competitions.
+
+** [[https://www.facebook.com/hookemarts/][hook 'em arts]]
+I was a member of the Hook 'Em Arts club at UT, a student organization dedicated to promoting and enjoying performing arts. We hosted Loft Events for shows that come through the Bass Concert Hall, and volunteered at youth performances. We also spread awareness of student shows and performances on campus.
+
+** [[https://www.facebook.com/TexasQuidditch/][austin quidditch]]
+For 2 years, I played on one of UT's club Quidditch teams, and yes, I mean the sport from Harry Potter. It's a co-ed, full contact sport played against other colleges and universities in the US Quidditch League. If you're wondering, I was primarily a Chaser and occasionally played Seeker.
+
+#+HTML: </div></div>
