@@ -1,0 +1,3 @@
+#+TITLE: blog bosts
+
+- [23.09.12] [[file:hello-world.org][hello world]]

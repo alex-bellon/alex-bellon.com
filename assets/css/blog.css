@@ -1,0 +1,61 @@
+body {
+    font-family: "Hack", Arial;
+    background-color: #000000;
+    color: #cccccc;
+    text-align: left;
+    margin-top: 0px;
+    width: 70%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a, .comment a {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    color: #aaaaff;
+}
+
+a:hover, .comment a:hover {
+	color: #5555cc;
+    transition: .4s;
+}
+
+p { 
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 34px;
+    color: #ddddff;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #8888ff;
+}
+
+h3 {
+    font-size: 22px;
+    color: #4444bb;
+}
+
+li {
+    font-size: 20px;
+}
+
+.content {
+    margin-bottom: 100px;
+}
+
+.meta {
+    font-size: 18px;
+    font-style: italic;
+    color: #777777;
+    margin-top: 10px;
+}
+
+#table-of-contents h2 {
+    display: none;
+}

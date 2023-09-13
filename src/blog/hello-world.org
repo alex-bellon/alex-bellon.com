@@ -1,0 +1,4 @@
+#+TITLE: hello world
+#+OPTIONS: toc:nil
+
+i don't really have anything specific to say, just wanted to test out my blog to make sure it works :)
