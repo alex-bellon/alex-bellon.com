@@ -41,15 +41,12 @@ h3 {
     color: #4444bb;
 }
 
-.content, .preamble {
+.content {
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
     width: 80%;
     margin-bottom: 80px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
 }
 
 .header {
@@ -111,6 +108,13 @@ h3 {
     font-style: italic;
     color: #777777;
     margin-top: 10px;
+}
+
+.preamble {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
 }
 
 #table-of-contents h2 {
