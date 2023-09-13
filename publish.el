@@ -1,8 +1,7 @@
 (require 'org)
 
 (defvar website-html-head
-"<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-<link rel='stylesheet' type='text/css' href='assets/css/main.css'>
+"<link rel='stylesheet' type='text/css' href='assets/css/main.css'>
 <link rel='icon' type='image/png' href='./images/art/personal_logo.png'>
 <meta name='viewport' content='width=device-width, initial-scale=.5'>
 <meta charset='utf-8'/>

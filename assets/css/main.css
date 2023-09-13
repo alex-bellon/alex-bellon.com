@@ -166,6 +166,7 @@ p {
 
 .intro {
     max-width: 1000px;
+    width: 70%;
     margin-right: auto; 
     margin-left: auto; 
     text-align: left; 
