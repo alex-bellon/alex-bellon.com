@@ -36,7 +36,7 @@
     <li><a target='_parent' href='../misc'>misc</a></li>
 </ul>
 <div class='preamble'>
-<h1 style='margin-top: 20px;'>%t</h1>
+<h1 style='margin-top: 60px;'>%t</h1>
 <p class=meta>posted %C (edited %T)</p></div>")
 
 (defvar website-html-postamble
