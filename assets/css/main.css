@@ -18,13 +18,13 @@ a:hover, .comment a:hover {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 27px;
     margin: 0;
 }
 
 p {
-    font-size: 23px;
-} 
+    font-size: 22px;
+}
 
 .blocks {
 	max-width:1600px;
@@ -59,7 +59,7 @@ p {
     margin: 0; 
     margin-right: auto; 
     margin-left:auto; 
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -80,7 +80,7 @@ p {
 }
 
 .divider {
-    font-size: 40px;
+    font-size: 33px;
     text-align: center;
 }
 
@@ -165,7 +165,7 @@ p {
 }
 
 .intro {
-    max-width: 700px; 
+    max-width: 1000px;
     margin-right: auto; 
     margin-left: auto; 
     text-align: left; 

@@ -34,9 +34,9 @@
 
 (setq org-publish-project-alist
     `(("pages"
-       :base-directory "~/GitHub/website-emacs/src/"
+       :base-directory "~/GitHub/website/src/"
        :base-extension "org"
-       :publishing-directory "~/GitHub/website-emacs/"
+       :publishing-directory "~/GitHub/website/"
        :publishing-function org-html-publish-to-html
        :section-numbers nil
        :with-toc nil
@@ -47,10 +47,10 @@
        :html-postamble ,website-html-postamble)
 
       ("blog"
-       :base-directory "~/GitHub/website-emacs/src/blog/"
+       :base-directory "~/GitHub/website/src/blog/"
        :base-extension "org"
        :recursive t
-       :publishing-directory "~/GitHub/website-emacs/blog/"
+       :publishing-directory "~/GitHub/website/blog/"
        :publishing-function org-html-publish-to-html
        :section-numbers nil
        :with-toc nil
@@ -61,10 +61,10 @@
        :html-postamble ,website-html-postamble)
 
       ("rss"
-       :base-directory "~/GitHub/website-emacs/src/blog/"
+       :base-directory "~/GitHub/website/src/blog/"
        :base-extension "org"
        :recursive t
-       :publishing-directory "~/GitHub/website-emacs/blog/"
+       :publishing-directory "~/GitHub/website/blog/"
        :publishing-function (org-rss-publish-to-rss)
        :html-link-home "https://alex-bellon.com"
        :html-link-use-abs-url t)
