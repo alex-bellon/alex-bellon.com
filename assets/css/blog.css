@@ -4,7 +4,6 @@ body {
     color: #cccccc;
     text-align: left;
     margin-top: 0px;
-    width: 70%;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -42,14 +41,24 @@ h3 {
     color: #4444bb;
 }
 
-.content {
-    margin-bottom: 100px;
+.content, .preamble {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 1600px;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
