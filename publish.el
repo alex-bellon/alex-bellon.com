@@ -70,3 +70,5 @@
        :html-link-use-abs-url t)
 
       ("website" :components ("pages" "blog" "rss"))))
+
+(org-publish-all t)
