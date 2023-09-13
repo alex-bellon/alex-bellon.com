@@ -1,0 +1,20 @@
+#+TITLE: misc | alex bellon
+#+OPTIONS: title:nil
+
+#+HTML: <div id="misc" class="main">
+#+HTML: <div class="contentBlock">
+
+** [[./organizations][organizations]]
+organizations that i'm involved with (or used to be involved with)
+** [[./talks][talks]]
+talks i've given, mainly with organizations i've been a part of
+
+#+ATTR_HTML: :class divider
+creative stuff
+
+** [[./art][art]]
+my graphic design + fine art work
+** [[./photography][photography]]
+some of my better photos
+
+#+HTML: </div></div>

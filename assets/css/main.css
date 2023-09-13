@@ -101,7 +101,7 @@ p {
     left: 0;
     background-color: black;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     padding-top: 5px;
     z-index: 5;
 }
@@ -116,7 +116,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 110%;
+    font-size: 22px;
     z-index: 5;
     list-style: none;
     padding: 0;

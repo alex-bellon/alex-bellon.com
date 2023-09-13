@@ -22,14 +22,20 @@
     <li><a target='_parent' href='./publications'>publications</a></li>
     <li><a target='_parent' href='./projects'>projects</a></li>
     <li><a target='_parent' href='./experience'>experience</a></li>
-    <li><a target='_parent' href='./organizations'>organizations</a></li>
-    <li><a target='_parent' href='./talks'>talks</a></li>
-    <li><a target='_parent' href='./art'>art</a></li>
-    <li><a target='_parent' href='./photography'>photography</a></li>
+    <li><a target='_parent' href='./blog'>blog</a></li>
+    <li><a target='_parent' href='./misc'>misc</a></li>
 </ul>")
 
 (defvar blog-html-preamble
-"<h1 style='margin-top: 70px;'>%t</h1>
+"<ul class='header'>
+    <li><a target='_parent' href='..'>home</a></li>
+    <li><a target='_parent' href='../publications'>publications</a></li>
+    <li><a target='_parent' href='../projects'>projects</a></li>
+    <li><a target='_parent' href='../experience'>experience</a></li>
+    <li><a target='_parent' href='.'>blog</a></li>
+    <li><a target='_parent' href='../misc'>misc</a></li>
+</ul>
+<h1 style='margin-top: 20px;'>%t</h1>
 <p class=meta>posted %C (edited %T)</p>")
 
 (defvar website-html-postamble
