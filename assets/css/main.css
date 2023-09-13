@@ -26,6 +26,14 @@ p {
     font-size: 20px;
 }
 
+@font-face {
+    font-family: "Hack";
+    src: url('../fonts/Hack-Regular.ttf'),
+    src: url('../fonts/Hack-Bold.ttf'),
+    src: url('../fonts/Hack-Italic.ttf'),
+    src: url('../fonts/Hack-BoldItalic.ttf')
+}
+
 .blocks {
 	max-width:1600px;
 	margin-right: auto;
