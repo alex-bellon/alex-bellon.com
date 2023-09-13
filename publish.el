@@ -1,4 +1,5 @@
 (require 'org)
+(require 'ox)
 
 (defvar website-html-head
 "<link rel='stylesheet' type='text/css' href='assets/css/main.css'>
@@ -14,13 +15,13 @@
 (defvar website-html-preamble
 "<ul class='header'>
     <li><a target='_parent' href='.'>home</a></li>
-    <li><a target='_parent' href='./publications.html'>publications</a></li>
-    <li><a target='_parent' href='./projects.html'>projects</a></li>
-    <li><a target='_parent' href='./experience.html'>experience</a></li>
-    <li><a target='_parent' href='./organizations.html'>organizations</a></li>
-    <li><a target='_parent' href='./talks.html'>talks</a></li>
-    <li><a target='_parent' href='./art.html'>art</a></li>
-    <li><a target='_parent' href='./photography.html'>photography</a></li>
+    <li><a target='_parent' href='./publications'>publications</a></li>
+    <li><a target='_parent' href='./projects'>projects</a></li>
+    <li><a target='_parent' href='./experience'>experience</a></li>
+    <li><a target='_parent' href='./organizations'>organizations</a></li>
+    <li><a target='_parent' href='./talks'>talks</a></li>
+    <li><a target='_parent' href='./art'>art</a></li>
+    <li><a target='_parent' href='./photography'>photography</a></li>
 </ul>")
 
 (defvar website-html-postamble
@@ -69,5 +70,13 @@
        :html-link-use-abs-url t)
 
       ("website" :components ("pages" "blog" "rss"))))
+
+(defun filter-local-links (link backend info)
+  "Filter that converts all the /index.html links to /"
+  (if (org-export-derived-backend-p backend 'html)
+	  (replace-regexp-in-string "/\.html$/" "" link)))
+
+;; Do not forget to add the function to the list!
+(add-to-list 'org-export-filter-link-functions 'filter-local-links)
 
 (org-publish-all t)
