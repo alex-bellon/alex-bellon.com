@@ -1,6 +1,6 @@
 var pos = 0;
 var jump = 250;
-var pages = ["home", "publications", "projects", "experience", "blog", "misc"]
+var pages = ["", "publications", "projects", "experience", "blog", "misc"]
 
 document.onkeydown = function(e) {
   e = e || window.event;
@@ -18,14 +18,26 @@ document.onkeydown = function(e) {
 
   // NEXT/PREV PAGE
   else if (e.keyCode == 76){ // l, next
-    var title = document.location.href.split("/").slice(-1)[0].replace(".html", "");
+    var title;
+    var url = document.location.href;
+    if (url.includes("blog")){
+        title = "blog";
+    } else {
+        title = url.split("/").slice(-1)[0].replace(".html", "");
+    }
     var index = pages.indexOf(title);
 	if(index == -1) index = 0;
     var newindex = pages[(index + 1) % pages.length];
     window.location.href = home + newindex;
   }
   else if (e.keyCode == 72){ // h, prev
-    var title = document.location.href.split("/").slice(-1)[0].replace(".html", "");
+    var title;
+    var url = document.location.href;
+    if (url.includes("blog")){
+        title = "blog";
+    } else {
+        title = url.split("/").slice(-1)[0].replace(".html", "");
+    }
     var index = pages.indexOf(title);
 	if(index == -1) index = 0;
     var newindex = pages[(index - 1 + pages.length) % pages.length];
