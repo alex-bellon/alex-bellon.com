@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 09.13.23 21:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='../assets/css/brain.css'>
+<link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
+<meta name='viewport' content='width=device-width, initial-scale=.5'>
+<meta charset='utf-8'/>
+<base target='_blank'/>
+<script src='../assets/js/vim.js'></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<ul class='header banner'>
+    <li><a target='_parent' href='..'>home</a></li>
+    <li><a target='_parent' href='../publications'>publications</a></li>
+    <li><a target='_parent' href='../projects'>projects</a></li>
+    <li><a target='_parent' href='../experience'>experience</a></li>
+    <li><a target='_parent' href='.'>blog</a></li>
+    <li><a target='_parent' href='../misc'>misc</a></li>
+</ul>
+<div class='preamble'>
+<h1 style='margin-top: 60px;'></h1>
+<p class=meta>posted 09.13.23 21:32 (edited 09.13.23 21:42)</p></div>
+</div>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org0e0e817">nmap</a>
+<ul>
+<li><a href="#org4dc2ffa">commands</a>
+<ul>
+<li><a href="#org3ff1e73">find which hosts are up</a></li>
+<li><a href="#org8c055f2">aggressive scan</a></li>
+<li><a href="#org75f5ec3">fast port scan</a></li>
+</ul>
+</li>
+<li><a href="#org6ffa23e">other flags</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0e0e817" class="outline-2">
+<h2 id="org0e0e817">nmap</h2>
+<div class="outline-text-2" id="text-org0e0e817">
+</div>
+<div id="outline-container-org4dc2ffa" class="outline-3">
+<h3 id="org4dc2ffa">commands</h3>
+<div class="outline-text-3" id="text-org4dc2ffa">
+</div>
+<div id="outline-container-org3ff1e73" class="outline-4">
+<h4 id="org3ff1e73">find which hosts are up</h4>
+<div class="outline-text-4" id="text-org3ff1e73">
+<pre class="example" id="org7b173e3">
+nmap -sn 192.168.1.0/24
+</pre>
+
+<ul class="org-ul">
+<li><code>-sn</code> Ping scan, disable port scan</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8c055f2" class="outline-4">
+<h4 id="org8c055f2">aggressive scan</h4>
+<div class="outline-text-4" id="text-org8c055f2">
+<pre class="example" id="orgc14e23a">
+nmap -v -A scanme.nmap.org
+</pre>
+
+<ul class="org-ul">
+<li><code>-v</code> verbose, use <code>-vv</code> for more verbosity</li>
+<li><code>-A</code> enable OS, version detection, script scanning, and traceroute</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org75f5ec3" class="outline-4">
+<h4 id="org75f5ec3">fast port scan</h4>
+<div class="outline-text-4" id="text-org75f5ec3">
+<pre class="example" id="org8e964a8">
+nmap -sS -F 192.168.1.0/24
+</pre>
+
+<ul class="org-ul">
+<li><code>-sS</code> send a SYN packet</li>
+<li><code>-F</code> fast mode, scan fewer ports</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6ffa23e" class="outline-3">
+<h3 id="org6ffa23e">other flags</h3>
+<div class="outline-text-3" id="text-org6ffa23e">
+<ul class="org-ul">
+<li><code>-Pn</code> no ping</li>
+<li><code>oA &lt;file&gt;</code> sends to output file</li>
+<li><code>sS</code> sends SYN packet</li>
+<li><code>sU</code> UDP</li>
+<li><code>sV</code> version scan</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

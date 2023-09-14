@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 09.13.23 21:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='../assets/css/brain.css'>
+<link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
+<meta name='viewport' content='width=device-width, initial-scale=.5'>
+<meta charset='utf-8'/>
+<base target='_blank'/>
+<script src='../assets/js/vim.js'></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<ul class='header banner'>
+    <li><a target='_parent' href='..'>home</a></li>
+    <li><a target='_parent' href='../publications'>publications</a></li>
+    <li><a target='_parent' href='../projects'>projects</a></li>
+    <li><a target='_parent' href='../experience'>experience</a></li>
+    <li><a target='_parent' href='.'>blog</a></li>
+    <li><a target='_parent' href='../misc'>misc</a></li>
+</ul>
+<div class='preamble'>
+<h1 style='margin-top: 60px;'></h1>
+<p class=meta>posted 09.13.23 21:32 (edited 09.13.23 21:42)</p></div>
+</div>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org8a07deb">forensics</a>
+<ul>
+<li><a href="#orga2763cf">classes</a></li>
+<li><a href="#org87273a9">concepts</a>
+<ul>
+<li><a href="#org9599c53">countdown</a></li>
+<li><a href="#org04b95c4">file headers</a></li>
+<li><a href="#orge674d8c">gifar</a></li>
+<li><a href="#orgead4282">mojibake</a></li>
+</ul>
+</li>
+<li><a href="#orgd69361f">practice</a></li>
+<li><a href="#orgb32af59">resources</a></li>
+<li><a href="#orgf4aea43">tools</a>
+<ul>
+<li><a href="#org1ff6701">general</a></li>
+<li><a href="#orgab2feb2">passwords</a></li>
+<li><a href="#org63e73cc">printing</a></li>
+<li><a href="#org1c065ce">steganography</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8a07deb" class="outline-2">
+<h2 id="org8a07deb">forensics</h2>
+<div class="outline-text-2" id="text-org8a07deb">
+</div>
+<div id="outline-container-orga2763cf" class="outline-3">
+<h3 id="orga2763cf">classes</h3>
+<div class="outline-text-3" id="text-orga2763cf">
+<ul class="org-ul">
+<li><a href="https://cms.cispa.saarland/itf22/">it forensics</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org87273a9" class="outline-3">
+<h3 id="org87273a9">concepts</h3>
+<div class="outline-text-3" id="text-org87273a9">
+<ul class="org-ul">
+<li><a href="https://elligator.org/">elligator: hiding cryptographic key exchange as random noise</a></li>
+<li><a href="http://www.msarnoff.org/millitext/">hiding text in pixels</a></li>
+<li><a href="https://positive.security/blog/video-depixelation">recovering redacted information from pixelated videos</a></li>
+<li><a href="https://en.wikipedia.org/wiki/slow-scan_television">sstv</a></li>
+<li><a href="https://github.com/dvd848/ctfs/blob/master/2019_picoctf/m00nwalk.md">example challenge writeup</a></li>
+<li><a href="https://www.zachaysan.com/writing/2017-12-30-zero-width-characters">zero width characters</a></li>
+<li><a href="https://research.swtch.com/zip">zip files all the way down</a></li>
+</ul>
+</div>
+
+<div id="outline-container-org9599c53" class="outline-4">
+<h4 id="org9599c53">countdown</h4>
+<div class="outline-text-4" id="text-org9599c53">
+<ul class="org-ul">
+<li><a href="https://incoherency.co.uk/countdown/">https://incoherency.co.uk/countdown/</a>
+<ul class="org-ul">
+<li><a href="https://github.com/jes/cntdn">solver</a> - solvers for the countdown letter and number games.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org04b95c4" class="outline-4">
+<h4 id="org04b95c4">file headers</h4>
+<div class="outline-text-4" id="text-org04b95c4">
+<ul class="org-ul">
+<li><a href="https://digital-forensics.sans.org/media/hex_file_and_regex_cheat_sheet.pdf">file header cheatsheet</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge674d8c" class="outline-4">
+<h4 id="orge674d8c">gifar</h4>
+<div class="outline-text-4" id="text-orge674d8c">
+<ul class="org-ul">
+<li><a href="https://www.howtogeek.com/270668/how-to-hide-a-file-or-folder-in-an-image-in-linux/">gifar linux version</a></li>
+<li><a href="https://en.wikipedia.org/wiki/gifar">gifar wikipedia</a></li>
+<li><a href="https://www.howtogeek.com/119365/how-to-hide-zip-files-inside-a-picture-without-any-extra-software/">gifar windows version</a></li>
+</ul>
+
+<p>
+<a href="https://quadhead.de/storing-javascript-code-in-gif-images/">walkthrough</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgead4282" class="outline-4">
+<h4 id="orgead4282">mojibake</h4>
+<div class="outline-text-4" id="text-orgead4282">
+<ul class="org-ul">
+<li><a href="https://incoherency.co.uk/mojibake/">https://incoherency.co.uk/mojibake/</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd69361f" class="outline-3">
+<h3 id="orgd69361f">practice</h3>
+<div class="outline-text-3" id="text-orgd69361f">
+<ul class="org-ul">
+<li><a href="http://forensicscontest.com/">forensics contest</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb32af59" class="outline-3">
+<h3 id="orgb32af59">resources</h3>
+<div class="outline-text-3" id="text-orgb32af59">
+<ul class="org-ul">
+<li><a href="https://bitvijays.github.io/lfc-forensics">ctf series: forensics</a> - this post (work in progress) lists the tips and tricks while doing forensics challenges during various ctf's.</li>
+<li><a href="https://georgeom.net/stegonline/checklist">https://georgeom.net/stegonline/checklist</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf4aea43" class="outline-3">
+<h3 id="orgf4aea43">tools</h3>
+<div class="outline-text-3" id="text-orgf4aea43">
+</div>
+<div id="outline-container-org1ff6701" class="outline-4">
+<h4 id="org1ff6701">general</h4>
+<div class="outline-text-4" id="text-org1ff6701">
+<ul class="org-ul">
+<li><a href="http://www.sleuthkit.org/autopsy/download.php">autopsy</a> - digital forensics platform</li>
+<li><a href="https://github.com/simsong/bulk_extractor">bulk<sub>extractor</sub></a> - scans a disk image, a file, or a directory of files</li>
+<li><a href="https://sourceforge.net/projects/dc3dd/">dc3dd</a> - a patched version of gnu dd with added features for computer forensics</li>
+<li><a href="https://github.com/securing/dumpsterdiver">dumpsterdiver</a> - analyze big volumes of various file types in search of hardcoded secrets</li>
+<li><a href="https://github.com/lsauer/entropy">entropy</a> - ent is a small, fast command line utility, plotting various entropy related metrics of files or pipe/stdin streams</li>
+<li><a href="https://github.com/exiftool/exiftool">exiftool</a> - read, write and edit exif metadata</li>
+<li><a href="https://linux.die.net/man/1/foremost">foremost</a> - restore files from their headers, footers and data structures</li>
+<li><a href="https://github.com/oalabs/frida-extract">frida-extract</a> - based runpe extraction tool</li>
+<li><a href="https://github.com/robinhouston/image-unshredding">image-unshredding</a></li>
+<li><a href="https://ide.kaitai.io/">kaitai</a> - reverse engineer different formats of files</li>
+<li><a href="https://github.com/corkami/mitra/#mocky">mocky</a> - mocky is a script to generates polymocks.</li>
+<li><a href="https://github.com/smalot/pdfparser">pdfparser</a> - a standalone php library, provides various tools to extract data from a pdf file</li>
+<li><a href="http://brendandahl.github.io/pdf.js.utils/browser/">pdf object browser</a></li>
+<li><a href="https://github.com/jesparza/peepdf">peepdf</a> - powerful python tool to analyze pdf documents</li>
+<li><a href="https://reverseengineering.stackexchange.com/questions/1526/open-source-gui-tool-for-decomposing-a-pdf">pdf decomposing tools</a></li>
+<li><a href="http://qpdf.sourceforge.net/">qpdf</a>
+<ul class="org-ul">
+<li>decompress: <code>qpdf --qdf --object-streams=disable orig.pdf uncompressed-qpdf.pdf</code></li>
+</ul></li>
+<li><a href="https://github.com/sleuthkit/scalpel">scalpel</a> - scalpel is an open source data carving tool.</li>
+<li><a href="https://github.com/colaclanth/sstv">sstv decoder</a></li>
+<li><a href="https://github.com/volatilityfoundation/volatility">volatility</a> - volatile memory extraction utility framework</li>
+<li><a href="https://github.com/andreas-mausch/whatsapp-viewer">whatsapp-viewer</a> - small tool to display chats from the android msgstore.db database</li>
+<li><a href="https://github.com/hellman/xortool">xortool</a> - a tool to analyze multi-byte xor cipher</li>
+<li><a href="https://github.com/vedhavyas/zwfp">zwfp</a> - zero-width fingerprinting</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgab2feb2" class="outline-4">
+<h4 id="orgab2feb2">passwords</h4>
+<div class="outline-text-4" id="text-orgab2feb2">
+<ul class="org-ul">
+<li><a href="https://github.com/berzerk0/bewgor">bewgor</a> - bull's eye wordlist generator</li>
+<li><a href="https://github.com/glv2/bruteforce-wallet">bruteforce-wallet</a> - try to find the password of an encrypted peercoin (or bitcoin, litecoin, etc&#x2026;) wallet file</li>
+<li><a href="http://pogostick.net/~pnh/ntpasswd/">chntpw</a> - utility to reset the password on windows</li>
+<li><a href="https://www.nirsoft.net/utils/chromepass">chromepass</a> - view passwords stored by google chrome web browser</li>
+<li><a href="https://github.com/galkan/crowbar">crowbar</a> - brute forcing tool</li>
+<li><a href="https://github.com/mebus/cupp">cupp</a> - common user passwords profiler</li>
+<li><a href="https://hashcat.net/hashcat/">hashcat</a> - advanced password recovery
+<ul class="org-ul">
+<li><a href="https://github.com/praetorian-code/hob0rules">hob0rules</a> - password cracking rules for hashcat based on statistics and industry patterns</li>
+</ul></li>
+<li><a href="https://www.openwall.com/john/">john the ripper</a> - a fast password cracker</li>
+<li><a href="https://charlesreid1.com/wiki/john_the_ripper/password_generation">john tutorial</a></li>
+<li><a href="https://blog.sleeplessbeastie.eu/2015/05/25/how-to-crack-archive-password-faster/">another john tutorial</a></li>
+<li><a href="https://www.piotrbania.com/all/kon-boot/">kon-boot</a> - wim/mac password breaker</li>
+<li><a href="https://github.com/alessandroz/lazagne">lazagne</a> - credentials recovery project</li>
+<li><a href="https://github.com/gentilkiwi/mimikatz">mimikatz</a> - a little tool to play with windows security</li>
+<li><a href="https://www.nirsoft.net/utils/passwordfox">passwordfox</a> - extract the user names/passwords stored in firefox</li>
+<li><a href="http://rarcrack.sourceforge.net">rarcrack</a> - crack .rar passwords</li>
+<li><a href="https://github.com/r4stl1n/ssh-brute-forcer">ssh-brute-forcer</a> - a simple multi-threaded ssh brute forcer</li>
+<li><a href="https://github.com/vanhauser-thc/thc-hydra">thc-hydra</a> - parallelized login cracker which supports numerous protocols to attack</li>
+<li><a href="https://www.ampliasecurity.com/research/windows-credentials-editor/">wce</a> - windows credentials editor</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org63e73cc" class="outline-4">
+<h4 id="org63e73cc">printing</h4>
+<div class="outline-text-4" id="text-org63e73cc">
+<ul class="org-ul">
+<li><a href="http://www.prnwatch.com/ok-printer-viewer/">print watch</a> - see what people printed</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1c065ce" class="outline-4">
+<h4 id="org1c065ce">steganography</h4>
+<div class="outline-text-4" id="text-org1c065ce">
+<ul class="org-ul">
+<li><a href="https://0xrick.github.io/lists/stego/">https://0xrick.github.io/lists/stego/</a></li>
+<li><a href="https://github.com/jes/chess-steg">chess steganography</a></li>
+<li><a href="https://github.com/solusipse/spectrology">spectrology</a> - images to audio files with corresponding spectrograms encoder.</li>
+<li><a href="https://github.com/dominicbreuker/stego-toolkit">stego toolkit</a> - collection of steganography tools - helps with ctf challenges</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

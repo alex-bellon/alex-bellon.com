@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 09.13.23 21:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='../assets/css/brain.css'>
+<link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
+<meta name='viewport' content='width=device-width, initial-scale=.5'>
+<meta charset='utf-8'/>
+<base target='_blank'/>
+<script src='../assets/js/vim.js'></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<ul class='header banner'>
+    <li><a target='_parent' href='..'>home</a></li>
+    <li><a target='_parent' href='../publications'>publications</a></li>
+    <li><a target='_parent' href='../projects'>projects</a></li>
+    <li><a target='_parent' href='../experience'>experience</a></li>
+    <li><a target='_parent' href='.'>blog</a></li>
+    <li><a target='_parent' href='../misc'>misc</a></li>
+</ul>
+<div class='preamble'>
+<h1 style='margin-top: 60px;'></h1>
+<p class=meta>posted 09.13.23 21:32 (edited 09.13.23 21:42)</p></div>
+</div>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgc1153e7">metasploit</a>
+<ul>
+<li><a href="#orgd39e8d3">common exploits</a></li>
+<li><a href="#orgfdc934b">getting shells</a></li>
+<li><a href="#org827efe8">metasploit flow</a></li>
+<li><a href="#org377821f">eternal blue</a>
+<ul>
+<li><a href="#orgb357ac2">steps of exploitation</a></li>
+<li><a href="#orgb11f5be">post exploitation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc1153e7" class="outline-2">
+<h2 id="orgc1153e7">metasploit</h2>
+<div class="outline-text-2" id="text-orgc1153e7">
+</div>
+<div id="outline-container-orgd39e8d3" class="outline-3">
+<h3 id="orgd39e8d3">common exploits</h3>
+<div class="outline-text-3" id="text-orgd39e8d3">
+<ul class="org-ul">
+<li><code>ms08_067</code></li>
+<li><code>ms17_010</code> - eternal blue</li>
+</ul>
+
+<p>
+<i><code>ms&lt;yr&gt;_&lt;version&gt;</code> are the microsoft identifiers</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfdc934b" class="outline-3">
+<h3 id="orgfdc934b">getting shells</h3>
+<div class="outline-text-3" id="text-orgfdc934b">
+<ul class="org-ul">
+<li>scan the network for accessible hosts
+<ul class="org-ul">
+<li><b>arp sweep</b>
+<ul class="org-ul">
+<li>try to ask for mac addresses for a certain ip</li>
+<li>need to be on the same network</li>
+<li>firewalls won't notice it</li>
+<li>needs to know what interface to send out from</li>
+</ul></li>
+<li><b>ipv6 multicast ping</b></li>
+</ul></li>
+<li>scan accessible hosts for open ports
+<ul class="org-ul">
+<li>tcp port scan</li>
+</ul></li>
+<li>profile services to identify vendors, products, version
+<ul class="org-ul">
+<li>metasploit modules for ssl, ssh, smb, etc.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org827efe8" class="outline-3">
+<h3 id="org827efe8">metasploit flow</h3>
+<div class="outline-text-3" id="text-org827efe8">
+<ol class="org-ol">
+<li value="0"><code>use &lt;module&gt;</code></li>
+<li><code>show options</code></li>
+<li><code>set &lt;variables&gt;</code></li>
+<li><code>run</code></li>
+<li>???</li>
+<li>profit</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org377821f" class="outline-3">
+<h3 id="org377821f">eternal blue</h3>
+<div class="outline-text-3" id="text-org377821f">
+</div>
+<div id="outline-container-orgb357ac2" class="outline-4">
+<h4 id="orgb357ac2">steps of exploitation</h4>
+<div class="outline-text-4" id="text-orgb357ac2">
+<ul class="org-ul">
+<li>get connection to the host and send the exploit</li>
+<li>optional nop sled</li>
+<li>optional stager(s)
+<ul class="org-ul">
+<li>manipulate memory to support our payload</li>
+</ul></li>
+<li>encoded payload
+<ul class="org-ul">
+<li>meterpreter
+<ul class="org-ul">
+<li>modular payload</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb11f5be" class="outline-4">
+<h4 id="orgb11f5be">post exploitation</h4>
+<div class="outline-text-4" id="text-orgb11f5be">
+<ul class="org-ul">
+<li>command shell
+<ul class="org-ul">
+<li>can upgrade to meterpreter</li>
+</ul></li>
+<li>meterpreter
+<ul class="org-ul">
+<li>go straight to meterpreter</li>
+<li>use <code>set payload</code> in eternal blue module</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

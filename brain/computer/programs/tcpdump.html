@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 09.13.23 21:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='../assets/css/brain.css'>
+<link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
+<meta name='viewport' content='width=device-width, initial-scale=.5'>
+<meta charset='utf-8'/>
+<base target='_blank'/>
+<script src='../assets/js/vim.js'></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<ul class='header banner'>
+    <li><a target='_parent' href='..'>home</a></li>
+    <li><a target='_parent' href='../publications'>publications</a></li>
+    <li><a target='_parent' href='../projects'>projects</a></li>
+    <li><a target='_parent' href='../experience'>experience</a></li>
+    <li><a target='_parent' href='.'>blog</a></li>
+    <li><a target='_parent' href='../misc'>misc</a></li>
+</ul>
+<div class='preamble'>
+<h1 style='margin-top: 60px;'></h1>
+<p class=meta>posted 09.13.23 21:32 (edited 09.13.23 21:42)</p></div>
+</div>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org950b3ce">tcpdump</a>
+<ul>
+<li><a href="#org07ba487">commands</a>
+<ul>
+<li><a href="#orgd058e39">track all udp traffic initiated by host (useful to track dns amplification attack)</a></li>
+<li><a href="#org51c4149">track dns traffic that comes on the host</a></li>
+<li><a href="#org2f6ffd6">track tcp syn packages from host: host tries to make to initiate tcp connection with an external source</a></li>
+<li><a href="#orgd1c90ed">track tcp syn-ack packages to host: external resources sent acknowledge about opening tcp connection</a></li>
+<li><a href="#orge0169bd">track traffic into redis and write all packets into pcap file (pcap file can be opened in wireshark then for analysis)</a></li>
+<li><a href="#org2a63617">track all udp output traffic except dns</a></li>
+<li><a href="#org694d1d0">track all traffic with particular host with writing it into pcap file (pcap file can be opened in wireshark then for analysis)</a></li>
+<li><a href="#org283cbc3">track all traffic on host except ssh, https, dns, rabbitmq, arp traffic</a></li>
+</ul>
+</li>
+<li><a href="#org949f921">flags</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org950b3ce" class="outline-2">
+<h2 id="org950b3ce">tcpdump</h2>
+<div class="outline-text-2" id="text-org950b3ce">
+</div>
+<div id="outline-container-org07ba487" class="outline-3">
+<h3 id="org07ba487">commands</h3>
+<div class="outline-text-3" id="text-org07ba487">
+</div>
+<div id="outline-container-orgd058e39" class="outline-4">
+<h4 id="orgd058e39">track all udp traffic initiated by host (useful to track dns amplification attack)</h4>
+<div class="outline-text-4" id="text-orgd058e39">
+<pre class="example" id="org462de60">
+tcpdump -i any 'udp &amp;&amp; src host 172.31.7.188' -vvnnS
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org51c4149" class="outline-4">
+<h4 id="org51c4149">track dns traffic that comes on the host</h4>
+<div class="outline-text-4" id="text-org51c4149">
+<pre class="example" id="org8339e34">
+tcpdump -i any '(udp &amp;&amp; port 53 &amp;&amp; dst host 172.31.7.188)' -vvnnS
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org2f6ffd6" class="outline-4">
+<h4 id="org2f6ffd6">track tcp syn packages from host: host tries to make to initiate tcp connection with an external source</h4>
+<div class="outline-text-4" id="text-org2f6ffd6">
+<pre class="example" id="orgdd67e16">
+tcpdump -i any '((tcp[tcpflags] == tcp-syn) &amp;&amp; src 172.31.7.188)' -vvnnS
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgd1c90ed" class="outline-4">
+<h4 id="orgd1c90ed">track tcp syn-ack packages to host: external resources sent acknowledge about opening tcp connection</h4>
+<div class="outline-text-4" id="text-orgd1c90ed">
+<pre class="example" id="org72a0471">
+tcpdump -i any '(tcp[13] = 18 and dst host 172.31.7.188)' -vvnnS
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orge0169bd" class="outline-4">
+<h4 id="orge0169bd">track traffic into redis and write all packets into pcap file (pcap file can be opened in wireshark then for analysis)</h4>
+<div class="outline-text-4" id="text-orge0169bd">
+<pre class="example" id="orgd419337">
+tcpdump -i any 'dst port 6379' -vvnnS -w redis.pcap
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org2a63617" class="outline-4">
+<h4 id="org2a63617">track all udp output traffic except dns</h4>
+<div class="outline-text-4" id="text-org2a63617">
+<pre class="example" id="org11286e5">
+tcpdump -i any '(udp and not dst port 53 and src host 172.31.7.188)' -vvnnS
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org694d1d0" class="outline-4">
+<h4 id="org694d1d0">track all traffic with particular host with writing it into pcap file (pcap file can be opened in wireshark then for analysis)</h4>
+<div class="outline-text-4" id="text-org694d1d0">
+<pre class="example" id="orga713ef8">
+tcpdump -i any 'host 172.31.7.188' -vvnnS -w host-172-31-71-88.pcap
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org283cbc3" class="outline-4">
+<h4 id="org283cbc3">track all traffic on host except ssh, https, dns, rabbitmq, arp traffic</h4>
+<div class="outline-text-4" id="text-org283cbc3">
+<pre class="example" id="org03c3fa8">
+tcpdump -i eth0 'not (port 22 or 443 or 53 or 5672) and not arp' -nnvvS
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org949f921" class="outline-3">
+<h3 id="org949f921">flags</h3>
+<div class="outline-text-3" id="text-org949f921">
+<ul class="org-ul">
+<li><code>D</code> &#x2013; show all interfaces</li>
+<li><code>i</code> - interface</li>
+<li><code>nn</code> &#x2013; without resolving hostname and ports</li>
+<li><code>vv</code> - verbose output</li>
+<li><code>S</code> - get entire package</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

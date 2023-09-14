@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 09.13.23 21:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='../assets/css/brain.css'>
+<link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
+<meta name='viewport' content='width=device-width, initial-scale=.5'>
+<meta charset='utf-8'/>
+<base target='_blank'/>
+<script src='../assets/js/vim.js'></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<ul class='header banner'>
+    <li><a target='_parent' href='..'>home</a></li>
+    <li><a target='_parent' href='../publications'>publications</a></li>
+    <li><a target='_parent' href='../projects'>projects</a></li>
+    <li><a target='_parent' href='../experience'>experience</a></li>
+    <li><a target='_parent' href='.'>blog</a></li>
+    <li><a target='_parent' href='../misc'>misc</a></li>
+</ul>
+<div class='preamble'>
+<h1 style='margin-top: 60px;'></h1>
+<p class=meta>posted 09.13.23 21:32 (edited 09.13.23 21:42)</p></div>
+</div>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgb75b20f">pfsense</a>
+<ul>
+<li><a href="#org5bad961">default logins</a>
+<ul>
+<li><a href="#orge5066ca">web ui</a></li>
+</ul>
+</li>
+<li><a href="#org594c9c9">getting into pfsense without creds</a></li>
+<li><a href="#org34bfa8a">walkthroughs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb75b20f" class="outline-2">
+<h2 id="orgb75b20f">pfsense</h2>
+<div class="outline-text-2" id="text-orgb75b20f">
+</div>
+<div id="outline-container-org5bad961" class="outline-3">
+<h3 id="org5bad961">default logins</h3>
+<div class="outline-text-3" id="text-org5bad961">
+</div>
+<div id="outline-container-orge5066ca" class="outline-4">
+<h4 id="orge5066ca">web ui</h4>
+<div class="outline-text-4" id="text-orge5066ca">
+<pre class="example" id="org256b8d6">
+username: admin
+password: pfsense
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org594c9c9" class="outline-3">
+<h3 id="org594c9c9">getting into pfsense without creds</h3>
+<div class="outline-text-3" id="text-org594c9c9">
+<ol class="org-ol">
+<li>reboot pfsense box</li>
+<li>choose option 4 (single user mode)</li>
+<li>press enter to start sh</li>
+<li>remount the drive as rewritable
+<code>/sbin/mount -o rw /</code></li>
+<li>run the built-in password reset command
+<code>/etc/rc.initial.password</code></li>
+<li>follow prompts to reset password</li>
+<li>reboot
+<code>/sbin/reboot</code></li>
+</ol>
+
+<p>
+<a href="https://www.netgate.com/docs/pfsense/usermanager/locked-out-of-the-webgui">source</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org34bfa8a" class="outline-3">
+<h3 id="org34bfa8a">walkthroughs</h3>
+<div class="outline-text-3" id="text-org34bfa8a">
+<ul class="org-ul">
+<li><a href="https://samuraihacks.com/install-pfsense-in-virtualbox/">pfsense in virtualbox</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

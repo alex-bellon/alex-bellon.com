@@ -9,6 +9,14 @@
 <script src='assets/js/vim.js'></script>")
 
 (defvar blog-html-head
+"<link rel='stylesheet' type='text/css' href='../assets/css/brain.css'>
+<link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
+<meta name='viewport' content='width=device-width, initial-scale=.5'>
+<meta charset='utf-8'/>
+<base target='_blank'/>
+<script src='../assets/js/vim.js'></script>")
+
+(defvar brain-html-head
 "<link rel='stylesheet' type='text/css' href='../assets/css/blog.css'>
 <link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
 <meta name='viewport' content='width=device-width, initial-scale=.5'>
@@ -36,6 +44,11 @@
     <li><a target='_parent' href='../misc'>misc</a></li>
 </ul>
 <div class='preamble'>
+<h1 style='margin-top: 60px;'>%t</h1>
+<p class=meta>posted %C (edited %T)</p></div>")
+
+(defvar blog-html-preamble
+"<div class='preamble'>
 <h1 style='margin-top: 60px;'>%t</h1>
 <p class=meta>posted %C (edited %T)</p></div>")
 
@@ -95,8 +108,29 @@
        :sitemap-filename "index.org"
        :sitemap-format-entry m/org-publish-org-sitemap-format-entry
        :sitemap-sort-files anti-chronologically)
+      
+      ("brain"
+       :base-directory "~/GitHub/website/src/brain/"
+       :base-extension "org"
+       :recursive t
+       :publishing-directory "~/GitHub/website/brain/"
+       :publishing-function org-html-publish-to-html
+       :section-numbers nil
+       :with-author nil
+       :with-title nil
+       :html-head-include-default-style nil
+       :html-head-include-scripts nil
+       :html-validation-link nil
+       :html-preamble ,brain-html-preamble
+       :html-postamble nil
+       :html-head ,blog-html-head
+            
+       :auto-sitemap t
+       :sitemap-title "brain"
+       :sitemap-filename "index.org"
+       :sitemap-format-entry m/org-publish-org-sitemap-format-entry)
 
-      ("website" :components ("pages" "blog"))))
+      ("website" :components ("pages" "blog" "brain"))))
 
 (defun filter-local-links (link backend info)
   "Filter that converts all the /index.html links to /"

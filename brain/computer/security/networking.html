@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 09.13.23 21:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='../assets/css/brain.css'>
+<link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
+<meta name='viewport' content='width=device-width, initial-scale=.5'>
+<meta charset='utf-8'/>
+<base target='_blank'/>
+<script src='../assets/js/vim.js'></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<ul class='header banner'>
+    <li><a target='_parent' href='..'>home</a></li>
+    <li><a target='_parent' href='../publications'>publications</a></li>
+    <li><a target='_parent' href='../projects'>projects</a></li>
+    <li><a target='_parent' href='../experience'>experience</a></li>
+    <li><a target='_parent' href='.'>blog</a></li>
+    <li><a target='_parent' href='../misc'>misc</a></li>
+</ul>
+<div class='preamble'>
+<h1 style='margin-top: 60px;'></h1>
+<p class=meta>posted 09.13.23 21:32 (edited 09.13.23 21:42)</p></div>
+</div>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org163f714">networking</a>
+<ul>
+<li><a href="#orgf412fef">concepts</a>
+<ul>
+<li><a href="#org0cb2ff4">https/ssl</a></li>
+<li><a href="#org709a0d1">miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#org9395207">tools</a>
+<ul>
+<li><a href="#org29e6694">general</a></li>
+<li><a href="#orgeb5daf1">netcat</a></li>
+<li><a href="#org79ab975">sniffer/spoofing</a></li>
+<li><a href="#orge6969bb">usb</a></li>
+<li><a href="#orgfb50d78">wireless attacks</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org163f714" class="outline-2">
+<h2 id="org163f714">networking</h2>
+<div class="outline-text-2" id="text-org163f714">
+</div>
+<div id="outline-container-orgf412fef" class="outline-3">
+<h3 id="orgf412fef">concepts</h3>
+<div class="outline-text-3" id="text-orgf412fef">
+</div>
+<div id="outline-container-org0cb2ff4" class="outline-4">
+<h4 id="org0cb2ff4">https/ssl</h4>
+<div class="outline-text-4" id="text-org0cb2ff4">
+<ul class="org-ul">
+<li><a href="https://drive.google.com/file/d/0b4k0ijflthaas01bvdjdd0rpaw8/view">how to intercept and decode ssl traffic</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org709a0d1" class="outline-4">
+<h4 id="org709a0d1">miscellaneous</h4>
+<div class="outline-text-4" id="text-org709a0d1">
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/martian_packet">martian packet</a></li>
+<li><a href="https://en.wikipedia.org/wiki/bogon_filtering">bogon filtering</a></li>
+<li><a href="https://www.youtube.com/watch?v=0_unebsxqgy&amp;feature=youtu.be">learn with me: vlans &amp; pfsense</a></li>
+<li><a href="https://www.tarlogic.com/en/blog/how-kerberos-works/">kerberos</a></li>
+<li><a href="https://haydenjames.io/linux-networking-commands-scripts/">59 linux networking commands and scripts</a></li>
+<li><a href="https://cyber.bgu.ac.il/advanced-cyber/airgap">air-gap research page</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9395207" class="outline-3">
+<h3 id="org9395207">tools</h3>
+<div class="outline-text-3" id="text-org9395207">
+</div>
+<div id="outline-container-org29e6694" class="outline-4">
+<h4 id="org29e6694">general</h4>
+<div class="outline-text-4" id="text-org29e6694">
+<ul class="org-ul">
+<li><a href="https://www.morningstarsecurity.com/research/bing-ip2hosts">bing-ip2hosts</a> - enumerate hostnames from bing</li>
+<li><a href="https://github.com/byt3bl33d3r/crackmapexec">crackmapexec</a> - a swiss army knife for pentesting networks</li>
+<li><a href="https://github.com/datasploit/datasploit">datasploit</a> - osint framework to perform various recon techniques</li>
+<li><a href="https://github.com/fwaeytens/dnsenum">dnsenum</a> - perl script that enumerates dns information</li>
+<li><a href="https://code.google.com/archive/p/dnsmap/downloads">dnsmap</a> - subdomain brute-forcing</li>
+<li><a href="https://github.com/darkoperator/dnsrecon">dnsrecon</a> - dns enumeration script</li>
+<li><a href="https://github.com/jgor/dork-cli">dork-cli</a> - command-line google dork tool</li>
+<li><a href="https://github.com/usscltd/dorks">dorks</a> - google hack database automation tool</li>
+<li><a href="https://github.com/infobyte/faraday">faraday</a> - collaborative penetration test and vulnerability management platform</li>
+<li><a href="http://git.kali.org/gitweb/?p=packages/fierce.git;a=summary">fierce</a> - dns analysis perl script</li>
+<li><a href="https://github.com/elevenpaths/foca">foca</a> - fingerprinting organizations with collected archives</li>
+<li><a href="https://github.com/antirez/hping">hping</a> - network tool able to send custom tcp/ip packets</li>
+<li><a href="https://github.com/ascribe/image-match%5d">image-match</a> - quickly search over billions of images</li>
+<li><a href="https://github.com/guelfoweb/knock">knock</a> - subdomain scan</li>
+<li><a href="https://github.com/robertdavidgraham/masscan">masscan</a> - fast tcp port scanner</li>
+<li><a href="https://github.com/opsdisk/metagoofil">metagoofil</a> - document and metadata reconnaissance (updated version)</li>
+<li><a href="https://github.com/k4m4/onioff">onioff</a> - an onion url inspector for inspecting deep web links</li>
+<li><a href="https://github.com/sharadkumar97/osint-spy">osint-spy</a> - performs osint scan on email/domain/ip<sub>address</sub>/organization</li>
+<li><a href="https://github.com/trycatchhcf/packetwhisper">packetwhisper</a> - stealthily exfiltrate data and defeat attribution using dns queries and text-based steganography. avoid the problems associated with typical dns exfiltration methods. transfer data between systems without the communicating devices directly connecting to each other or to a common endpoint. no need to control a dns name server.</li>
+<li><a href="https://github.com/opsdisk/pagodo">pagodo</a> - automate google hacking database scraping</li>
+<li><a href="https://github.com/simplysecurity/simplyemail">simplyemail</a> - email recon made fast and easy</li>
+<li><a href="https://github.com/needmorecowbell/sniff-paste">sniff-paste</a> - pastebin osint harvester</li>
+<li><a href="https://github.com/kisom/surfraw">surfraw</a> - a fast unix command line interface to a variety of popular www search engines</li>
+<li><a href="https://github.com/1an0rmus/tekdefense-automater">tekdefense-automater</a> - ip url and md5 osint analysis</li>
+<li><a href="https://github.com/laramies/theharvester">theharvester</a> - e-mails, subdomains and names harvester - osint</li>
+<li><a href="https://github.com/urbanadventurer/whatweb">whatweb</a> - web scanner</li>
+<li><a href="https://github.com/evilsocket/xray">xray</a> - a tool for recon, mapping and osint gathering from public networks</li>
+<li><a href="https://github.com/zmap/zmap">zmap</a> - fast single packet network scanner</li>
+</ul>
+
+<p>
+<a href="https://wigle.net/">https://wigle.net/</a> - map of networks
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgeb5daf1" class="outline-4">
+<h4 id="orgeb5daf1">netcat</h4>
+<div class="outline-text-4" id="text-orgeb5daf1">
+<ul class="org-ul">
+<li><a href="https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf">cheat sheet</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org79ab975" class="outline-4">
+<h4 id="org79ab975">sniffer/spoofing</h4>
+<div class="outline-text-4" id="text-org79ab975">
+<ul class="org-ul">
+<li><a href="https://github.com/bettercap/bettercap">bettercap</a> - the swiss army knife for 802.11, ble and ethernet networks reconnaissance and mitm attacks</li>
+<li><a href="https://github.com/alobbs/macchanger">macchanger</a> - utility that makes the manipulation of mac addresses of network interfaces easier</li>
+<li><a href="https://mitmproxy.org">mitmproxy</a> - free and open source interactive https proxy</li>
+<li><a href="https://github.com/filosottile/mkcert">mkcert</a> - make locally trusted development certificates with any names you'd like</li>
+<li><a href="https://moxie.org/software/sslstrip/">sslstrip</a> - ssl/tls man-in-the-middle attack tool</li>
+<li><a href="https://www.wireshark.org">wireshark</a> - the world's foremost and widely-used network protocol analyzer</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge6969bb" class="outline-4">
+<h4 id="orge6969bb">usb</h4>
+<div class="outline-text-4" id="text-orge6969bb">
+<ul class="org-ul">
+<li><a href="https://github.com/wcooley/usbrevue/blob/master/readme.usbreplay">usb replay</a> - replays a <code>.pcap</code> of usb traffic</li>
+<li><a href="https://github.com/wcooley/usbrevue">usbrevue</a> - usbrevue is a suite of tools for reverse-engineering usb devices.</li>
+<li><a href="https://github.com/jamesjara/usb-traffic-protocol-decoder">usb traffic protocol decoder</a> - analysing usb traffic protocol decoder from a pcap wireshark</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfb50d78" class="outline-4">
+<h4 id="orgfb50d78">wireless attacks</h4>
+<div class="outline-text-4" id="text-orgfb50d78">
+<ul class="org-ul">
+<li><a href="https://github.com/aircrack-ng/aircrack-ng">aircrack-ng</a> - a complete suite of tools to assess wifi network security</li>
+<li><a href="https://github.com/v1s1t0r1sh3r3/airgeddon">airgeddon</a> - multi-use bash script for linux systems to audit wireless networks</li>
+<li><a href="https://github.com/ms3fgx/bluelog">bluelog</a> - a highly configurable linux bluetooth scanner</li>
+<li><a href="https://github.com/misterbianco/boopsuite">boopsuite</a> - a suite of tools written in python for wireless auditing</li>
+<li><a href="http://git.kali.org/gitweb/?p=packages/bully.git;a=summary">bully</a> - implementation of the wps brute force attack, written in c</li>
+<li><a href="https://github.com/fluxionnetwork/fluxion">fluxion</a> - fluxion is a remake of linset by vk496 with less bugs and enhanced functionality</li>
+<li><a href="https://github.com/entropy1337/infernal-twin">infernal-twin</a> - this is automated wireless hacking tool</li>
+<li><a href="https://github.com/kismetwireless/kismet">kismet</a> - an 802.11 layer2 wireless network detector, sniffer, and intrusion detection system</li>
+<li><a href="https://github.com/vanhoefm/krackattacks-scripts">krackattacks-scripts</a> - wpa2 krack attack scripts</li>
+<li><a href="https://github.com/securingsam/krackdetector">krack detector</a> - detect and prevent krack attacks in your network</li>
+<li><a href="https://github.com/wiire-a/pixiewps">pixiewps</a> - an offline wi-fi protected setup brute-force utility</li>
+<li><a href="https://github.com/threat9/routersploit">routersploit</a> - exploitation framework for embedded devices</li>
+<li><a href="https://github.com/0x90/wifi-arsenal">wifi-arsenal</a> - resources for wifi pentesting</li>
+<li><a href="https://github.com/wifiphisher/wifiphisher">wifiphisher</a> - the rogue access point framework</li>
+<li><a href="https://github.com/p0cl4bs/wifi-pumpkin">wifi-pumpkin</a> - framework for rogue wi-fi access point attack</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

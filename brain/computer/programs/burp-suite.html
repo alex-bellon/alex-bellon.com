@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 09.13.23 21:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='../assets/css/brain.css'>
+<link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
+<meta name='viewport' content='width=device-width, initial-scale=.5'>
+<meta charset='utf-8'/>
+<base target='_blank'/>
+<script src='../assets/js/vim.js'></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<ul class='header banner'>
+    <li><a target='_parent' href='..'>home</a></li>
+    <li><a target='_parent' href='../publications'>publications</a></li>
+    <li><a target='_parent' href='../projects'>projects</a></li>
+    <li><a target='_parent' href='../experience'>experience</a></li>
+    <li><a target='_parent' href='.'>blog</a></li>
+    <li><a target='_parent' href='../misc'>misc</a></li>
+</ul>
+<div class='preamble'>
+<h1 style='margin-top: 60px;'></h1>
+<p class=meta>posted 09.13.23 21:32 (edited 09.13.23 21:42)</p></div>
+</div>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org09f7712">burpsuite</a>
+<ul>
+<li><a href="#org0bd0c16">repos</a></li>
+<li><a href="#org420e0a8">burpsuite workshop notes</a>
+<ul>
+<li><a href="#org0518cd6">what is burpsuite?</a></li>
+<li><a href="#org640b1ae">how to set up burpsuite</a></li>
+<li><a href="#org4d675e4">target tab</a></li>
+<li><a href="#orgbb57bcb">proxy tab</a></li>
+<li><a href="#orgc41374b">spider tab</a></li>
+<li><a href="#org2112a84">sequencer tab</a></li>
+<li><a href="#orgef71aab">intruder tab</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org09f7712" class="outline-2">
+<h2 id="org09f7712">burpsuite</h2>
+<div class="outline-text-2" id="text-org09f7712">
+</div>
+<div id="outline-container-org0bd0c16" class="outline-3">
+<h3 id="org0bd0c16">repos</h3>
+<div class="outline-text-3" id="text-org0bd0c16">
+<ul class="org-ul">
+<li><a href="https://github.com/snoopysecurity/awesome-burp-extensions">awesome burp extensions</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org420e0a8" class="outline-3">
+<h3 id="org420e0a8">burpsuite workshop notes</h3>
+<div class="outline-text-3" id="text-org420e0a8">
+</div>
+<div id="outline-container-org0518cd6" class="outline-4">
+<h4 id="org0518cd6">what is burpsuite?</h4>
+<div class="outline-text-4" id="text-org0518cd6">
+<p>
+lets you see the requests and responses to and from your browser. you can intercept traffic on the way in or out. you can also replay requests.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org640b1ae" class="outline-4">
+<h4 id="org640b1ae">how to set up burpsuite</h4>
+<div class="outline-text-4" id="text-org640b1ae">
+</div>
+<ul class="org-ul">
+<li><a id="orga1653f1"></a>new profile<br />
+<div class="outline-text-5" id="text-orga1653f1">
+<p>
+using firefox, make a new browser profile (go to <code>about:profiles</code> in the firefox browser).
+#### proxy setup
+go to <code>prefences &gt; general &gt; network settings</code> and select <code>manual proxy configuration</code> and enter <code>127.0.0.1</code> and <code>8080</code> for the port. make sure to check <code>use this proxy server for all protocols</code>. you should probably use a vpn in case you get your ip banned, so your "real" ip doesn't actually get banned.
+#### useful extensions - user-agent switcher - change your user agent - wappalyzer - builtwith - hackbar - send post requests directly from the browser - web developer
+#### download burp suite ca
+download the burpsuite certificate from <a href="http://burp">http://burp</a>.
+#### install burpsuite ca
+go to <code>preferences &gt; privacy &amp; security &gt; certificates &gt; view certificates</code> and click the <code>authorities</code> tab. import the certificate that you just downloaded.
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org4d675e4" class="outline-4">
+<h4 id="org4d675e4">target tab</h4>
+<div class="outline-text-4" id="text-org4d675e4">
+<ul class="org-ul">
+<li>focus on specific sites</li>
+<li>focus on specific functions</li>
+<li>visualize attack surface</li>
+<li>set "scope" to filter all other tools
+#### site map
+the target tab is a tree style view of all websites in scope.
+#### scope
+control what you're looking at. you can add specific domains or keywords. you can add things from this menu or right click to add things from the site map tab.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbb57bcb" class="outline-4">
+<h4 id="orgbb57bcb">proxy tab</h4>
+<div class="outline-text-4" id="text-orgbb57bcb">
+</div>
+<ul class="org-ul">
+<li><a id="orge0973f7"></a>http history tab<br />
+<div class="outline-text-5" id="text-orge0973f7">
+<p>
+shows requests and responses. it will show extra info in the <code>params</code> tab, and the headers in the <code>headers</code> tab.
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orgc41374b" class="outline-4">
+<h4 id="orgc41374b">spider tab</h4>
+<div class="outline-text-4" id="text-orgc41374b">
+<p>
+will automatically try to fill out information in the site map tab. it will try to explore and enumerate every link and subdomain from the given website to try to fill out an entire site map.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2112a84" class="outline-4">
+<h4 id="org2112a84">sequencer tab</h4>
+<div class="outline-text-4" id="text-org2112a84">
+<p>
+test the entropy of cookies, session tokens, and csrf tokens.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgef71aab" class="outline-4">
+<h4 id="orgef71aab">intruder tab</h4>
+<div class="outline-text-4" id="text-orgef71aab">
+<p>
+a way to automate injections and form automation. you can specify payloads for burpsuite to go through and try. the community edition of burpsuite does not include any payloads automatically.
+</p>
+
+<ul class="org-ul">
+<li>attack types: sniper, battering ram, pitchfork, cluster bomb.</li>
+<li>allows you to fuxx parameters/paths</li>
+<li>brute force passwords</li>
+<li>content discovery</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

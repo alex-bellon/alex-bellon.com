@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 09.13.23 21:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='../assets/css/brain.css'>
+<link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
+<meta name='viewport' content='width=device-width, initial-scale=.5'>
+<meta charset='utf-8'/>
+<base target='_blank'/>
+<script src='../assets/js/vim.js'></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<ul class='header banner'>
+    <li><a target='_parent' href='..'>home</a></li>
+    <li><a target='_parent' href='../publications'>publications</a></li>
+    <li><a target='_parent' href='../projects'>projects</a></li>
+    <li><a target='_parent' href='../experience'>experience</a></li>
+    <li><a target='_parent' href='.'>blog</a></li>
+    <li><a target='_parent' href='../misc'>misc</a></li>
+</ul>
+<div class='preamble'>
+<h1 style='margin-top: 60px;'></h1>
+<p class=meta>posted 09.13.23 21:32 (edited 09.13.23 21:42)</p></div>
+</div>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org3875129">iptables</a>
+<ul>
+<li><a href="#orgd376660">resources</a></li>
+<li><a href="#orgd2c5dd3">notes</a>
+<ul>
+<li><a href="#orgf76f831">basic guide to iptables</a></li>
+<li><a href="#org8ba4275">3 main files</a></li>
+<li><a href="#org8847113">3 tables</a></li>
+<li><a href="#orga26916c">Actions</a></li>
+<li><a href="#orgd12792b">Commands</a></li>
+<li><a href="#orged8a4e8">Flags</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3875129" class="outline-2">
+<h2 id="org3875129">iptables</h2>
+<div class="outline-text-2" id="text-org3875129">
+</div>
+<div id="outline-container-orgd376660" class="outline-3">
+<h3 id="orgd376660">resources</h3>
+<div class="outline-text-3" id="text-orgd376660">
+<ul class="org-ul">
+<li><a href="https://www.tecmint.com/basic-guide-on-iptables-linux-firewall-tips-commands/">basic guide on iptables (linux firewall) tips / commands</a></li>
+<li><a href="https://help.ubuntu.com/community/iptableshowto">iptableshowto - community help wiki</a></li>
+<li><a href="https://www.thegeekstuff.com/2011/01/iptables-fundamentals">linux firewall tutorial: iptables tables, chains, rules fundamentals</a></li>
+<li><a href="https://www.howtogeek.com/177621/the-beginners-guide-to-iptables-the-linux-firewall/">the beginner's guide to iptables, the linux firewall</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd2c5dd3" class="outline-3">
+<h3 id="orgd2c5dd3">notes</h3>
+<div class="outline-text-3" id="text-orgd2c5dd3">
+</div>
+<div id="outline-container-orgf76f831" class="outline-4">
+<h4 id="orgf76f831">basic guide to iptables</h4>
+<div class="outline-text-4" id="text-orgf76f831">
+<p>
+iptables -&gt; tables -&gt; chains -&gt; rules
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ba4275" class="outline-4">
+<h4 id="org8ba4275">3 main files</h4>
+<div class="outline-text-4" id="text-org8ba4275">
+<ol class="org-ol">
+<li><b>/etc/init.d/iptables</b> &#x2013; init script to start|stop|restart and save rulesets.</li>
+<li><b>/etc/sysconfig/iptables</b> &#x2013; where rulesets are saved.</li>
+<li><b>/sbin/iptables</b> &#x2013; binary.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org8847113" class="outline-4">
+<h4 id="org8847113">3 tables</h4>
+<div class="outline-text-4" id="text-org8847113">
+<ul class="org-ul">
+<li><b>Filter</b>
+<ul class="org-ul">
+<li>Default table</li>
+<li>INPUT - incoming to firewall</li>
+<li>OUTPUT - outgoing from server</li>
+<li>FORWARD - routed through local server</li>
+</ul></li>
+<li><b>NAT</b>
+<ul class="org-ul">
+<li>PREROUTING - alters packets before routing</li>
+<li>POSTROUTING - alters packets when they're leaving the system</li>
+<li>OUTPUT - for locally generated packets on the firewall</li>
+</ul></li>
+<li><b>Mangle</b></li>
+
+<li><b>INPUT</b> : Default chain originating to system.</li>
+<li><b>OUTPUT</b> : Default chain generating from system.</li>
+<li><b>FORWARD</b> : Default chain packets are send through another interface.</li>
+<li><b>RH-Firewall-1-INPUT</b> : The user-defined custom chain.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga26916c" class="outline-4">
+<h4 id="orga26916c">Actions</h4>
+<div class="outline-text-4" id="text-orga26916c">
+</div>
+<ul class="org-ul">
+<li><a id="org5692736"></a>ACCEPT<br />
+<div class="outline-text-5" id="text-org5692736">
+<p>
+Allow the connection
+#### DROP
+Act like it never happened. Useful if you don't want people to know you exist.
+#### REJECT
+Don't allow the connection, send back and error.
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orgd12792b" class="outline-4">
+<h4 id="orgd12792b">Commands</h4>
+<div class="outline-text-4" id="text-orgd12792b">
+</div>
+<ul class="org-ul">
+<li><a id="org99554f6"></a>Change default action<br />
+<div class="outline-text-5" id="text-org99554f6">
+<pre class="example" id="org2eb168a">
+iptables --policy INPUT ACCEPT/DROP/REJECT
+iptables --policy OUTPUT ACCEPT/DROP/REJECT
+iptables --policy FORWARD ACCEPT/DROP/REJECT
+</pre>
+</div>
+</li>
+
+<li><a id="org48c699a"></a>Delete a specific rules<br />
+<div class="outline-text-5" id="text-org48c699a">
+<pre class="example" id="org4d4c3ac">
+[root@tecmint ~]# iptables -D INPUT 5
+</pre>
+</div>
+</li>
+
+<li><a id="org57f85b1"></a>Flush ruleset<br />
+<div class="outline-text-5" id="text-org57f85b1">
+<pre class="example" id="org3666d4e">
+iptables -F
+</pre>
+</div>
+</li>
+
+<li><a id="orgd29cc01"></a>Insert rule<br />
+<div class="outline-text-5" id="text-orgd29cc01">
+<pre class="example" id="org4d50c63">
+[root@tecmint ~]# iptables -I INPUT 5 -s ipaddress -j DROP
+</pre>
+</div>
+</li>
+
+<li><a id="org78f1bcb"></a>List rules<br />
+<div class="outline-text-5" id="text-org78f1bcb">
+<pre class="example" id="org5018ebc">
+[root@tecmint ~]# iptables -L INPUT -n --line-numbers
+
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED
+2    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0
+3    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0
+4    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state NEW tcp dpt:22
+5    REJECT     all  --  0.0.0.0/0            0.0.0.0/0
+</pre>
+</div>
+</li>
+
+<li><a id="org990482c"></a>Save Changes<br />
+<div class="outline-text-5" id="text-org990482c">
+<pre class="example" id="org31d3f2e">
+Ubuntu:
+
+    sudo /sbin/iptables-save
+
+Red Hat / CentOS:
+
+    /sbin/service iptables save
+</pre>
+</div>
+</li>
+
+<li><a id="orgf652384"></a>Set action based on state<br />
+<div class="outline-text-5" id="text-orgf652384">
+<pre class="example" id="orgaa72001">
+iptables -A INPUT -p tcp --dport ssh -s 10.10.10.10 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+iptables -A OUTPUT -p tcp --sport 22 -d 10.10.10.10 -m state --state ESTABLISHED -j ACCEPT
+</pre>
+</div>
+</li>
+
+<li><a id="orgaf7ca2f"></a>Set action for connection from range of IPs<br />
+<div class="outline-text-5" id="text-orgaf7ca2f">
+<pre class="example" id="orgc701d1e">
+iptables -A INPUT -s 10.10.10.10 -j DROP
+</pre>
+</div>
+</li>
+
+<li><a id="org20a7af8"></a>Set action for connection from single IP<br />
+<div class="outline-text-5" id="text-org20a7af8">
+<pre class="example" id="org7d6dc5a">
+iptables -A INPUT -s 10.10.10.0/24 -j DROP
+</pre>
+</div>
+</li>
+
+<li><a id="org3b47e2d"></a>Set action for connection to a specific port<br />
+<div class="outline-text-5" id="text-org3b47e2d">
+<pre class="example" id="orgd6c90ff">
+iptables -A INPUT -p tcp --dport ssh -s 10.10.10.10 -j DROP
+</pre>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orged8a4e8" class="outline-4">
+<h4 id="orged8a4e8">Flags</h4>
+<div class="outline-text-4" id="text-orged8a4e8">
+</div>
+<ul class="org-ul">
+<li><a id="org1fc1db6"></a>-D <code>&lt;chain&gt; &lt;rulenum&gt;</code><br />
+<div class="outline-text-5" id="text-org1fc1db6">
+<p>
+Delete rule
+</p>
+</div>
+</li>
+
+<li><a id="org0afeb4e"></a>-I <code>&lt;chain&gt; &lt;rulenum&gt; &lt;rulespec&gt;</code><br />
+<div class="outline-text-5" id="text-org0afeb4e">
+<p>
+Insert rule
+</p>
+</div>
+</li>
+
+<li><a id="org3f525ad"></a>-j <code>&lt;target&gt;</code><br />
+<div class="outline-text-5" id="text-org3f525ad">
+<p>
+This specifies the target of the rule; i.e., what to do if the packet matches it. The target can be a user-defined chain (other than the one this rule is in), one of the special built in targets which decide the fate of the packet immediately, or an extension. If this option is omitted in a rule (and -g is not used), then matching the rule will have no effect on the packet's fate, but the counters on the rule will be incremented.
+</p>
+</div>
+</li>
+
+<li><a id="org1417c90"></a>-L<br />
+<div class="outline-text-5" id="text-org1417c90">
+<p>
+List ruleset
+</p>
+</div>
+</li>
+
+<li><a id="org29b941a"></a>&#x2013;line-numbers<br />
+<div class="outline-text-5" id="text-org29b941a">
+<p>
+Show line numbers to make adding/deleting easy
+</p>
+</div>
+</li>
+
+<li><a id="orgb1e8f1e"></a>-n<br />
+<div class="outline-text-5" id="text-orgb1e8f1e">
+<p>
+Display in numeric format
+</p>
+</div>
+</li>
+
+<li><a id="org7c1b388"></a>-v<br />
+<div class="outline-text-5" id="text-org7c1b388">
+<p>
+Verbose
+</p>
+</div>
+</li>
+
+<li><a id="orgc0a1d47"></a>-s <code>&lt;source&gt;</code><br />
+<div class="outline-text-5" id="text-orgc0a1d47">
+<p>
+Set source for rules
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
