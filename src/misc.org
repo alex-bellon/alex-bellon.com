@@ -4,16 +4,24 @@
 #+HTML: <div id="misc" class="main">
 #+HTML: <div class="contentBlock">
 
-- [[[https://github.com/alex-bellon/alex-bellon.com][source code for this website]]] this website is written primarily in org mode (plus css, and js for the vim keybinding navigation), which is then published to html.
+** *cool stuff*
 
-** *activities*
+- [[[./brain][brain]]] the contents of my brain, in digital form (basically a collection of notes and links)
+- [[[https://github.com/alex-bellon/wikipedia][wikipedia articles]]] a /categorized/ collection of 1000+ wikipedia articles that i thought were interesting
+- [[[https://github.com/alex-bellon/til][til]]] collection of things that i learned (roughly) today
+- [[[https://github.com/alex-bellon/questions][questions]]] questions that pop up in my head, and their answers (if i find them)
+- [[[https://github.com/alex-bellon/learning][learning]]] notes and work from self-studying textbooks and [[https://en.wikipedia.org/wiki/Massive_open_online_course][mooc]]s
 
-- [[[./organizations][organizations]]] organizations i'm a part of (or used to be a part of)
-- [[[./talks][talks]]]
 
-** *creative stuff*
+** *things i've made that aren't code*
 
 - [[[./art][art]]]
 - [[[./photography][photography]]]
+- [[[./talks][talks]]]
+
+** *miscellaneous stuff*
+
+- [[[./organizations][organizations]]] organizations i'm a part of (or used to be a part of)
+
 
 #+HTML: </div></div>

@@ -2,7 +2,8 @@
 (require 'ox-publish)
 
 (defvar website-html-head
-"<link rel='stylesheet' type='text/css' href='assets/css/main.css'>
+"<link rel='stylesheet' type='text/css' href='assets/css/common.css'>
+<link rel='stylesheet' type='text/css' href='assets/css/main.css'>
 <link rel='icon' type='image/png' href='./images/art/personal_logo.png'>
 <meta name='viewport' content='width=device-width, initial-scale=.5'>
 <meta charset='utf-8'/>
@@ -10,7 +11,8 @@
 <script src='assets/js/vim.js'></script>")
 
 (defvar blog-html-head
-"<link rel='stylesheet' type='text/css' href='../assets/css/blog.css'>
+"<link rel='stylesheet' type='text/css' href='../assets/css/common.css'>
+<link rel='stylesheet' type='text/css' href='../assets/css/blog.css'>
 <link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
 <meta name='viewport' content='width=device-width, initial-scale=.5'>
 <meta charset='utf-8'/>
@@ -18,7 +20,8 @@
 <script src='../assets/js/vim.js'></script>")
 
 (defvar brain-html-head
-"<link rel='stylesheet' type='text/css' href='/~abellon/assets/css/brain.css'>
+"<link rel='stylesheet' type='text/css' href='/~abellon/assets/css/common.css'>
+<link rel='stylesheet' type='text/css' href='/~abellon/assets/css/brain.css'>
 <link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
 <meta name='viewport' content='width=device-width, initial-scale=.5'>
 <meta charset='utf-8'/>
@@ -55,8 +58,17 @@
 (defvar website-html-postamble
 "<div>
     <ul class='footer banner' style='margin-top:0px; margin-bottom:0px;'>
-        <li><a target='_parent' href='./cv.pdf'>cv</a></li>
-        <li><a target='_parent' href='https://github.com/alex-bellon'>github</a></li>
+        <span class='footer-container'>
+            <span>
+                <li><a target='_parent' href='./cv.pdf'>cv</a></li>
+                <li><a target='_parent' href='https://github.com/alex-bellon/'>github</a></li>
+                <li><a target='_parent' href='https://scholar.google.com/citations?user=caybufUAAAAJ'>scholar</a></li>
+            </span>
+            <span>
+                <li><a href='https://alex-bellon.com'>home</a></li>
+                <li><a target='_parent' href='https://github.com/alex-bellon/alex-bellon.com'>website source</a></li>
+            </span>
+        </span>
     </ul>
 </div")
 

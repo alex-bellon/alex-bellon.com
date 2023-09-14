@@ -17,11 +17,6 @@ this website supports vim keybindings! use j/k to scroll up/down and h/l to go t
 #+ATTR_HTML: :class subtitle
 (aka "/balex"/)
 
-#+ATTR_HTML: :class header
-- [[./cv.pdf][cv]]
-- [[https://github.com/alex-bellon][github]]
-- [[https://scholar.google.com/citations?user=caybufUAAAAJ][google scholar]]
-
 #+HTML: <div class="intro">
 *I am a third year PhD student in the CSE department at UC San Diego, advised by [[https://cseweb.ucsd.edu/~dstefan/][Deian Stefan]] and [[https://patpannuto.com/][Pat Pannuto]].* I'm primarily interested in the security of high risk systems and embedded devices. My research ranges from reverse engineering firmware from embedded devices to measuring the performance and reliability of IoT networks.
 

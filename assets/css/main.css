@@ -1,38 +1,6 @@
-body {
-    font-family: "Hack", Arial;
-    background-color: #000000;
-    color: #cccccc;
-    text-align: center;
-    margin-top: 0px;
-    font-size: 20px;
-}
-
-a, .comment a {
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
-    color: #aaaaff;
-}
-
-a:hover, .comment a:hover {
-	color: #5555cc;
-    transition: .4s;
-}
-
 h2 {
     font-size: 27px;
     margin: 0;
-}
-
-p {
-    font-size: 20px;
-}
-
-@font-face {
-    font-family: "Hack";
-    src: url('../fonts/Hack-Regular.ttf'),
-    src: url('../fonts/Hack-Bold.ttf'),
-    src: url('../fonts/Hack-Italic.ttf'),
-    src: url('../fonts/Hack-BoldItalic.ttf')
 }
 
 .blocks {
@@ -95,86 +63,12 @@ p {
     width: auto;
 }
 
-.divider {
-    font-size: 28px;
-    text-align: center;
-}
-
-.footer {
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    z-index: 5;
-    font-size: 18px;
-}
-
-.header {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 1600px;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 22px;
-    z-index: 5;
-    list-style: none;
-    padding: 0;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    min-height: 30px;
-    text-align: center;
-}
-
-.banner li {
-    overflow: hidden;
-    display: inline-block;
-    height: 30px;
-}
-
-.banner li a {
-    color: #ffffff;
-    z-index: 5;
-    display: inline-block;
-    text-align: center;
-    padding: 4px 10px;
-    text-decoration: none;
-    transition: .5s;
-}
-
-.banner li a::before {
-    content: "[";
-    color: #aaaaaa;
-}
-
-.banner li a::after {
-    content: "]";
-    color: #aaaaaa;
-}
-
 .footer li a {
     color: #aaaaaa;
 }
 
 .footer li a::after, .footer li a::before {
     color: #888888;
-}
-
-.banner li a:hover {
-    transition: .15s;
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
-    color: #9999ff;
 }
 
 .hint {
@@ -189,11 +83,11 @@ p {
 }
 
 .intro {
-    max-width: 1000px;
+    max-width: 900px;
     width: 70%;
     margin-right: auto; 
     margin-left: auto; 
-    text-align: left; 
+    text-align: justify; 
     margin-top: 20px;
 }
 
@@ -208,6 +102,17 @@ p {
     height: 100%;
 }
 
+.main {
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .publinks {
     color: #bbbbbb;
     font-size: 18px;
@@ -218,21 +123,10 @@ p {
     color: inherit;
 }
 
-.main {
-    max-width: 1400px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 80px;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
 .profile {
     border-radius: 3px;
     max-width: 300px;
 }
-
 
 .subtitle {
     font-size: 18px;
@@ -242,6 +136,6 @@ p {
 
 .title {
     font-size: 35px;
-    margin: 20px;
+    margin: 10px;
     color: white;
 }
