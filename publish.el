@@ -1,4 +1,5 @@
 (require 'ox)
+(require 'ox-publish)
 
 (defvar website-html-head
 "<link rel='stylesheet' type='text/css' href='assets/css/main.css'>
@@ -9,7 +10,7 @@
 <script src='assets/js/vim.js'></script>")
 
 (defvar blog-html-head
-"<link rel='stylesheet' type='text/css' href='../assets/css/brain.css'>
+"<link rel='stylesheet' type='text/css' href='/assets/css/blog.css'>
 <link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
 <meta name='viewport' content='width=device-width, initial-scale=.5'>
 <meta charset='utf-8'/>
@@ -17,7 +18,7 @@
 <script src='../assets/js/vim.js'></script>")
 
 (defvar brain-html-head
-"<link rel='stylesheet' type='text/css' href='../assets/css/blog.css'>
+"<link rel='stylesheet' type='text/css' href='/assets/css/brain.css'>
 <link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
 <meta name='viewport' content='width=device-width, initial-scale=.5'>
 <meta charset='utf-8'/>
@@ -49,8 +50,7 @@
 
 (defvar brain-html-preamble
 "<div class='preamble'>
-<h1 style='margin-top: 60px;'>%t</h1>
-<p class=meta>posted %C (edited %T)</p></div>")
+<h1 style='margin-top: 60px;'>%t</h1></div>")
 
 (defvar website-html-postamble
 "<div>
@@ -62,7 +62,7 @@
 
 (setq org-html-metadata-timestamp-format "%m.%d.%y %H:%M")
 
-(defun m/org-publish-org-sitemap-format-entry (entry style project)
+(defun sitemap-format-entry (entry style project)
   (cond ((not (directory-name-p entry))
          (let* ((date (org-publish-find-date entry project)))
            (format "[%s] [[file:%s][%s]]"
@@ -106,7 +106,7 @@
        :auto-sitemap t
        :sitemap-title "blog bosts"
        :sitemap-filename "index.org"
-       :sitemap-format-entry m/org-publish-org-sitemap-format-entry
+       :sitemap-format-entry sitemap-format-entry
        :sitemap-sort-files anti-chronologically)
       
       ("brain"
@@ -118,6 +118,7 @@
        :section-numbers nil
        :with-author nil
        :with-title nil
+       :with-toc nil
        :html-head-include-default-style nil
        :html-head-include-scripts nil
        :html-validation-link nil
@@ -127,8 +128,7 @@
            
        :auto-sitemap t
        :sitemap-title "brain"
-       :sitemap-filename "index.org"
-       :sitemap-format-entry m/org-publish-org-sitemap-format-entry)
+       :sitemap-filename "index.org")
 
       ("website" :components ("pages" "blog" "brain"))))
 
