@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 09.14.23 00:06 -->
+<!-- 09.14.23 00:15 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
 <meta name="generator" content="Org Mode" />
-<link rel='stylesheet' type='text/css' href='/assets/css/brain.css'>
+<link rel='stylesheet' type='text/css' href='/~abellon/assets/css/brain.css'>
 <link rel='icon' type='image/png' href='../images/art/personal_logo.png'>
 <meta name='viewport' content='width=device-width, initial-scale=.5'>
 <meta charset='utf-8'/>
@@ -21,13 +21,13 @@
 <h1 style='margin-top: 60px;'></h1></div>
 </div>
 <div id="content" class="content">
-<div id="outline-container-org5079e9f" class="outline-2">
-<h2 id="org5079e9f">hardening</h2>
-<div class="outline-text-2" id="text-org5079e9f">
+<div id="outline-container-org7de96de" class="outline-2">
+<h2 id="org7de96de">hardening</h2>
+<div class="outline-text-2" id="text-org7de96de">
 </div>
-<div id="outline-container-org2f1ff84" class="outline-3">
-<h3 id="org2f1ff84">linux</h3>
-<div class="outline-text-3" id="text-org2f1ff84">
+<div id="outline-container-orgc476d86" class="outline-3">
+<h3 id="orgc476d86">linux</h3>
+<div class="outline-text-3" id="text-orgc476d86">
 <ul class="org-ul">
 <li><a href="https://www.reddit.com/r/linux/comments/ns7r7o/a_complete_yet_beginner_friendly_guide_on_how_to/">a complete yet beginner friendly guide on how to secure linux</a></li>
 <li><a href="https://github.com/imthenachoman/how-to-secure-a-linux-server">how to secure a linux server</a></li>
@@ -37,17 +37,17 @@
 </div>
 </div>
 
-<div id="outline-container-org08d412d" class="outline-3">
-<h3 id="org08d412d">ssh</h3>
-<div class="outline-text-3" id="text-org08d412d">
+<div id="outline-container-org19988fa" class="outline-3">
+<h3 id="org19988fa">ssh</h3>
+<div class="outline-text-3" id="text-org19988fa">
 <ul class="org-ul">
 <li><a href="https://github.com/jtesta/ssh-audit">ssh-audit</a></li>
 </ul>
 </div>
 
-<div id="outline-container-orgfe717d5" class="outline-4">
-<h4 id="orgfe717d5">openssh</h4>
-<div class="outline-text-4" id="text-orgfe717d5">
+<div id="outline-container-org7c0224d" class="outline-4">
+<h4 id="org7c0224d">openssh</h4>
+<div class="outline-text-4" id="text-org7c0224d">
 <ul class="org-ul">
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-18-04">how to harden openssh on ubuntu 18.04</a></li>
 </ul>
@@ -55,17 +55,17 @@
 </div>
 </div>
 
-<div id="outline-container-org92fd5fe" class="outline-3">
-<h3 id="org92fd5fe">sql</h3>
-<div class="outline-text-3" id="text-org92fd5fe">
+<div id="outline-container-orgf4b964a" class="outline-3">
+<h3 id="orgf4b964a">sql</h3>
+<div class="outline-text-3" id="text-orgf4b964a">
 <ul class="org-ul">
 <li><a href="https://www.techrepublic.com/article/how-to-harden-mysql-security-with-a-single-command/">https://www.techrepublic.com/article/how-to-harden-mysql-security-with-a-single-command/</a></li>
 </ul>
 </div>
 
-<div id="outline-container-org0548d56" class="outline-4">
-<h4 id="org0548d56"><a href="https://medium.com/linode-cube/5-essential-steps-to-hardening-your-mysql-database-591e477bbbd7">5 Steps to hardedning your MySQL database</a></h4>
-<div class="outline-text-4" id="text-org0548d56">
+<div id="outline-container-orgad92916" class="outline-4">
+<h4 id="orgad92916"><a href="https://medium.com/linode-cube/5-essential-steps-to-hardening-your-mysql-database-591e477bbbd7">5 Steps to hardedning your MySQL database</a></h4>
+<div class="outline-text-4" id="text-orgad92916">
 <ul class="org-ul">
 <li>Setup with <code>mysql_secure_installation</code> - takes care of most of this for you!</li>
 <li><p>
@@ -75,7 +75,7 @@ Set strong passwords and change default passwords
 <li><code>sudo mysqladmin password</code></li>
 <li>Unfortunately, MySQL runs background tasks as that root user. These tasks will break once you set a password, unless you take the additional step of hard-coding the password into the <i>root</i>.my.cnf file:</li>
 </ul>
-<pre class="example" id="org55fac79">
+<pre class="example" id="org08b5e2c">
 [mysqladmin]
 user = root
 password = yourpassword
@@ -83,7 +83,7 @@ password = yourpassword
 <p>
 Make sure to restrict access to that file
 </p>
-<pre class="example" id="org58d2fb0">
+<pre class="example" id="orge45fa6a">
 $ sudo chown root:root /root/.my.cnf
 $ sudo chmod 0600 /root/.my.cnf
 </pre></li>
@@ -115,7 +115,7 @@ Enable TLS
 <ul class="org-ul">
 <li>Once you have valid certs, add this to my.cnf</li>
 </ul>
-<pre class="example" id="org346595e">
+<pre class="example" id="org4ceed1a">
 [mysqld]
 ssl-ca=/path/to/ca.crt
 ssl-cert=/path/to/server.crt
@@ -128,9 +128,9 @@ ssl-key=/path/to/server.key
 </div>
 </div>
 
-<div id="outline-container-org8a556ac" class="outline-4">
-<h4 id="org8a556ac"><a href="https://www.tecklyfe.com/harden-mysql-server/">Harden MySQL Server</a></h4>
-<div class="outline-text-4" id="text-org8a556ac">
+<div id="outline-container-org8095032" class="outline-4">
+<h4 id="org8095032"><a href="https://www.tecklyfe.com/harden-mysql-server/">Harden MySQL Server</a></h4>
+<div class="outline-text-4" id="text-org8095032">
 <ul class="org-ul">
 <li>Set connection error limit
 <ul class="org-ul">
@@ -154,7 +154,7 @@ Disable show databases
 <ul class="org-ul">
 <li>Edit <code>my.cnf</code> and add <code>skip-show-database</code> to the `[mysqld]`` section:</li>
 </ul>
-<pre class="example" id="org5c74b05">
+<pre class="example" id="org20aae8b">
 [mysqld]
 skip-show-database
 </pre></li>
@@ -178,7 +178,7 @@ skip-show-database
 <li><p>
 rename root user
 </p>
-<pre class="example" id="org21bed65">
+<pre class="example" id="org76ce2d2">
 RENAME USER 'root'@'localhost' TO 'foobar'@'localhost';
 FLUSH PRIVILEGES;
 </pre></li>
@@ -187,9 +187,9 @@ FLUSH PRIVILEGES;
 </div>
 </div>
 
-<div id="outline-container-org2716613" class="outline-3">
-<h3 id="org2716613">tools</h3>
-<div class="outline-text-3" id="text-org2716613">
+<div id="outline-container-org305fbd2" class="outline-3">
+<h3 id="org305fbd2">tools</h3>
+<div class="outline-text-3" id="text-org305fbd2">
 <ul class="org-ul">
 <li><a href="https://github.com/cloudflare/flan">flan</a> - flan scan is a lightweight network vulnerability scanner.</li>
 </ul>
