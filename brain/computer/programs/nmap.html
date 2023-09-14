@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 09.13.23 22:00 -->
+<!-- 09.13.23 22:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -19,40 +19,40 @@
 <div id="preamble" class="status">
 <div class='preamble'>
 <h1 style='margin-top: 60px;'></h1>
-<p class=meta>posted 09.13.23 21:32 (edited 09.13.23 22:00)</p></div>
+<p class=meta>posted 09.13.23 21:32 (edited 09.13.23 22:05)</p></div>
 </div>
 <div id="content" class="content">
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf8d40e4">nmap</a>
+<li><a href="#orgacdd167">nmap</a>
 <ul>
-<li><a href="#org58704b2">commands</a>
+<li><a href="#org53cb934">commands</a>
 <ul>
-<li><a href="#orgc432674">find which hosts are up</a></li>
-<li><a href="#orgcc74557">aggressive scan</a></li>
-<li><a href="#org6441cfc">fast port scan</a></li>
+<li><a href="#org2adfc31">find which hosts are up</a></li>
+<li><a href="#org2bf5950">aggressive scan</a></li>
+<li><a href="#orga181fd4">fast port scan</a></li>
 </ul>
 </li>
-<li><a href="#org2a71f47">other flags</a></li>
+<li><a href="#org5f00f5d">other flags</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf8d40e4" class="outline-2">
-<h2 id="orgf8d40e4">nmap</h2>
-<div class="outline-text-2" id="text-orgf8d40e4">
+<div id="outline-container-orgacdd167" class="outline-2">
+<h2 id="orgacdd167">nmap</h2>
+<div class="outline-text-2" id="text-orgacdd167">
 </div>
-<div id="outline-container-org58704b2" class="outline-3">
-<h3 id="org58704b2">commands</h3>
-<div class="outline-text-3" id="text-org58704b2">
+<div id="outline-container-org53cb934" class="outline-3">
+<h3 id="org53cb934">commands</h3>
+<div class="outline-text-3" id="text-org53cb934">
 </div>
-<div id="outline-container-orgc432674" class="outline-4">
-<h4 id="orgc432674">find which hosts are up</h4>
-<div class="outline-text-4" id="text-orgc432674">
-<pre class="example" id="org30641e1">
+<div id="outline-container-org2adfc31" class="outline-4">
+<h4 id="org2adfc31">find which hosts are up</h4>
+<div class="outline-text-4" id="text-org2adfc31">
+<pre class="example" id="org30badb9">
 nmap -sn 192.168.1.0/24
 </pre>
 
@@ -62,10 +62,10 @@ nmap -sn 192.168.1.0/24
 </div>
 </div>
 
-<div id="outline-container-orgcc74557" class="outline-4">
-<h4 id="orgcc74557">aggressive scan</h4>
-<div class="outline-text-4" id="text-orgcc74557">
-<pre class="example" id="org3af32a0">
+<div id="outline-container-org2bf5950" class="outline-4">
+<h4 id="org2bf5950">aggressive scan</h4>
+<div class="outline-text-4" id="text-org2bf5950">
+<pre class="example" id="org31e70f4">
 nmap -v -A scanme.nmap.org
 </pre>
 
@@ -76,10 +76,10 @@ nmap -v -A scanme.nmap.org
 </div>
 </div>
 
-<div id="outline-container-org6441cfc" class="outline-4">
-<h4 id="org6441cfc">fast port scan</h4>
-<div class="outline-text-4" id="text-org6441cfc">
-<pre class="example" id="org48b16fb">
+<div id="outline-container-orga181fd4" class="outline-4">
+<h4 id="orga181fd4">fast port scan</h4>
+<div class="outline-text-4" id="text-orga181fd4">
+<pre class="example" id="org3cd672b">
 nmap -sS -F 192.168.1.0/24
 </pre>
 
@@ -91,9 +91,9 @@ nmap -sS -F 192.168.1.0/24
 </div>
 </div>
 
-<div id="outline-container-org2a71f47" class="outline-3">
-<h3 id="org2a71f47">other flags</h3>
-<div class="outline-text-3" id="text-org2a71f47">
+<div id="outline-container-org5f00f5d" class="outline-3">
+<h3 id="org5f00f5d">other flags</h3>
+<div class="outline-text-3" id="text-org5f00f5d">
 <ul class="org-ul">
 <li><code>-Pn</code> no ping</li>
 <li><code>oA &lt;file&gt;</code> sends to output file</li>

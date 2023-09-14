@@ -125,8 +125,6 @@
        :html-postamble nil
        :html-head ,brain-html-head
            
-       :org-export-with-broken-links t
- 
        :auto-sitemap t
        :sitemap-title "brain"
        :sitemap-filename "index.org"
