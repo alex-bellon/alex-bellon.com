@@ -70,13 +70,13 @@ h3 {
     text-align: center;
 }
 
-.header li {
+.banner li {
     overflow: hidden;
     display: inline-block;
     height: 30px;
 }
 
-.header li a {
+.banner li a {
     color: #ffffff;
     z-index: 5;
     display: inline-block;
@@ -86,17 +86,17 @@ h3 {
     transition: .5s;
 }
 
-.header li a::before {
+.banner li a::before {
     content: "[";
     color: #aaaaaa;
 }
 
-.header li a::after {
+.banner li a::after {
     content: "]";
     color: #aaaaaa;
 }
 
-.header li a:hover {
+.banner li a:hover {
     transition: .2s;
     text-decoration-line: underline;
     text-decoration-style: dotted;

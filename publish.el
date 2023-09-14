@@ -17,7 +17,7 @@
 <script src='../assets/js/vim.js'></script>")
 
 (defvar website-html-preamble
-"<ul class='header'>
+"<ul class='header banner'>
     <li><a target='_parent' href='.'>home</a></li>
     <li><a target='_parent' href='./publications'>publications</a></li>
     <li><a target='_parent' href='./projects'>projects</a></li>
@@ -27,7 +27,7 @@
 </ul>")
 
 (defvar blog-html-preamble
-"<ul class='header'>
+"<ul class='header banner'>
     <li><a target='_parent' href='..'>home</a></li>
     <li><a target='_parent' href='../publications'>publications</a></li>
     <li><a target='_parent' href='../projects'>projects</a></li>
@@ -40,8 +40,8 @@
 <p class=meta>posted %C (edited %T)</p></div>")
 
 (defvar website-html-postamble
-"<div class='footer'>
-    <ul class='header' style='margin-top:0px; margin-bottom:0px;'>
+"<div>
+    <ul class='footer banner' style='margin-top:0px; margin-bottom:0px;'>
         <li><a target='_parent' href='./cv.pdf'>cv</a></li>
         <li><a target='_parent' href='https://github.com/alex-bellon'>github</a></li>
     </ul>

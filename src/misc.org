@@ -4,17 +4,16 @@
 #+HTML: <div id="misc" class="main">
 #+HTML: <div class="contentBlock">
 
-** [[./organizations][organizations]]
-organizations that i'm involved with (or used to be involved with)
-** [[./talks][talks]]
-talks i've given, mainly with organizations i've been a part of
+- [[[https://github.com/alex-bellon/alex-bellon.com][source code for this website]]] this website is written primarily in org mode (plus css, and js for the vim keybinding navigation), which is then published to html.
 
-#+ATTR_HTML: :class divider
-creative stuff
+** *activities*
 
-** [[./art][art]]
-my graphic design + fine art work
-** [[./photography][photography]]
-some of my better photos
+- [[[./organizations][organizations]]] organizations i'm a part of (or used to be a part of)
+- [[[./talks][talks]]]
+
+** *creative stuff*
+
+- [[[./art][art]]]
+- [[[./photography][photography]]]
 
 #+HTML: </div></div>

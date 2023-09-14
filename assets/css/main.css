@@ -4,6 +4,7 @@ body {
     color: #cccccc;
     text-align: center;
     margin-top: 0px;
+    font-size: 20px;
 }
 
 a, .comment a {
@@ -35,7 +36,7 @@ p {
 }
 
 .blocks {
-	max-width:1600px;
+	max-width: 1400px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-right:60px;
@@ -100,7 +101,6 @@ p {
 }
 
 .footer {
-    max-width: 1600px;
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
@@ -112,6 +112,7 @@ p {
     padding-bottom: 10px;
     padding-top: 5px;
     z-index: 5;
+    font-size: 18px;
 }
 
 .header {
@@ -135,13 +136,13 @@ p {
     text-align: center;
 }
 
-.header li {
+.banner li {
     overflow: hidden;
     display: inline-block;
     height: 30px;
 }
 
-.header li a {
+.banner li a {
     color: #ffffff;
     z-index: 5;
     display: inline-block;
@@ -151,18 +152,26 @@ p {
     transition: .5s;
 }
 
-.header li a::before {
+.banner li a::before {
     content: "[";
     color: #aaaaaa;
 }
 
-.header li a::after {
+.banner li a::after {
     content: "]";
     color: #aaaaaa;
 }
 
-.header li a:hover {
-    transition: .2s;
+.footer li a {
+    color: #aaaaaa;
+}
+
+.footer li a::after, .footer li a::before {
+    color: #888888;
+}
+
+.banner li a:hover {
+    transition: .15s;
     text-decoration-line: underline;
     text-decoration-style: dotted;
     color: #9999ff;
@@ -210,7 +219,7 @@ p {
 }
 
 .main {
-    max-width: 1600px;
+    max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 80px;
