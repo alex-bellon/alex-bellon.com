@@ -47,7 +47,7 @@
 <h1 style='margin-top: 60px;'>%t</h1>
 <p class=meta>posted %C (edited %T)</p></div>")
 
-(defvar blog-html-preamble
+(defvar brain-html-preamble
 "<div class='preamble'>
 <h1 style='margin-top: 60px;'>%t</h1>
 <p class=meta>posted %C (edited %T)</p></div>")
@@ -123,8 +123,10 @@
        :html-validation-link nil
        :html-preamble ,brain-html-preamble
        :html-postamble nil
-       :html-head ,blog-html-head
-            
+       :html-head ,brain-html-head
+           
+       :org-export-with-broken-links t
+ 
        :auto-sitemap t
        :sitemap-title "brain"
        :sitemap-filename "index.org"

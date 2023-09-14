@@ -1,6 +1,5 @@
 #+TITLE: brain
 
-- [23.09.13] [[file:README.org][README]]
 - art
   - [23.09.13] [[file:art/art.org][art]]
   - [23.09.13] [[file:art/drawing.org][drawing]]
@@ -70,7 +69,6 @@
     - [23.09.13] [[file:computer/programming-languages/functional-programming.org][functional-programming]]
     - [23.09.13] [[file:computer/programming-languages/go.org][go]]
     - [23.09.13] [[file:computer/programming-languages/haskell.org][haskell]]
-    - [23.09.13] [[file:computer/programming-languages/html.org][html]]
     - [23.09.13] [[file:computer/programming-languages/java.org][java]]
     - [23.09.13] [[file:computer/programming-languages/javascript.org][javascript]]
     - [23.09.13] [[file:computer/programming-languages/latex.org][latex]]
