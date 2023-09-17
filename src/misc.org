@@ -7,7 +7,7 @@
 ** *cool stuff*
 
 - [[[./brain][brain]]] the contents of my brain, in digital form (basically a collection of notes and links)
-- [[[https://github.com/alex-bellon/wikipedia][wikipedia articles]]] a /categorized/ collection of 1000+ wikipedia articles that i thought were interesting
+- [[[./wikipedia][wikipedia articles]]] a /categorized/ collection of 1000+ wikipedia articles that i thought were interesting
 - [[[https://github.com/alex-bellon/til][til]]] collection of things that i learned (roughly) today
 - [[[https://github.com/alex-bellon/questions][questions]]] questions that pop up in my head, and their answers (if i find them)
 - [[[https://github.com/alex-bellon/learning][learning]]] notes and work from self-studying textbooks and [[https://en.wikipedia.org/wiki/Massive_open_online_course][mooc]]s

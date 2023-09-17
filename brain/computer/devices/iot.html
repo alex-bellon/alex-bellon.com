@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 09.14.23 10:21 -->
+<!-- 09.14.23 10:52 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -22,9 +22,9 @@
 <h1 style='margin-top: 60px;'></h1></div>
 </div>
 <div id="content" class="content">
-<div id="outline-container-orgc47ad7b" class="outline-2">
-<h2 id="orgc47ad7b">iot</h2>
-<div class="outline-text-2" id="text-orgc47ad7b">
+<div id="outline-container-org073a01f" class="outline-2">
+<h2 id="org073a01f">iot</h2>
+<div class="outline-text-2" id="text-org073a01f">
 <ul class="org-ul">
 <li><a href="https://www.home-assistant.io/">home assistant</a> - foss home automation suite
 <ul class="org-ul">
@@ -52,87 +52,87 @@ a few things i have in my home all plugged into ha, not an exhaustive list:
 </div>
 </div>
 
-<div id="outline-container-org4c82570" class="outline-2">
-<h2 id="org4c82570">hue lights</h2>
+<div id="outline-container-orga9762cf" class="outline-2">
+<h2 id="orga9762cf">hue lights</h2>
 </div>
-<div id="outline-container-org136d1b4" class="outline-2">
-<h2 id="org136d1b4">google home devices</h2>
+<div id="outline-container-orga71d249" class="outline-2">
+<h2 id="orga71d249">google home devices</h2>
 </div>
-<div id="outline-container-orga433dfe" class="outline-2">
-<h2 id="orga433dfe">chromecasts</h2>
+<div id="outline-container-org9c48c12" class="outline-2">
+<h2 id="org9c48c12">chromecasts</h2>
 </div>
-<div id="outline-container-org9f5fd06" class="outline-2">
-<h2 id="org9f5fd06">iris door sensors</h2>
+<div id="outline-container-orgaf18edd" class="outline-2">
+<h2 id="orgaf18edd">iris door sensors</h2>
 </div>
-<div id="outline-container-org3dc04a8" class="outline-2">
-<h2 id="org3dc04a8">a homemade garage door sensor/opener</h2>
+<div id="outline-container-org74cfbc0" class="outline-2">
+<h2 id="org74cfbc0">a homemade garage door sensor/opener</h2>
 </div>
-<div id="outline-container-orgbcc7e62" class="outline-2">
-<h2 id="orgbcc7e62">my wireless router</h2>
+<div id="outline-container-orgced6a1a" class="outline-2">
+<h2 id="orgced6a1a">my wireless router</h2>
 </div>
-<div id="outline-container-orgd095cec" class="outline-2">
-<h2 id="orgd095cec">chinese wifi outlets</h2>
+<div id="outline-container-orgac91612" class="outline-2">
+<h2 id="orgac91612">chinese wifi outlets</h2>
 </div>
-<div id="outline-container-orgef18335" class="outline-2">
-<h2 id="orgef18335">ge smart light switches</h2>
+<div id="outline-container-orga316132" class="outline-2">
+<h2 id="orga316132">ge smart light switches</h2>
 </div>
-<div id="outline-container-org2fbcda6" class="outline-2">
-<h2 id="org2fbcda6">dark sky weather api</h2>
+<div id="outline-container-orgad9f577" class="outline-2">
+<h2 id="orgad9f577">dark sky weather api</h2>
 </div>
-<div id="outline-container-org284fb9f" class="outline-2">
-<h2 id="org284fb9f">national weather service api</h2>
+<div id="outline-container-orgf62f102" class="outline-2">
+<h2 id="orgf62f102">national weather service api</h2>
 </div>
-<div id="outline-container-org9380b45" class="outline-2">
-<h2 id="org9380b45">pushbullet</h2>
+<div id="outline-container-orgde0b7cc" class="outline-2">
+<h2 id="orgde0b7cc">pushbullet</h2>
 </div>
-<div id="outline-container-org004ae40" class="outline-2">
-<h2 id="org004ae40">smart doorbell</h2>
+<div id="outline-container-orga7362a2" class="outline-2">
+<h2 id="orga7362a2">smart doorbell</h2>
 </div>
-<div id="outline-container-org0904807" class="outline-2">
-<h2 id="org0904807">nest thermostats</h2>
-<div class="outline-text-2" id="text-org0904807">
+<div id="outline-container-org7e0add6" class="outline-2">
+<h2 id="org7e0add6">nest thermostats</h2>
+<div class="outline-text-2" id="text-org7e0add6">
 <p>
 <b><b>all of this crap is from different companies but they all report their statuses to ha and then ha lets me write automations</b></b>:
 </p>
 </div>
 </div>
 
-<div id="outline-container-org3663a65" class="outline-2">
-<h2 id="org3663a65">front door opened and it's either after sunset or the sky is 90% or more covered with clouds? turn on the foyer light for 2 minutes so my guests can take off their coats and shoes. that's an iris sensor from home depot causing a change to a ge wall switch (only if certain weather related data is true such as cloud coverage and sun elevation!) those devices aren't meant to talk to each other, and certainly not based on weather conditions, but since ha knows what's going on with the iris door sensor and it can talk to the ge light switch <b>and</b> it knows the sun's elevation for my lat/long <b>and</b> it knows the cloud coverage in the sky, all that shit's part of the same ecosystem now and we can make decisions based on all of it. that's the power of home assistant. it's a huge bucket you dump all of your sensors into (door open or closed? light on or off? cloudy or not? daytime or nighttime?) and you wrap rules around them that look for changes in states as the basis to trigger actions. this is <b>powerful</b>.</h2>
+<div id="outline-container-orgfc4bf94" class="outline-2">
+<h2 id="orgfc4bf94">front door opened and it's either after sunset or the sky is 90% or more covered with clouds? turn on the foyer light for 2 minutes so my guests can take off their coats and shoes. that's an iris sensor from home depot causing a change to a ge wall switch (only if certain weather related data is true such as cloud coverage and sun elevation!) those devices aren't meant to talk to each other, and certainly not based on weather conditions, but since ha knows what's going on with the iris door sensor and it can talk to the ge light switch <b>and</b> it knows the sun's elevation for my lat/long <b>and</b> it knows the cloud coverage in the sky, all that shit's part of the same ecosystem now and we can make decisions based on all of it. that's the power of home assistant. it's a huge bucket you dump all of your sensors into (door open or closed? light on or off? cloudy or not? daytime or nighttime?) and you wrap rules around them that look for changes in states as the basis to trigger actions. this is <b>powerful</b>.</h2>
 </div>
-<div id="outline-container-org8fdedf4" class="outline-2">
-<h2 id="org8fdedf4">garage door been open for 60 min? send a notification to my phone and have all google homes say \"the garage door has been open for 60 minutes.\" continue to check and report every 60 minutes it's been open thereafter. edit: a robot voice out of the blue kept startling us. changed to a certain chime sound.</h2>
+<div id="outline-container-orga6adcb6" class="outline-2">
+<h2 id="orga6adcb6">garage door been open for 60 min? send a notification to my phone and have all google homes say \"the garage door has been open for 60 minutes.\" continue to check and report every 60 minutes it's been open thereafter. edit: a robot voice out of the blue kept startling us. changed to a certain chime sound.</h2>
 </div>
-<div id="outline-container-org1407ce6" class="outline-2">
-<h2 id="org1407ce6">can't hear doorbell in the basement? spam doorbell.mp3 to all google homes when someone rings. might as well send a notification to my phone while i'm at it.</h2>
+<div id="outline-container-orgd115e3b" class="outline-2">
+<h2 id="orgd115e3b">can't hear doorbell in the basement? spam doorbell.mp3 to all google homes when someone rings. might as well send a notification to my phone while i'm at it.</h2>
 </div>
-<div id="outline-container-org2fe36f5" class="outline-2">
-<h2 id="org2fe36f5">send me weather forecast as phone notification daily at 7a.</h2>
+<div id="outline-container-org1c18bd3" class="outline-2">
+<h2 id="org1c18bd3">send me weather forecast as phone notification daily at 7a.</h2>
 </div>
-<div id="outline-container-org1e248e5" class="outline-2">
-<h2 id="org1e248e5">send me notifications on nws storm warnings. i don't even have a weather app on my phone anymore which is saying a lot as a nws trained weather spotter (enthusiast).</h2>
+<div id="outline-container-orgc3a5bf0" class="outline-2">
+<h2 id="orgc3a5bf0">send me notifications on nws storm warnings. i don't even have a weather app on my phone anymore which is saying a lot as a nws trained weather spotter (enthusiast).</h2>
 </div>
-<div id="outline-container-orgd33a124" class="outline-2">
-<h2 id="orgd33a124">remotely check ha user interface and see if my wife is home.</h2>
+<div id="outline-container-org11493b0" class="outline-2">
+<h2 id="org11493b0">remotely check ha user interface and see if my wife is home.</h2>
 </div>
-<div id="outline-container-org0938368" class="outline-2">
-<h2 id="org0938368">someone set the thermostat outside of 65-70? wait 10 seconds for them to walk away and set it right back to 68. dad level 100.</h2>
+<div id="outline-container-org2db1059" class="outline-2">
+<h2 id="org2db1059">someone set the thermostat outside of 65-70? wait 10 seconds for them to walk away and set it right back to 68. dad level 100.</h2>
 </div>
-<div id="outline-container-orgb11e60b" class="outline-2">
-<h2 id="orgb11e60b">flick a switch called vacation mode on my ha user interface and now all my lights turn on/off according to a schedule i set once three years ago. if i set up presence detection, i won't even have to switch it back off when i return because ha sees \"rufus's phone is on wifi so they've returned from vacation. i'll turn vacation mode off for them\". some people plug google calendar in and let ha mine their calendar to find flight info and they turn on vacation mode automatically.</h2>
+<div id="outline-container-org4cfc4c0" class="outline-2">
+<h2 id="org4cfc4c0">flick a switch called vacation mode on my ha user interface and now all my lights turn on/off according to a schedule i set once three years ago. if i set up presence detection, i won't even have to switch it back off when i return because ha sees \"rufus's phone is on wifi so they've returned from vacation. i'll turn vacation mode off for them\". some people plug google calendar in and let ha mine their calendar to find flight info and they turn on vacation mode automatically.</h2>
 </div>
-<div id="outline-container-orgad6e5a1" class="outline-2">
-<h2 id="orgad6e5a1">automate all lights in my home from one utility (since some are hue, some are ge switches, some are chinese outlets). i don't even have these apps on my phone. i want light x to turn on at 7pm. i don't want to think about if it's hue or chinese or ge or what. just turn on light.bedroom and be done with it. beautiful abstraction.</h2>
+<div id="outline-container-org4b87b30" class="outline-2">
+<h2 id="org4b87b30">automate all lights in my home from one utility (since some are hue, some are ge switches, some are chinese outlets). i don't even have these apps on my phone. i want light x to turn on at 7pm. i don't want to think about if it's hue or chinese or ge or what. just turn on light.bedroom and be done with it. beautiful abstraction.</h2>
 </div>
-<div id="outline-container-org0b4e19e" class="outline-2">
-<h2 id="org0b4e19e">is it after 9pm and the bed room light is on 100% brightness and the bedroom chromecast switches from 'idle' to 'playing'? dim that bedroom light to 20%.</h2>
+<div id="outline-container-org03a3255" class="outline-2">
+<h2 id="org03a3255">is it after 9pm and the bed room light is on 100% brightness and the bedroom chromecast switches from 'idle' to 'playing'? dim that bedroom light to 20%.</h2>
 </div>
-<div id="outline-container-org85d9868" class="outline-2">
-<h2 id="org85d9868">automate lighting for my wife if she comes home after 10pm. the effect is that outdoor lights only turn off at 10pm if she's home. if she's out, they'll stay on until she arrives and then some indoor lights turn on for ten min so she doesn't come home to a dark house. she'll walk to bed never even touching a light switch, they'll shut off behind her.</h2>
+<div id="outline-container-orgb9ced71" class="outline-2">
+<h2 id="orgb9ced71">automate lighting for my wife if she comes home after 10pm. the effect is that outdoor lights only turn off at 10pm if she's home. if she's out, they'll stay on until she arrives and then some indoor lights turn on for ten min so she doesn't come home to a dark house. she'll walk to bed never even touching a light switch, they'll shut off behind her.</h2>
 </div>
-<div id="outline-container-org8866c2c" class="outline-2">
-<h2 id="org8866c2c">anytime the garage door opens, a chime plays on google homes because we can't hear the garage door and it's jarring to have someone just walk in.</h2>
-<div class="outline-text-2" id="text-org8866c2c">
+<div id="outline-container-org7748872" class="outline-2">
+<h2 id="org7748872">anytime the garage door opens, a chime plays on google homes because we can't hear the garage door and it's jarring to have someone just walk in.</h2>
+<div class="outline-text-2" id="text-org7748872">
 <p>
 i could go on. edit: i did go on. more examples.
 </p>

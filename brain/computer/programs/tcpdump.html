@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 09.14.23 10:21 -->
+<!-- 09.14.23 10:52 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -22,90 +22,90 @@
 <h1 style='margin-top: 60px;'></h1></div>
 </div>
 <div id="content" class="content">
-<div id="outline-container-org6c0d169" class="outline-2">
-<h2 id="org6c0d169">tcpdump</h2>
-<div class="outline-text-2" id="text-org6c0d169">
+<div id="outline-container-org2b2cae6" class="outline-2">
+<h2 id="org2b2cae6">tcpdump</h2>
+<div class="outline-text-2" id="text-org2b2cae6">
 </div>
-<div id="outline-container-orgc1b8ae4" class="outline-3">
-<h3 id="orgc1b8ae4">commands</h3>
-<div class="outline-text-3" id="text-orgc1b8ae4">
+<div id="outline-container-org1e7c4a0" class="outline-3">
+<h3 id="org1e7c4a0">commands</h3>
+<div class="outline-text-3" id="text-org1e7c4a0">
 </div>
-<div id="outline-container-orgf934ef5" class="outline-4">
-<h4 id="orgf934ef5">track all udp traffic initiated by host (useful to track dns amplification attack)</h4>
-<div class="outline-text-4" id="text-orgf934ef5">
-<pre class="example" id="org8e7d4d4">
+<div id="outline-container-org62a53ea" class="outline-4">
+<h4 id="org62a53ea">track all udp traffic initiated by host (useful to track dns amplification attack)</h4>
+<div class="outline-text-4" id="text-org62a53ea">
+<pre class="example" id="org7ca7398">
 tcpdump -i any 'udp &amp;&amp; src host 172.31.7.188' -vvnnS
 </pre>
 </div>
 </div>
 
-<div id="outline-container-org1ee41f0" class="outline-4">
-<h4 id="org1ee41f0">track dns traffic that comes on the host</h4>
-<div class="outline-text-4" id="text-org1ee41f0">
-<pre class="example" id="org3ee01d8">
+<div id="outline-container-orge52f644" class="outline-4">
+<h4 id="orge52f644">track dns traffic that comes on the host</h4>
+<div class="outline-text-4" id="text-orge52f644">
+<pre class="example" id="orgc5b2b38">
 tcpdump -i any '(udp &amp;&amp; port 53 &amp;&amp; dst host 172.31.7.188)' -vvnnS
 </pre>
 </div>
 </div>
 
-<div id="outline-container-orgfbffbd6" class="outline-4">
-<h4 id="orgfbffbd6">track tcp syn packages from host: host tries to make to initiate tcp connection with an external source</h4>
-<div class="outline-text-4" id="text-orgfbffbd6">
-<pre class="example" id="org29eaadc">
+<div id="outline-container-org70af87e" class="outline-4">
+<h4 id="org70af87e">track tcp syn packages from host: host tries to make to initiate tcp connection with an external source</h4>
+<div class="outline-text-4" id="text-org70af87e">
+<pre class="example" id="org37890cf">
 tcpdump -i any '((tcp[tcpflags] == tcp-syn) &amp;&amp; src 172.31.7.188)' -vvnnS
 </pre>
 </div>
 </div>
 
-<div id="outline-container-org027038d" class="outline-4">
-<h4 id="org027038d">track tcp syn-ack packages to host: external resources sent acknowledge about opening tcp connection</h4>
-<div class="outline-text-4" id="text-org027038d">
-<pre class="example" id="org708af0d">
+<div id="outline-container-org5c09320" class="outline-4">
+<h4 id="org5c09320">track tcp syn-ack packages to host: external resources sent acknowledge about opening tcp connection</h4>
+<div class="outline-text-4" id="text-org5c09320">
+<pre class="example" id="org72f2856">
 tcpdump -i any '(tcp[13] = 18 and dst host 172.31.7.188)' -vvnnS
 </pre>
 </div>
 </div>
 
-<div id="outline-container-orgae34725" class="outline-4">
-<h4 id="orgae34725">track traffic into redis and write all packets into pcap file (pcap file can be opened in wireshark then for analysis)</h4>
-<div class="outline-text-4" id="text-orgae34725">
-<pre class="example" id="orgcd83243">
+<div id="outline-container-orgb17dea4" class="outline-4">
+<h4 id="orgb17dea4">track traffic into redis and write all packets into pcap file (pcap file can be opened in wireshark then for analysis)</h4>
+<div class="outline-text-4" id="text-orgb17dea4">
+<pre class="example" id="orgefc450a">
 tcpdump -i any 'dst port 6379' -vvnnS -w redis.pcap
 </pre>
 </div>
 </div>
 
-<div id="outline-container-orga3d532f" class="outline-4">
-<h4 id="orga3d532f">track all udp output traffic except dns</h4>
-<div class="outline-text-4" id="text-orga3d532f">
-<pre class="example" id="orgaa97d5b">
+<div id="outline-container-org359e5db" class="outline-4">
+<h4 id="org359e5db">track all udp output traffic except dns</h4>
+<div class="outline-text-4" id="text-org359e5db">
+<pre class="example" id="org44234bb">
 tcpdump -i any '(udp and not dst port 53 and src host 172.31.7.188)' -vvnnS
 </pre>
 </div>
 </div>
 
-<div id="outline-container-org1c12271" class="outline-4">
-<h4 id="org1c12271">track all traffic with particular host with writing it into pcap file (pcap file can be opened in wireshark then for analysis)</h4>
-<div class="outline-text-4" id="text-org1c12271">
-<pre class="example" id="org56af966">
+<div id="outline-container-org748dddc" class="outline-4">
+<h4 id="org748dddc">track all traffic with particular host with writing it into pcap file (pcap file can be opened in wireshark then for analysis)</h4>
+<div class="outline-text-4" id="text-org748dddc">
+<pre class="example" id="orge78301d">
 tcpdump -i any 'host 172.31.7.188' -vvnnS -w host-172-31-71-88.pcap
 </pre>
 </div>
 </div>
 
-<div id="outline-container-org85eb81d" class="outline-4">
-<h4 id="org85eb81d">track all traffic on host except ssh, https, dns, rabbitmq, arp traffic</h4>
-<div class="outline-text-4" id="text-org85eb81d">
-<pre class="example" id="orgfb3179f">
+<div id="outline-container-org915c1c1" class="outline-4">
+<h4 id="org915c1c1">track all traffic on host except ssh, https, dns, rabbitmq, arp traffic</h4>
+<div class="outline-text-4" id="text-org915c1c1">
+<pre class="example" id="orge9c36c4">
 tcpdump -i eth0 'not (port 22 or 443 or 53 or 5672) and not arp' -nnvvS
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org80f5aff" class="outline-3">
-<h3 id="org80f5aff">flags</h3>
-<div class="outline-text-3" id="text-org80f5aff">
+<div id="outline-container-org0e98592" class="outline-3">
+<h3 id="org0e98592">flags</h3>
+<div class="outline-text-3" id="text-org0e98592">
 <ul class="org-ul">
 <li><code>D</code> &#x2013; show all interfaces</li>
 <li><code>i</code> - interface</li>
