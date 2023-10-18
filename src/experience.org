@@ -4,9 +4,13 @@
 #+HTML: <div id="experience" class="main">
 #+HTML: <div class="contentBlock">
 
+** [[https://www.mpi-sp.org/][research intern, max planck institute for security and privacy]]
+*** [Fall 2023]
+I'm currently interning at the Max Planck Institute for Security and Privacy, working on identifying vulnerabilities in firmware using fuzzing. More updates to come :)
+
 ** [[https://micron.com][software engineering intern, micron]]
 *** [Summer 2023]
-I'm currently interning at Micron, working with CXL memory. More updates to come!
+At Micron, I worked on the Advanced Memory Systems team to optimize workloads for use with CXL memory. I worked with C/C++, Bash, and LLVM/Clang.
 
 ** [[https://www.cs.utexas.edu/][undergraduate teaching assistant, ut austin]]
 *** [Spring 2021, Fall 2021]
@@ -14,7 +18,7 @@ As a TA for CS349 Contemporary Issues in Computer Science, I graded assignments 
 
 ** [[https://github.com/mozilla-services/dependency-observatory-research/tree/master/alex-bellon-internship][security engineering intern, mozilla]]
 *** [Summer 2020]
-As part of the Firefox Operations Security team, I worked on Dependency Observatory, a tool that allows developers to check how secure an NPM package is before using it in their project. I researched how vulnerable top packages in NPM, PyPI and Cargo are to attack, and used those findings to tweak the algorithm used to "score" packages' safety in Dependency Observatory. I worked with Python, k8s, Docker, Flask, and GraphQL.
+I was part of the Firefox Operations Security team, where I worked on Dependency Observatory, a tool that allows developers to check how secure an NPM package is before using it in their project. I researched how vulnerable top packages in NPM, PyPI and Cargo are to attack, and used those findings to tweak the algorithm used to "score" packages' safety in Dependency Observatory. I worked with Python, k8s, Docker, Flask, and GraphQL.
 
 ** [[https://www.cs.utexas.edu/][undergraduate teaching assistant, ut austin]]
 *** [Spring 2019, Fall 2019]
