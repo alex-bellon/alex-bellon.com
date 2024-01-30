@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 10.18.23 13:54 -->
+<!-- 01.30.24 12:01 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -22,13 +22,13 @@
 <h1 style='margin-top: 60px;'></h1></div>
 </div>
 <div id="content" class="content">
-<div id="outline-container-org7be8df0" class="outline-2">
-<h2 id="org7be8df0">hardening</h2>
-<div class="outline-text-2" id="text-org7be8df0">
+<div id="outline-container-org1c38477" class="outline-2">
+<h2 id="org1c38477">hardening</h2>
+<div class="outline-text-2" id="text-org1c38477">
 </div>
-<div id="outline-container-orge2ff7f4" class="outline-3">
-<h3 id="orge2ff7f4">linux</h3>
-<div class="outline-text-3" id="text-orge2ff7f4">
+<div id="outline-container-orgc62e54d" class="outline-3">
+<h3 id="orgc62e54d">linux</h3>
+<div class="outline-text-3" id="text-orgc62e54d">
 <ul class="org-ul">
 <li><a href="https://www.reddit.com/r/linux/comments/ns7r7o/a_complete_yet_beginner_friendly_guide_on_how_to/">a complete yet beginner friendly guide on how to secure linux</a></li>
 <li><a href="https://github.com/imthenachoman/how-to-secure-a-linux-server">how to secure a linux server</a></li>
@@ -38,17 +38,17 @@
 </div>
 </div>
 
-<div id="outline-container-org2296aad" class="outline-3">
-<h3 id="org2296aad">ssh</h3>
-<div class="outline-text-3" id="text-org2296aad">
+<div id="outline-container-org179f2a4" class="outline-3">
+<h3 id="org179f2a4">ssh</h3>
+<div class="outline-text-3" id="text-org179f2a4">
 <ul class="org-ul">
 <li><a href="https://github.com/jtesta/ssh-audit">ssh-audit</a></li>
 </ul>
 </div>
 
-<div id="outline-container-orgef98261" class="outline-4">
-<h4 id="orgef98261">openssh</h4>
-<div class="outline-text-4" id="text-orgef98261">
+<div id="outline-container-orgcd43531" class="outline-4">
+<h4 id="orgcd43531">openssh</h4>
+<div class="outline-text-4" id="text-orgcd43531">
 <ul class="org-ul">
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-18-04">how to harden openssh on ubuntu 18.04</a></li>
 </ul>
@@ -56,17 +56,17 @@
 </div>
 </div>
 
-<div id="outline-container-org218a6a6" class="outline-3">
-<h3 id="org218a6a6">sql</h3>
-<div class="outline-text-3" id="text-org218a6a6">
+<div id="outline-container-orga34f9f1" class="outline-3">
+<h3 id="orga34f9f1">sql</h3>
+<div class="outline-text-3" id="text-orga34f9f1">
 <ul class="org-ul">
 <li><a href="https://www.techrepublic.com/article/how-to-harden-mysql-security-with-a-single-command/">https://www.techrepublic.com/article/how-to-harden-mysql-security-with-a-single-command/</a></li>
 </ul>
 </div>
 
-<div id="outline-container-orgda56b78" class="outline-4">
-<h4 id="orgda56b78"><a href="https://medium.com/linode-cube/5-essential-steps-to-hardening-your-mysql-database-591e477bbbd7">5 Steps to hardedning your MySQL database</a></h4>
-<div class="outline-text-4" id="text-orgda56b78">
+<div id="outline-container-org737e92d" class="outline-4">
+<h4 id="org737e92d"><a href="https://medium.com/linode-cube/5-essential-steps-to-hardening-your-mysql-database-591e477bbbd7">5 Steps to hardedning your MySQL database</a></h4>
+<div class="outline-text-4" id="text-org737e92d">
 <ul class="org-ul">
 <li>Setup with <code>mysql_secure_installation</code> - takes care of most of this for you!</li>
 <li><p>
@@ -76,7 +76,7 @@ Set strong passwords and change default passwords
 <li><code>sudo mysqladmin password</code></li>
 <li>Unfortunately, MySQL runs background tasks as that root user. These tasks will break once you set a password, unless you take the additional step of hard-coding the password into the <i>root</i>.my.cnf file:</li>
 </ul>
-<pre class="example" id="org18a12f1">
+<pre class="example" id="orgf16a30e">
 [mysqladmin]
 user = root
 password = yourpassword
@@ -84,7 +84,7 @@ password = yourpassword
 <p>
 Make sure to restrict access to that file
 </p>
-<pre class="example" id="org33d4f53">
+<pre class="example" id="org7c870e3">
 $ sudo chown root:root /root/.my.cnf
 $ sudo chmod 0600 /root/.my.cnf
 </pre></li>
@@ -116,7 +116,7 @@ Enable TLS
 <ul class="org-ul">
 <li>Once you have valid certs, add this to my.cnf</li>
 </ul>
-<pre class="example" id="org201011b">
+<pre class="example" id="org86dacfe">
 [mysqld]
 ssl-ca=/path/to/ca.crt
 ssl-cert=/path/to/server.crt
@@ -129,9 +129,9 @@ ssl-key=/path/to/server.key
 </div>
 </div>
 
-<div id="outline-container-org1d8a0ea" class="outline-4">
-<h4 id="org1d8a0ea"><a href="https://www.tecklyfe.com/harden-mysql-server/">Harden MySQL Server</a></h4>
-<div class="outline-text-4" id="text-org1d8a0ea">
+<div id="outline-container-orgdc86730" class="outline-4">
+<h4 id="orgdc86730"><a href="https://www.tecklyfe.com/harden-mysql-server/">Harden MySQL Server</a></h4>
+<div class="outline-text-4" id="text-orgdc86730">
 <ul class="org-ul">
 <li>Set connection error limit
 <ul class="org-ul">
@@ -155,7 +155,7 @@ Disable show databases
 <ul class="org-ul">
 <li>Edit <code>my.cnf</code> and add <code>skip-show-database</code> to the `[mysqld]`` section:</li>
 </ul>
-<pre class="example" id="org4f2627b">
+<pre class="example" id="org24aa0d0">
 [mysqld]
 skip-show-database
 </pre></li>
@@ -179,7 +179,7 @@ skip-show-database
 <li><p>
 rename root user
 </p>
-<pre class="example" id="org04d034a">
+<pre class="example" id="orgcd7132d">
 RENAME USER 'root'@'localhost' TO 'foobar'@'localhost';
 FLUSH PRIVILEGES;
 </pre></li>
@@ -188,9 +188,9 @@ FLUSH PRIVILEGES;
 </div>
 </div>
 
-<div id="outline-container-orga3a952b" class="outline-3">
-<h3 id="orga3a952b">tools</h3>
-<div class="outline-text-3" id="text-orga3a952b">
+<div id="outline-container-org4c7141e" class="outline-3">
+<h3 id="org4c7141e">tools</h3>
+<div class="outline-text-3" id="text-org4c7141e">
 <ul class="org-ul">
 <li><a href="https://github.com/cloudflare/flan">flan</a> - flan scan is a lightweight network vulnerability scanner.</li>
 </ul>

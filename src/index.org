@@ -8,17 +8,17 @@ this website supports vim keybindings! use j/k to scroll up/down and h/l to go t
 #+HTML: <div class="main">
 
 #+ATTR_HTML: :class profile
-#+ATTR_HTML: :alt a cropped photo of alex sitting on a bench in the woods. they have on a red tank top, black shorts, a black hat, pink clear glasses, and a backpack. they are looking away from the camera and have their hands clasped together with their elbows rested on their knees.
+#+ATTR_HTML: :alt a cropped photo of alex standing in the woods. they have on a black hoodie, a black hat, and pink clear glasses. they are looking at the camera and have their hands in their hoodie pocket.
 [[./images/profile/profile-square.jpg]]
 
 #+ATTR_HTML: :class title
-*alex bellon*
+*alex bellon (aka "/balex/")*
 
 #+ATTR_HTML: :class subtitle
-(aka "/balex"/)
+interested in doohickeys, gizmos and thingamabobs
 
 #+HTML: <div class="intro">
-*I am a third year PhD student in the CSE department at UC San Diego, advised by [[https://cseweb.ucsd.edu/~dstefan/][Deian Stefan]] and [[https://patpannuto.com/][Pat Pannuto]].* I'm primarily interested in the security of high risk systems and embedded devices. My research ranges from reverse engineering firmware from embedded devices to measuring the performance and reliability of IoT networks.
+*I am a third year PhD student in the CSE department at UC San Diego, advised by [[https://cseweb.ucsd.edu/~dstefan/][Deian Stefan]] and [[https://patpannuto.com/][Pat Pannuto]].* I'm primarily interested in the security of high risk systems and embedded devices. My research ranges from reverse engineering firmware from embedded devices to measuring the performance and reliability of IoT networks. My research is partially supported by a [[https://grad.ucsd.edu/diversity/programs-resources/diversity-resources/sdf-cr-fellowships.html][San Diego Fellowship]].
 
 I graduated from UT Austin in 2021 with degrees in CS and Mathematics, where I was very involved in the security community. I served as president of UT's cybersecurity organization, [[https://www.isss.io/][Information and Systems Society (ISSS)]], where I wrote CTF challenges for the CTFs that we hosted and gave talks about security topics like cryptography, data forensics, and more. I also served as captain of UT's [[https://www.nationalccdc.org/][Collegiate Cyber Defense Competition (CCDC)]] and [[https://nationalcptc.org/][Collegiate Penetration Testing Competition (CPTC)]] teams (where we made it to the 2021 Nationals for CCDC!).
 
