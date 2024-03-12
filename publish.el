@@ -49,7 +49,7 @@
 </ul>
 <div class='preamble'>
 <h1 style='margin-top: 60px;'>%t</h1>
-<p class=meta>posted %C (edited %T)</p></div>")
+<p class=meta>posted %C</p></div>")
 
 (defvar brain-html-preamble
 "<div class='preamble'>
@@ -152,4 +152,4 @@
 ;; Do not forget to add the function to the list!
 (add-to-list 'org-export-filter-link-functions 'filter-local-links)
 
-(org-publish-all t)
+ (org-publish-all t)
