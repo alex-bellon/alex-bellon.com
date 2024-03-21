@@ -116,7 +116,7 @@
        :html-head ,blog-html-head
             
        :auto-sitemap t
-       :sitemap-title "blog bosts"
+       :sitemap-title "blog posts"
        :sitemap-filename "index.org"
        :sitemap-format-entry sitemap-format-entry
        :sitemap-sort-files anti-chronologically)

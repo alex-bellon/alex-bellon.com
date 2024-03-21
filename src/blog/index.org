@@ -1,4 +1,3 @@
-#+TITLE: blog bosts
+#+TITLE: blog posts
 
-- [24.03.10] [[file:coast-starlight-tmp.org][transit report: amtrak coast starlight]]
 - [23.09.12] [[file:hello-world.org][hello world]]
