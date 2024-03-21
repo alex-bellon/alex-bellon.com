@@ -87,9 +87,9 @@
 
 (setq org-publish-project-alist
     `(("pages"
-       :base-directory "~/GitHub/website/src/"
+       :base-directory "~/git/website/src/"
        :base-extension "org"
-       :publishing-directory "~/GitHub/website/"
+       :publishing-directory "~/git/website/"
        :publishing-function org-html-publish-to-html
        :section-numbers nil
        :with-toc nil
@@ -100,10 +100,10 @@
        :html-postamble ,website-html-postamble)
 
       ("blog"
-       :base-directory "~/GitHub/website/src/blog/"
+       :base-directory "~/git/website/src/blog/"
        :base-extension "org"
        :recursive t
-       :publishing-directory "~/GitHub/website/blog/"
+       :publishing-directory "~/git/website/blog/"
        :publishing-function org-html-publish-to-html
        :section-numbers nil
        :with-author nil
@@ -122,10 +122,10 @@
        :sitemap-sort-files anti-chronologically)
       
       ("brain"
-       :base-directory "~/GitHub/website/src/brain/"
+       :base-directory "~/git/website/src/brain/"
        :base-extension "org"
        :recursive t
-       :publishing-directory "~/GitHub/website/brain/"
+       :publishing-directory "~/git/website/brain/"
        :publishing-function org-html-publish-to-html
        :section-numbers nil
        :with-author nil
@@ -152,4 +152,4 @@
 ;; Do not forget to add the function to the list!
 (add-to-list 'org-export-filter-link-functions 'filter-local-links)
 
- (org-publish-all t)
+(org-publish-all t)
