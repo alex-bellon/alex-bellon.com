@@ -1,0 +1,147 @@
+#+TITLE: transit i've ridden | alex bellon
+#+OPTIONS: title:nil
+
+#+HTML: <div class="main">
+#+HTML: <div class="contentBlock">
+
+* transit i have ridden
+- Austria
+  - Local
+    - Vienna Tram - 2023
+  - National
+    - OEBB Nightjet - 2023
+    - OEBB Railjet - 2023
+- Belgium
+  - Local
+    - Brussels Metro - 2011
+  - Regional 
+    - SNCB InterCity - 2011, 2023
+- Canada
+  - Local
+    - Montral Metro - 2013
+- Denmark
+  - National 
+    - DSB InterCity - 2023
+    - Snalltaget - 2023 (yes I know Snalltaget is a Swedish company but I only rode it in Denmark/Germany)
+- France
+  - Local
+    - Paris Metro - 2023
+  - Regional
+    - SNCF TER - 2023
+  - National
+    - SNCF TGV - 2023
+    - SNCF TGV Lyria - 2023
+- Germany
+  - Local
+	- Bochum BOGESTRA Bus - 2023
+	- Bochum Tram - 2023
+	- Bochum U Bahn - 2023
+	- Berlin Strassenbahn - 2023
+	- Berlin U Bahn - 2023
+	- Berlin S Bahn - 2023
+	- Bonn Bus - 2023
+	- Bonn U Bahn - 2023
+	- Bonn S Bahn - 2023
+	- Cologne U Bahn - 2023
+	- Duesseldorf Tram - 2023
+	- Duesseldorf U Bahn - 2023
+	- Hannover Tram - 2023
+	- Hannover U Bahn - 2023
+	- Muenchen U Bahn - 2023
+	- Weil am Rhein Bus - 2023
+	- Wuppertal Schwebebahn - 2023
+  - Regional
+  	- Ruhr Regional Express - 2023
+  	- Rhein-Ruhr S-Bahn - 2023
+  - National
+    - DB ICE - 2023
+    - DB EuroCity - 2023
+    - DB InterCity - 2023
+- Hong Kong
+  - Local
+    - Hong Kong MTR - 2011
+- Hungary
+  - Local
+    - Budapest Subway - 2023
+  - National
+    - MAV EuroCity - 2023
+- Italy
+  - Local
+    - Milan Regional? - 2009?
+    - Venice ATCV? Boat - 2009?
+- Netherlands
+  - Local 
+    - Amsterdam Subway - 2023
+    - Amsterdam Tram - 2023
+- Poland
+  - Local
+    - Poznan Tram - 2023
+  - National
+    - PKP Intercity - 2023
+- Spain
+  - Local
+    - Barcelona Bus - 2023
+    - Baecelona Metro - 2023
+  - National
+    - Renfe AVE - 2023
+- Sweden
+  - Local
+    - Stockholm Metro - 2011
+- Switzerland
+  - Local
+  	- Basel Bus - 2023
+    - Basel Tram - 2023
+    - Basel S-Bahn - 2023
+    - Lausanne Bus - 2011
+    - Leman Express (Geneve) - 2023
+    - Lugano S10 - 2011
+    - Zuerich S-Bahn - 2023
+  	- Zuerich Tram - 2023
+  - Regional
+    - SBB InterCity - 2023
+    - SBB InterRegio - 2023
+    - SBB RegioExpress - 2023
+- United Kingdom 
+  - Local
+    - London Underground - 2010, 2023
+- United States
+  - Local
+    - Austin CapMetro Bus - 2017-2021, 2024
+    - Boston T - 2022
+    - King County Transit Bus - 2019
+    - Los Angeles Metro - 2024
+    - OC Bus - 2023
+    - San Diego Bus - 2021-2024
+    - San Diego Trolley - 2021-2024
+    - San Francisco Muni - 2023
+    - San Francisco Muni Metro - 2023
+    - San Jose VTA Bus - 2023
+    - San Jose VTA Light Rail - 2023
+    - Seattle Link - 2019, 2023
+    - Seattle Monorail - 2023
+    - TEXRail - 2024
+    - Washington D.C. Metro - 2017
+  - Regional
+  	- BART - 2023
+  	- Caltrain - 2023
+  - National
+    - Amtrak Coast Starlight - 2023
+    - Amtrak Pacific Surfliner - 2023, 2024
+    - Amtrak Sunset Limited - 2023
+    - Amtrak Texas Eagle - 2023, 2024
+- Intercountry
+  - Eurostar - 2023
+  - Thalys - 2023
+- Airport
+  - Changi Airport Skytrain
+  - Cincinnati Airport People Mover
+  - DFW Skylink
+  - Houston Skyway
+  - Newark AirTrain
+  - Orlando People Mover
+  - SEA Underground
+  - Zuerich Skymetro
+
+
+#+HTML: </div>
+#+HTML: </div>
