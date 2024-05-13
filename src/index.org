@@ -8,8 +8,8 @@ this website supports vim keybindings! use j/k to scroll up/down and h/l to go t
 #+HTML: <div class="main">
 
 #+ATTR_HTML: :class profile
-#+ATTR_HTML: :alt a cropped photo of alex standing in the woods. they have on a black hoodie, a black hat, and pink clear glasses. they are looking at the camera and have their hands in their hoodie pocket.
-[[./images/profile/profile-square.jpg]]
+#+ATTR_HTML: :alt a cropped photo of alex pretending to ride a frog statue at a zoo. they have on a black hoodie, a hat, and patterened colorful pants. they have their hand up as if they are a rodeo cowboy.
+[[./images/profile/frog.jpg]]
 
 #+ATTR_HTML: :class title
 *alex bellon (aka "/balex/")*
@@ -18,7 +18,7 @@ this website supports vim keybindings! use j/k to scroll up/down and h/l to go t
 interested in doohickeys, gizmos and thingamabobs
 
 #+HTML: <div class="intro">
-*I am a third year PhD student in the CSE department at UC San Diego, advised by [[https://cseweb.ucsd.edu/~dstefan/][Deian Stefan]] and [[https://patpannuto.com/][Pat Pannuto]].* I'm primarily interested in the security of high risk systems and embedded devices. My research is partially supported by a [[https://grad.ucsd.edu/diversity/programs-resources/diversity-resources/sdf-cr-fellowships.html][San Diego Fellowship]].
+*I am a third year PhD student in the CSE department at UC San Diego, advised by [[https://cseweb.ucsd.edu/~dstefan/][Deian Stefan]] and [[https://patpannuto.com/][Pat Pannuto]].* I'm primarily interested in the security of high risk systems and embedded devices. My research is supported by a [[https://www.qualcomm.com/research/university-relations/innovation-fellowship/winners][Qualcomm Innovation Fellowship]] and a [[https://cse.ucsd.edu/graduate/san-diego-and-cota-robles-fellowships][San Diego Fellowship]].
 
 I graduated from UT Austin in 2021 with degrees in CS and Mathematics, where I was very involved in the security community. I served as president of UT's cybersecurity organization, [[https://www.isss.io/][Information and Systems Society (ISSS)]], and also captained UT's [[https://www.nationalccdc.org/][Collegiate Cyber Defense Competition (CCDC)]] and [[https://nationalcptc.org/][Collegiate Penetration Testing Competition (CPTC)]] teams.
 

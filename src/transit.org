@@ -122,11 +122,11 @@
     - TEXRail - 2024
     - Washington D.C. Metro - 2017
   - Regional
+    - Amtrak Pacific Surfliner - 2023, 2024
   	- BART - 2023
   	- Caltrain - 2023
   - National
     - Amtrak Coast Starlight - 2023
-    - Amtrak Pacific Surfliner - 2023, 2024
     - Amtrak Sunset Limited - 2023
     - Amtrak Texas Eagle - 2023, 2024
 - Intercountry
