@@ -8,7 +8,7 @@
 I help Chez Bob, the graduate student food and drink co-op for the CSE department. Chez Bob is run out of the CSE graduate student lounge, and provides students, postdocs, faculty and staff with cheap snacks and caffeine 24/7. The infrastructure for Chez Bob is completely [[https://github.com/chezbob/chezbob][open source]]!
 
 ** [[https://www.naqt.com/stats/school/index.jsp?org_id=66397][quizbowl]]
-I am a member of UCSD's QuizBowl team. QuizBowl is like competitive trivia, with an emphasis on art and literature, history and science. I've competed at ACF Fall 2022 (SoCal Region), NAQT Sectionals 2023 (SoCal Region), and ACRONYM 2023 (online).
+I am a member of UCSD's QuizBowl team. QuizBowl is like competitive trivia, with an emphasis on art and literature, history and science. I've competed at ACF Fall 2022 (SoCal Region), NAQT Sectionals 2023 (SoCal Region), ACRONYM 2023 (online), and Booster Shot California 2024 (online).
 
 #+ATTR_HTML: :class divider
 *undergrad*
