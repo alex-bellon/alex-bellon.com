@@ -1,6 +1,7 @@
 h2 {
     font-size: 27px;
     margin: 0;
+    
 }
 
 .blocks {
@@ -56,11 +57,20 @@ h2 {
 
 .contentBlock h2 {
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+
+.contentBlock h3 {
+    margin: 5px 0px;
 }
 
 .contentBlock p {
     width: auto;
+    margin: 5px 0px;
+}
+
+.contentBlock .divider {
+    margin-top: 60px;
 }
 
 .footer li a {
@@ -113,10 +123,14 @@ h2 {
     text-align: center;
 }
 
+.outline-2 {
+    margin: 30px 0px;
+}
+
 .publinks {
     color: #bbbbbb;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .publinks a {

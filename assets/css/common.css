@@ -33,10 +33,6 @@ h2 {
     margin: 0;
 }
 
-p {
-    font-size: 20px;
-}
-
 .banner li {
     overflow: hidden;
     display: inline-block;
@@ -87,6 +83,7 @@ p {
 .divider {
     font-size: 28px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .footer {
