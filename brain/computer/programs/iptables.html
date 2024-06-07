@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 05.13.24 11:41 -->
+<!-- 06.07.24 15:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -22,13 +22,13 @@
 <h1 style='margin-top: 60px;'></h1></div>
 </div>
 <div id="content" class="content">
-<div id="outline-container-orgb9784ba" class="outline-2">
-<h2 id="orgb9784ba">iptables</h2>
-<div class="outline-text-2" id="text-orgb9784ba">
+<div id="outline-container-org6c04c81" class="outline-2">
+<h2 id="org6c04c81">iptables</h2>
+<div class="outline-text-2" id="text-org6c04c81">
 </div>
-<div id="outline-container-org93440b0" class="outline-3">
-<h3 id="org93440b0">resources</h3>
-<div class="outline-text-3" id="text-org93440b0">
+<div id="outline-container-orgea1b319" class="outline-3">
+<h3 id="orgea1b319">resources</h3>
+<div class="outline-text-3" id="text-orgea1b319">
 <ul class="org-ul">
 <li><a href="https://www.tecmint.com/basic-guide-on-iptables-linux-firewall-tips-commands/">basic guide on iptables (linux firewall) tips / commands</a></li>
 <li><a href="https://help.ubuntu.com/community/iptableshowto">iptableshowto - community help wiki</a></li>
@@ -38,22 +38,22 @@
 </div>
 </div>
 
-<div id="outline-container-orgbea51dd" class="outline-3">
-<h3 id="orgbea51dd">notes</h3>
-<div class="outline-text-3" id="text-orgbea51dd">
+<div id="outline-container-org357e22e" class="outline-3">
+<h3 id="org357e22e">notes</h3>
+<div class="outline-text-3" id="text-org357e22e">
 </div>
-<div id="outline-container-org95baae5" class="outline-4">
-<h4 id="org95baae5">basic guide to iptables</h4>
-<div class="outline-text-4" id="text-org95baae5">
+<div id="outline-container-org335b540" class="outline-4">
+<h4 id="org335b540">basic guide to iptables</h4>
+<div class="outline-text-4" id="text-org335b540">
 <p>
 iptables -&gt; tables -&gt; chains -&gt; rules
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga82b737" class="outline-4">
-<h4 id="orga82b737">3 main files</h4>
-<div class="outline-text-4" id="text-orga82b737">
+<div id="outline-container-orgf8c3fc7" class="outline-4">
+<h4 id="orgf8c3fc7">3 main files</h4>
+<div class="outline-text-4" id="text-orgf8c3fc7">
 <ol class="org-ol">
 <li><b>/etc/init.d/iptables</b> &#x2013; init script to start|stop|restart and save rulesets.</li>
 <li><b>/etc/sysconfig/iptables</b> &#x2013; where rulesets are saved.</li>
@@ -62,9 +62,9 @@ iptables -&gt; tables -&gt; chains -&gt; rules
 </div>
 </div>
 
-<div id="outline-container-org673a815" class="outline-4">
-<h4 id="org673a815">3 tables</h4>
-<div class="outline-text-4" id="text-org673a815">
+<div id="outline-container-org7ce70ab" class="outline-4">
+<h4 id="org7ce70ab">3 tables</h4>
+<div class="outline-text-4" id="text-org7ce70ab">
 <ul class="org-ul">
 <li><b>Filter</b>
 <ul class="org-ul">
@@ -89,13 +89,13 @@ iptables -&gt; tables -&gt; chains -&gt; rules
 </div>
 </div>
 
-<div id="outline-container-org80c5ce8" class="outline-4">
-<h4 id="org80c5ce8">Actions</h4>
-<div class="outline-text-4" id="text-org80c5ce8">
+<div id="outline-container-org9007b26" class="outline-4">
+<h4 id="org9007b26">Actions</h4>
+<div class="outline-text-4" id="text-org9007b26">
 </div>
 <ul class="org-ul">
-<li><a id="orgc85c70c"></a>ACCEPT<br />
-<div class="outline-text-5" id="text-orgc85c70c">
+<li><a id="org66c3269"></a>ACCEPT<br />
+<div class="outline-text-5" id="text-org66c3269">
 <p>
 Allow the connection
 #### DROP
@@ -108,14 +108,14 @@ Don't allow the connection, send back and error.
 </ul>
 </div>
 
-<div id="outline-container-org47cc9e2" class="outline-4">
-<h4 id="org47cc9e2">Commands</h4>
-<div class="outline-text-4" id="text-org47cc9e2">
+<div id="outline-container-org16933ea" class="outline-4">
+<h4 id="org16933ea">Commands</h4>
+<div class="outline-text-4" id="text-org16933ea">
 </div>
 <ul class="org-ul">
-<li><a id="orgdd413bd"></a>Change default action<br />
-<div class="outline-text-5" id="text-orgdd413bd">
-<pre class="example" id="org00a9794">
+<li><a id="org5d32dba"></a>Change default action<br />
+<div class="outline-text-5" id="text-org5d32dba">
+<pre class="example" id="org5e1578c">
 iptables --policy INPUT ACCEPT/DROP/REJECT
 iptables --policy OUTPUT ACCEPT/DROP/REJECT
 iptables --policy FORWARD ACCEPT/DROP/REJECT
@@ -123,33 +123,33 @@ iptables --policy FORWARD ACCEPT/DROP/REJECT
 </div>
 </li>
 
-<li><a id="org054cde4"></a>Delete a specific rules<br />
-<div class="outline-text-5" id="text-org054cde4">
-<pre class="example" id="org4f9f446">
+<li><a id="org3df5da7"></a>Delete a specific rules<br />
+<div class="outline-text-5" id="text-org3df5da7">
+<pre class="example" id="org1a493c4">
 [root@tecmint ~]# iptables -D INPUT 5
 </pre>
 </div>
 </li>
 
-<li><a id="org7057d01"></a>Flush ruleset<br />
-<div class="outline-text-5" id="text-org7057d01">
-<pre class="example" id="org708a8b9">
+<li><a id="org4fa6c0e"></a>Flush ruleset<br />
+<div class="outline-text-5" id="text-org4fa6c0e">
+<pre class="example" id="orgd0963e0">
 iptables -F
 </pre>
 </div>
 </li>
 
-<li><a id="orgefca434"></a>Insert rule<br />
-<div class="outline-text-5" id="text-orgefca434">
-<pre class="example" id="org60955a5">
+<li><a id="org83ad782"></a>Insert rule<br />
+<div class="outline-text-5" id="text-org83ad782">
+<pre class="example" id="orgffc07c7">
 [root@tecmint ~]# iptables -I INPUT 5 -s ipaddress -j DROP
 </pre>
 </div>
 </li>
 
-<li><a id="orgd06e17c"></a>List rules<br />
-<div class="outline-text-5" id="text-orgd06e17c">
-<pre class="example" id="orgc88e28b">
+<li><a id="org1a85ae3"></a>List rules<br />
+<div class="outline-text-5" id="text-org1a85ae3">
+<pre class="example" id="orge10065a">
 [root@tecmint ~]# iptables -L INPUT -n --line-numbers
 
 Chain INPUT (policy ACCEPT)
@@ -163,9 +163,9 @@ num  target     prot opt source               destination
 </div>
 </li>
 
-<li><a id="org7682f97"></a>Save Changes<br />
-<div class="outline-text-5" id="text-org7682f97">
-<pre class="example" id="org123cb5f">
+<li><a id="org36f00eb"></a>Save Changes<br />
+<div class="outline-text-5" id="text-org36f00eb">
+<pre class="example" id="orgcd1a092">
 Ubuntu:
 
     sudo /sbin/iptables-save
@@ -177,9 +177,9 @@ Red Hat / CentOS:
 </div>
 </li>
 
-<li><a id="orgc86c2a9"></a>Set action based on state<br />
-<div class="outline-text-5" id="text-orgc86c2a9">
-<pre class="example" id="orgf49da13">
+<li><a id="org9eb7956"></a>Set action based on state<br />
+<div class="outline-text-5" id="text-org9eb7956">
+<pre class="example" id="org4fee391">
 iptables -A INPUT -p tcp --dport ssh -s 10.10.10.10 -m state --state NEW,ESTABLISHED -j ACCEPT
 
 iptables -A OUTPUT -p tcp --sport 22 -d 10.10.10.10 -m state --state ESTABLISHED -j ACCEPT
@@ -187,25 +187,25 @@ iptables -A OUTPUT -p tcp --sport 22 -d 10.10.10.10 -m state --state ESTABLISHED
 </div>
 </li>
 
-<li><a id="org3568799"></a>Set action for connection from range of IPs<br />
-<div class="outline-text-5" id="text-org3568799">
-<pre class="example" id="orgceb15ca">
+<li><a id="orga0ef5f3"></a>Set action for connection from range of IPs<br />
+<div class="outline-text-5" id="text-orga0ef5f3">
+<pre class="example" id="orgf04de4a">
 iptables -A INPUT -s 10.10.10.10 -j DROP
 </pre>
 </div>
 </li>
 
-<li><a id="org8ade2b0"></a>Set action for connection from single IP<br />
-<div class="outline-text-5" id="text-org8ade2b0">
-<pre class="example" id="org9b70dd5">
+<li><a id="orgde77f7f"></a>Set action for connection from single IP<br />
+<div class="outline-text-5" id="text-orgde77f7f">
+<pre class="example" id="org5fa09ed">
 iptables -A INPUT -s 10.10.10.0/24 -j DROP
 </pre>
 </div>
 </li>
 
-<li><a id="org00e3452"></a>Set action for connection to a specific port<br />
-<div class="outline-text-5" id="text-org00e3452">
-<pre class="example" id="orgf88253c">
+<li><a id="org6ee84d6"></a>Set action for connection to a specific port<br />
+<div class="outline-text-5" id="text-org6ee84d6">
+<pre class="example" id="org53e904e">
 iptables -A INPUT -p tcp --dport ssh -s 10.10.10.10 -j DROP
 </pre>
 </div>
@@ -213,69 +213,69 @@ iptables -A INPUT -p tcp --dport ssh -s 10.10.10.10 -j DROP
 </ul>
 </div>
 
-<div id="outline-container-org27d407f" class="outline-4">
-<h4 id="org27d407f">Flags</h4>
-<div class="outline-text-4" id="text-org27d407f">
+<div id="outline-container-orgeecf8a7" class="outline-4">
+<h4 id="orgeecf8a7">Flags</h4>
+<div class="outline-text-4" id="text-orgeecf8a7">
 </div>
 <ul class="org-ul">
-<li><a id="orgf3ee2aa"></a>-D <code>&lt;chain&gt; &lt;rulenum&gt;</code><br />
-<div class="outline-text-5" id="text-orgf3ee2aa">
+<li><a id="org2e7bf27"></a>-D <code>&lt;chain&gt; &lt;rulenum&gt;</code><br />
+<div class="outline-text-5" id="text-org2e7bf27">
 <p>
 Delete rule
 </p>
 </div>
 </li>
 
-<li><a id="org3b08f19"></a>-I <code>&lt;chain&gt; &lt;rulenum&gt; &lt;rulespec&gt;</code><br />
-<div class="outline-text-5" id="text-org3b08f19">
+<li><a id="orgd4e0813"></a>-I <code>&lt;chain&gt; &lt;rulenum&gt; &lt;rulespec&gt;</code><br />
+<div class="outline-text-5" id="text-orgd4e0813">
 <p>
 Insert rule
 </p>
 </div>
 </li>
 
-<li><a id="org801ca3f"></a>-j <code>&lt;target&gt;</code><br />
-<div class="outline-text-5" id="text-org801ca3f">
+<li><a id="orgee06fa3"></a>-j <code>&lt;target&gt;</code><br />
+<div class="outline-text-5" id="text-orgee06fa3">
 <p>
 This specifies the target of the rule; i.e., what to do if the packet matches it. The target can be a user-defined chain (other than the one this rule is in), one of the special built in targets which decide the fate of the packet immediately, or an extension. If this option is omitted in a rule (and -g is not used), then matching the rule will have no effect on the packet's fate, but the counters on the rule will be incremented.
 </p>
 </div>
 </li>
 
-<li><a id="org58ab8c6"></a>-L<br />
-<div class="outline-text-5" id="text-org58ab8c6">
+<li><a id="org26f62d2"></a>-L<br />
+<div class="outline-text-5" id="text-org26f62d2">
 <p>
 List ruleset
 </p>
 </div>
 </li>
 
-<li><a id="org6960a83"></a>&#x2013;line-numbers<br />
-<div class="outline-text-5" id="text-org6960a83">
+<li><a id="orgfcefdd3"></a>&#x2013;line-numbers<br />
+<div class="outline-text-5" id="text-orgfcefdd3">
 <p>
 Show line numbers to make adding/deleting easy
 </p>
 </div>
 </li>
 
-<li><a id="orgf379b5a"></a>-n<br />
-<div class="outline-text-5" id="text-orgf379b5a">
+<li><a id="orgf630ea4"></a>-n<br />
+<div class="outline-text-5" id="text-orgf630ea4">
 <p>
 Display in numeric format
 </p>
 </div>
 </li>
 
-<li><a id="org84f934e"></a>-v<br />
-<div class="outline-text-5" id="text-org84f934e">
+<li><a id="orgf804bb0"></a>-v<br />
+<div class="outline-text-5" id="text-orgf804bb0">
 <p>
 Verbose
 </p>
 </div>
 </li>
 
-<li><a id="orge3338bb"></a>-s <code>&lt;source&gt;</code><br />
-<div class="outline-text-5" id="text-orge3338bb">
+<li><a id="orgf3b74a8"></a>-s <code>&lt;source&gt;</code><br />
+<div class="outline-text-5" id="text-orgf3b74a8">
 <p>
 Set source for rules
 </p>

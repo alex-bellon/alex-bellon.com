@@ -18,11 +18,11 @@
     - SNCB InterCity - 2011, 2023
 - Canada
   - Local
-    - Montral Metro - 2013
+    - Montreal Metro - 2013
 - Denmark
   - National 
     - DSB InterCity - 2023
-    - Snalltaget - 2023 (yes I know Snalltaget is a Swedish company but I only rode it in Denmark/Germany)
+    - Snalltaget - 2023 (I know Snalltaget is a Swedish company but I only rode it in Denmark)
 - France
   - Local
     - Paris Metro - 2023
@@ -42,7 +42,7 @@
 	- Bonn Bus - 2023
 	- Bonn U Bahn - 2023
 	- Bonn S Bahn - 2023
-	- Cologne U Bahn - 2023
+	- Koeln U Bahn - 2023
 	- Duesseldorf Tram - 2023
 	- Duesseldorf U Bahn - 2023
 	- Hannover Tram - 2023
@@ -81,7 +81,8 @@
 - Spain
   - Local
     - Barcelona Bus - 2023
-    - Baecelona Metro - 2023
+    - Barcelona Metro - 2023
+    - Barcelona Tram - 2012?
   - National
     - Renfe AVE - 2023
 - Sweden
@@ -94,12 +95,16 @@
     - Basel S-Bahn - 2023
     - Lausanne Bus - 2011
     - Leman Express (Geneve) - 2023
-    - Lugano S10 - 2011
+    - Lugano TILO S10 - 2011
+    - Lugano Citta-Stazione Funicular - 2008-2012
+    - Monte Bre Funicular - 2008-2012
+    - Monte San Salvatore Funicular - 2008-2012
     - Zuerich S-Bahn - 2023
   	- Zuerich Tram - 2023
   - Regional
-    - SBB InterCity - 2023
-    - SBB InterRegio - 2023
+    - SBB InterCity - 2008-2012, 2023
+    - SBB InterRegio - 2008-2012, 2023
+    - SBB Regio - 2008-2012
     - SBB RegioExpress - 2023
 - United Kingdom 
   - Local
@@ -107,23 +112,23 @@
 - United States
   - Local
     - Austin CapMetro Bus - 2017-2021, 2024
-    - Boston T - 2022
-    - King County Transit Bus - 2019
+    - Boston T - 2016, 2022
+    - Fort Worth TEXRail - 2024
+    - King County Transit (Seattle) Bus - 2019
     - Los Angeles Metro - 2024
     - OC Bus - 2023
-    - San Diego Bus - 2021-2024
-    - San Diego Trolley - 2021-2024
+    - San Diego Bus - 2021-present
+    - San Diego Trolley - 2021-present
     - San Francisco Muni - 2023
-    - San Francisco Muni Metro - 2023
+    - San Francisco Muni Metro - 2023, 2024
     - San Jose VTA Bus - 2023
     - San Jose VTA Light Rail - 2023
-    - Seattle Link - 2019, 2023
-    - Seattle Monorail - 2023
-    - TEXRail - 2024
+    - Seattle Link - 2019, 2023, 2024
+    - Seattle Monorail - 2023, 2024
     - Washington D.C. Metro - 2017
   - Regional
     - Amtrak Pacific Surfliner - 2023, 2024
-  	- BART - 2023
+  	- BART - 2023, 2024
   	- Caltrain - 2023
   - National
     - Amtrak Coast Starlight - 2023

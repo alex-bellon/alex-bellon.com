@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 05.13.24 11:41 -->
+<!-- 06.07.24 15:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -22,13 +22,13 @@
 <h1 style='margin-top: 60px;'></h1></div>
 </div>
 <div id="content" class="content">
-<div id="outline-container-org49c627a" class="outline-2">
-<h2 id="org49c627a">git</h2>
-<div class="outline-text-2" id="text-org49c627a">
+<div id="outline-container-org3345c84" class="outline-2">
+<h2 id="org3345c84">git</h2>
+<div class="outline-text-2" id="text-org3345c84">
 </div>
-<div id="outline-container-org76fd316" class="outline-3">
-<h3 id="org76fd316">articles</h3>
-<div class="outline-text-3" id="text-org76fd316">
+<div id="outline-container-org6f12755" class="outline-3">
+<h3 id="org6f12755">articles</h3>
+<div class="outline-text-3" id="text-org6f12755">
 <ul class="org-ul">
 <li><a href="https://devopsdirective.com/posts/2020/07/stupid-github-actions/">doing stupid stuff with github actions</a></li>
 <li><a href="https://medium.freecodecamp.org/an-intro-to-git-aliases-a-faster-way-of-working-with-git-b1eda81c7747">git aliases</a></li>
@@ -43,9 +43,9 @@
 </div>
 </div>
 
-<div id="outline-container-org9f1cb9b" class="outline-3">
-<h3 id="org9f1cb9b">general</h3>
-<div class="outline-text-3" id="text-org9f1cb9b">
+<div id="outline-container-orga3af711" class="outline-3">
+<h3 id="orga3af711">general</h3>
+<div class="outline-text-3" id="text-orga3af711">
 <ul class="org-ul">
 <li><a href="https://git-annex.branchable.com/">git annex</a></li>
 <li><a href="https://github.com/pluralsight/git-internals-pdf/releases">git internals</a></li>
@@ -56,18 +56,18 @@
 </div>
 </div>
 
-<div id="outline-container-org537c168" class="outline-3">
-<h3 id="org537c168">tools</h3>
-<div class="outline-text-3" id="text-org537c168">
+<div id="outline-container-org0aa339d" class="outline-3">
+<h3 id="org0aa339d">tools</h3>
+<div class="outline-text-3" id="text-org0aa339d">
 <ul class="org-ul">
 <li><a href="https://rtyley.github.io/bfg-repo-cleaner/">bfg repo-cleaner</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orge6483a9" class="outline-3">
-<h3 id="orge6483a9">notes</h3>
-<div class="outline-text-3" id="text-orge6483a9">
+<div id="outline-container-org99e2f31" class="outline-3">
+<h3 id="org99e2f31">notes</h3>
+<div class="outline-text-3" id="text-org99e2f31">
 <ul class="org-ul">
 <li>git pull = git fetch + git merge origin/master</li>
 <li><code>git log --oneline --abbrev-commit --all --graph --decorate --color</code></li>
@@ -109,7 +109,7 @@
 <li><p>
 <code>git rebase foo bar</code> is equivalent to:
 </p>
-<pre class="example" id="orgb83da97">
+<pre class="example" id="orgf65fedf">
 git checkout foo
 git checkout -b newbar
 git cherry-pick c d e
@@ -181,9 +181,9 @@ git branch -d newbar
 </div>
 </div>
 
-<div id="outline-container-org4da7a3f" class="outline-3">
-<h3 id="org4da7a3f">tools</h3>
-<div class="outline-text-3" id="text-org4da7a3f">
+<div id="outline-container-org24ff644" class="outline-3">
+<h3 id="org24ff644">tools</h3>
+<div class="outline-text-3" id="text-org24ff644">
 <ul class="org-ul">
 <li><a href="https://github.com/tummychow/git-absorb">git-absorb</a> - git commit &#x2013;fixup, but automatic</li>
 <li><a href="https://github.com/aspiers/git-deps">git-deps</a> - git-deps is a tool for performing automatic analysis of dependencies between commits in a git repository.</li>
@@ -193,14 +193,14 @@ git branch -d newbar
 </div>
 </div>
 
-<div id="outline-container-org5394025" class="outline-3">
-<h3 id="org5394025">misc</h3>
-<div class="outline-text-3" id="text-org5394025">
+<div id="outline-container-orgb86283e" class="outline-3">
+<h3 id="orgb86283e">misc</h3>
+<div class="outline-text-3" id="text-orgb86283e">
 </div>
-<div id="outline-container-org74a47bd" class="outline-4">
-<h4 id="org74a47bd">replacing the dmca repo with <code>ytdl</code> source code</h4>
-<div class="outline-text-4" id="text-org74a47bd">
-<pre class="example" id="orgbd3eef9">
+<div id="outline-container-orge582ad2" class="outline-4">
+<h4 id="orge582ad2">replacing the dmca repo with <code>ytdl</code> source code</h4>
+<div class="outline-text-4" id="text-orge582ad2">
+<pre class="example" id="org621d2cc">
 haha not quite literally, but remembering how github works in the backend with forks of the same repo being shared, i realized that if i made a merge commit between the 2 latest commits of each repo then opened a pr, the connected git graph would let you access the entire git commit history of ytdl through the dmca repo. for a little extra fun, i made the merge commit not actually take anything from the ytdl repo, causing the commit to be empty and not contain any ytdl code. but once you step up one commit into the ytdl tree, all the code is there. since i also didn't rebase any commits, all the commit hashes in either history are preserved, as well as any signed commits. and then i realized i couldn't delete the pr, so it stays even after i deleted my fork. i guess it'll be up to github to remove since the repo it's linked to is theirs.
 
 if you use arch linux, i made a pkgbuild you can use to install ytdl from the source that's now in the dmca mirror. kinda pointless but funny...
