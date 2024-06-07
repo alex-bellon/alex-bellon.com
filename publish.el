@@ -93,6 +93,7 @@
        :publishing-function org-html-publish-to-html
        :section-numbers nil
        :with-toc nil
+       :auto-sitemap nil
        :html-head-include-default-style nil
        :html-head-include-scripts nil
        :html-head ,website-html-head
@@ -116,6 +117,7 @@
        :html-head ,blog-html-head
             
        :auto-sitemap t
+       :auto-sitemap 'cache
        :sitemap-title "blog posts"
        :sitemap-filename "index.org"
        :sitemap-format-entry sitemap-format-entry
@@ -139,6 +141,7 @@
        :html-head ,brain-html-head
            
        :auto-sitemap t
+       :auto-sitemap 'cache
        :sitemap-title "brain"
        :sitemap-filename "index.org")
 
@@ -152,4 +155,6 @@
 ;; Do not forget to add the function to the list!
 (add-to-list 'org-export-filter-link-functions 'filter-local-links)
 
-(org-publish-all t)
+(org-publish "pages")
+(org-publish "blog")
+(org-publish "brain")
