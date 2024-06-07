@@ -155,6 +155,17 @@
 ;; Do not forget to add the function to the list!
 (add-to-list 'org-export-filter-link-functions 'filter-local-links)
 
-(org-publish "pages")
-(org-publish "blog")
-(org-publish "brain")
+(defvar project-name (nth 0 argv))
+
+(cond ((string= project-name "pages")
+       (org-publish "pages"))
+      ((string= project-name "blog")
+       (org-publish "blog"))
+      ((string= project-name "brain")
+       (org-publish "brain"))
+      ((string= project-name "all")
+       (org-publish "pages")
+       (org-publish "blog")
+       (org-publish "brain"))
+      (t
+       (message "Invalid project name")))
