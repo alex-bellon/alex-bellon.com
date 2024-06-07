@@ -5,7 +5,7 @@
 #+HTML: <div class="contentBlock">
 
 #+ATTR_HTML: :class comment
-these are some of my personal projects. to see my research work check out my [[file:publications]]. to see /all/ my personal projects, visit my [[https://github.com/alex-bellon][github]] page.
+these are some of my personal projects. to see my research work check out my [[file:publications]]. to see /all/ my projects, visit my [[https://github.com/alex-bellon][github]], and check out my non-code projects on the [[file:misc]] page.
 
 ** [[https://github.com/utisss/][utctf (2019, 2020, 2021)]]
 UTCTF is the international 48-hour CTF we ([[https://isss.io][ISSS]]) host every year. In 2021 and 2020 I led the project, coordinating the event planning, communication channels, prizes, etc. in addition to writing challenges for the CTF as part of my engineering officer duties. For UTCTF 2020 we had over *2500 users registered between 1300+ teams/*. In 2019 I wrote cryptography, forensics and miscellaneous challenges for the CTF.

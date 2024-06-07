@@ -6,7 +6,7 @@
 
 ** [[https://www.mpi-sp.org/][research intern, max planck institute for security and privacy]]
 *** [Fall 2023]
-I'm currently interning at the Max Planck Institute for Security and Privacy, working on identifying vulnerabilities in firmware using fuzzing. More updates to come :)
+I worked on rehosting firmware extracted from an embedded device to be able to run it with a fuzzer. I used Ghidra, C/C++, and fuzzware.
 
 ** [[https://micron.com][software engineering intern, micron]]
 *** [Summer 2023]
