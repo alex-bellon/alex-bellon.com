@@ -34,6 +34,9 @@ My Python implementation of the drunken bishop algorithm used to generate the AS
 ** [[https://forever.isss.io/][foreverCTF]]
 An introductory and instructional CTF aimed at students new to cybersecurity, hosted by [[https://isss.io][ISSS]]. I wrote many of the forensics and cryptography problems.
 
+** [[https://github.com/alex-bellon/quantum-money-attack][quantum money attack]]
+This program was written as part of a CTF problem for UTCTF 2021 in which contestants had to recover the state of a piece of quantum money using a predefined set of gates.
+
 ** [[https://github.com/alex-bellon/rubikstega][rubikstega]]
 My implementation of Rubikstega, a Rubik's cube based type of steganography. Whitepaper describing the algorithm can be found [[http://informatika.stei.itb.ac.id/~rinaldi.munir/TA/Makalah_TA_Ade_Yusuf.pdf][here]].
 
