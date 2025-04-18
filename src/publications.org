@@ -6,10 +6,10 @@
 
 (*) indicates first author(s)
 
-** [[file:pubs/2024-cslaw-nsl.pdf][an empirical analysis on the use and reporting of national security letters]]
-alex bellon, miro haller*, andrey labunets, enze liu, stefan savage. /arXiv/
+** [[file:pubs/2025-cslaw-nsl.pdf][an empirical analysis on the use and reporting of national security letters]]
+alex bellon, miro haller*, andrey labunets, enze liu, stefan savage. /CS&Law 2025/
 #+ATTR_HTML: :class publinks
-[[[file:pubs/2024-cslaw-nsl.pdf][pdf]]] [[[https://arxiv.org/abs/2403.02768][arXiv]]] [[[https://github.com/ucsdsysnet/nsl-empirical-analysis][data + code]]] [[[https://computersciencelaw.org/2024/accepted-papers/][CSLAW 2024 short presentation]]]
+[[[file:pubs/2025-cslaw-nsl.pdf][pdf]]] [[[https://dl.acm.org/doi/10.1145/3709025.3712209][doi]]] [[[https://github.com/ucsdsysnet/nsl-empirical-analysis][data + code]]] [[[https://computersciencelaw.org/2025][conference]]]
 
 ** [[file:pubs/2023-soups-via.pdf][understanding the viability of e-mail origin indicators for identifying the sender]]
 enze liu*, lu sun, alex bellon, grant ho, stefan savage, geoffrey m. voelker, imani n. s. munyaka. /SOUPS 2023/
