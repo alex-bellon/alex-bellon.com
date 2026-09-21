@@ -6,6 +6,11 @@
 
 (*) indicates first author(s)
 
+** [[file:pubs/2025-hotnets-cressida.pdf][the case for crowd-sourcing communication to ble-only devices]]
+alex bellon*, tess despres*, prabal dutta, pat pannuto, sylvia ratnasamy. /HotNets 2025/
+#+ATTR_HTML: :class publinks
+[[[file:pubs/2025-hotnets-cressida.pdf][pdf]]] [[[https://dl.acm.org/doi/10.1145/3772356.3772394][doi]]] [[[https://conferences.sigcomm.org/hotnets/2025/][conference]]]
+
 ** [[file:pubs/2025-cslaw-nsl.pdf][an empirical analysis on the use and reporting of national security letters]]
 alex bellon, miro haller*, andrey labunets, enze liu, stefan savage. /CS&Law 2025/
 #+ATTR_HTML: :class publinks
