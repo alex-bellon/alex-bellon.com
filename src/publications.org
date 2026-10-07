@@ -6,60 +6,60 @@
 
 (*) indicates first author(s)
 
-** [[file:pubs/2025-hotnets-cressida.pdf][the case for crowd-sourcing communication to ble-only devices]]
+** [[file:pubs/2025_hotnets_cressida.pdf][the case for crowd-sourcing communication to ble-only devices]]
 alex bellon*, tess despres*, prabal dutta, pat pannuto, sylvia ratnasamy. /HotNets 2025/
 #+ATTR_HTML: :class publinks
-[[[file:pubs/2025-hotnets-cressida.pdf][pdf]]] [[[https://dl.acm.org/doi/10.1145/3772356.3772394][doi]]] [[[https://conferences.sigcomm.org/hotnets/2025/][conference]]]
+[[[file:pubs/2025_hotnets_cressida.pdf][pdf]]] [[[https://dl.acm.org/doi/10.1145/3772356.3772394][doi]]] [[[https://conferences.sigcomm.org/hotnets/2025/][conference]]]
 
-** [[file:pubs/2025-cslaw-nsl.pdf][an empirical analysis on the use and reporting of national security letters]]
+** [[file:pubs/2025_cslaw_nsl.pdf][an empirical analysis on the use and reporting of national security letters]]
 alex bellon, miro haller*, andrey labunets, enze liu, stefan savage. /CS&Law 2025/
 #+ATTR_HTML: :class publinks
-[[[file:pubs/2025-cslaw-nsl.pdf][pdf]]] [[[https://dl.acm.org/doi/10.1145/3709025.3712209][doi]]] [[[https://github.com/ucsdsysnet/nsl-empirical-analysis][data + code]]] [[[https://computersciencelaw.org/2025][conference]]]
+[[[file:pubs/2025_cslaw_nsl.pdf][pdf]]] [[[https://dl.acm.org/doi/10.1145/3709025.3712209][doi]]] [[[https://github.com/ucsdsysnet/nsl-empirical-analysis][data + code]]] [[[https://computersciencelaw.org/2025][conference]]]
 
-** [[file:pubs/2023-soups-via.pdf][understanding the viability of e-mail origin indicators for identifying the sender]]
+** [[file:pubs/2023_soups_via.pdf][understanding the viability of e-mail origin indicators for identifying the sender]]
 enze liu*, lu sun, alex bellon, grant ho, stefan savage, geoffrey m. voelker, imani n. s. munyaka. /SOUPS 2023/
 #+ATTR_HTML: :class publinks
-[[[file:pubs/2023-soups-via.pdf][pdf]]] [[[https://www.usenix.org/conference/soups2023/presentation/liu][usenix page]]] [[[https://www.usenix.org/conference/soups2023][conference]]]
+[[[file:pubs/2023_soups_via.pdf][pdf]]] [[[https://www.usenix.org/conference/soups2023/presentation/liu][usenix page]]] [[[https://www.usenix.org/conference/soups2023][conference]]]
 
-** [[file:pubs/2023-hotmobile-tagalong.pdf][tagalong: a free, wide-area data-muling service built on the airtag protocol]]
+** [[file:pubs/2023_hotmobile_tagalong.pdf][tagalong: a free, wide-area data-muling service built on the airtag protocol]]
 alex bellon*, alex yen, pat pannuto. /HotMobile 2023/
 #+ATTR_HTML: :class publinks
-[[[file:pubs/2023-hotmobile-tagalong.pdf][pdf]]] [[[file:pubs/2023-hotmobile-tagalong-slides.pdf][slides]]] [[[https://dl.acm.org/doi/10.1145/3572864.3580342][doi]]] [[[https://hotmobile.org/2023/][conference]]]
+[[[file:pubs/2023_hotmobile_tagalong.pdf][pdf]]] [[[file:pubs/2023_hotmobile_tagalong_slides.pdf][slides]]] [[[https://dl.acm.org/doi/10.1145/3572864.3580342][doi]]] [[[https://hotmobile.org/2023/][conference]]]
 
-** [[file:pubs/2022-techcon-hacking-for-fun-and-glucose.pdf][hacking for fun and glucose: reverse engineering an insulin pump]]
+** [[file:pubs/2022_techcon_hacking_for_fun_and_glucose.pdf][hacking for fun and glucose: reverse engineering an insulin pump]]
 alex bellon*, alex snoeren, deian stefan. /SRC TECHCON 2022/
 #+ATTR_HTML: :class publinks
-[[[file:pubs/2022-techcon-hacking-for-fun-and-glucose.pdf][pdf]]] [[[file:pubs/2022-techcon-slides.pdf][slides]]] [[[https://src.secure-platform.com/a/page/techcon][conference]]]
+[[[file:pubs/2022_techcon_hacking_for_fun_and_glucose.pdf][pdf]]] [[[file:pubs/2022_techcon_slides.pdf][slides]]] [[[https://src.secure-platform.com/a/page/techcon][conference]]]
 
 
 #+ATTR_HTML: :class divider
 demos and posters
 
-** [[file:pubs/2022-sensys-tagalong-demo.pdf][demo: tagalong: a free, wide-area data-muling service built on the airtag protocol]]
+** [[file:pubs/2022_sensys_tagalong_demo.pdf][demo: tagalong: a free, wide-area data-muling service built on the airtag protocol]]
 alex bellon*, alex yen, pat pannuto. /SenSys 2022/
 #+ATTR_HTML: :class publinks
-[[[file:pubs/2022-sensys-tagalong-demo.pdf][pdf]]] [[[file:pubs/2022-sensys-tagalong-poster.pdf][poster]]] [[[https://www.youtube.com/watch?v=c1jwv0srtu4][video]]] [[[https://dl.acm.org/doi/abs/10.1145/3560905.3568085][doi]]] [[[https://sensys.acm.org/2022/][conference]]]
+[[[file:pubs/2022_sensys_tagalong_demo.pdf][pdf]]] [[[file:pubs/2022_sensys_tagalong_poster.pdf][poster]]] [[[https://www.youtube.com/watch?v=c1jwv0srtu4][video]]] [[[https://dl.acm.org/doi/abs/10.1145/3560905.3568085][doi]]] [[[https://sensys.acm.org/2022/][conference]]]
 
 
 #+ATTR_HTML: :class divider
 fun papers
 
-** [[file:pubs/2024-sigbovik-et-alex.pdf][et al(ex): examining the impact of alexs on the field of computer science]]
+** [[file:pubs/2024_sigbovik_et_alex.pdf][et al(ex): examining the impact of alexs on the field of computer science]]
 alex bellon, alex liu, alex(ander) redding, alex c snoeren, alex yen. /SIGBOVIK 2024/
 #+ATTR_HTML: :class publinks
-[[[file:pubs/2024-sigbovik-et-alex.pdf][pdf]]] [[[https://sigbovik.org/2024/][conference]]]
+[[[file:pubs/2024_sigbovik_et_alex.pdf][pdf]]] [[[https://sigbovik.org/2024/][conference]]]
 
 
 #+ATTR_HTML: :class divider
 writeups and articles
 
-** [[file:pubs/mozilla-internship-writeup.pdf][the impact of maintainers on package ecosystem security]]
+** [[file:pubs/mozilla_internship_writeup.pdf][the impact of maintainers on package ecosystem security]]
 *alex bellon*. /mozilla internship project blog post/
 
-** [[file:pubs/cptc-report-2020.pdf][cptc report 2020]]
+** [[file:pubs/cptc_report_2020.pdf][cptc report 2020]]
 *alex bellon*, nathan huckleberry, alice reuter, soham roy. /pentesting report for CPTC southeast regional 2020/
 
-** [[file:pubs/cptc-report-2019.pdf][cptc report 2019]]
+** [[file:pubs/cptc_report_2019.pdf][cptc report 2019]]
 neil patil, *alex bellon*, nathan huckleberry, alice reuter, logan kirkpatrick, joseph manahan. /pentesting report for CPTC new england regional 2019/
 
 ** [[https://pagedout.institute/download/PagedOut_001_beta1.pdf][rubikstega]]
