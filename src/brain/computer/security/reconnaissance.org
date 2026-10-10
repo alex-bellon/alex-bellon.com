@@ -6,8 +6,7 @@
 
 *** certificate search
 - [[https://crt.sh/][crt.sh]]
-- [[https://transparencyreport.google.com/https/certificates?hl=en][google certificate search]]
-- [[https://www.entrust.com/ct-search/][entrust certifcate search]]
+- [[https://certobserver.com/ct-search][certobserver certificate search]]
 
 *** osint
 - [[https://github.com/liamg/gitjacker][gitjack]] - leak git repositories from misconfigured websites
