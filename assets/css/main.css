@@ -153,3 +153,8 @@ h2 {
     margin: 10px;
     color: white;
 }
+
+.wip-ring {
+    align-self: center;
+    margin-top: 30px;
+}
